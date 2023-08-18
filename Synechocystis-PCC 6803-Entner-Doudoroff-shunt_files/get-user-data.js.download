@@ -1,0 +1,5 @@
+var userInfo = null;
+var subscriptionInfo = null;
+var preferred_database = 'GCF_000234725';
+var can_create_group = false;
+var multiorg_initiallySelected =null;

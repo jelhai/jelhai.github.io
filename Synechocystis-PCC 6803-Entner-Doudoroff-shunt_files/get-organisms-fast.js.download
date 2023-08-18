@@ -1,0 +1,5 @@
+var userAccountsEnabled = true;
+var groupsEnabled = true;
+var allOrganisms = [{"id":"ECOLI","label":"Escherichia coli K-12 substr. MG1655 reference genome","regOv":true,"genBrowser":true,"genOv":true,"cellov":true,"tier":1,"genomeType":"REFERENCE","domain":"BACTERIA","synonyms":["EcoCyc","ECOLI","Escherichia coli K-12 substr. MG1655","Escherichia coli MG1655","Escherichia coli K12 substr. MG1655"]},{"id":"GCF_000009725","label":"Synechocystis sp. PCC 6803 PCC","regOv":true,"genBrowser":true,"genOv":true,"cellov":true,"tier":2,"genomeType":null,"domain":"BACTERIA"}];
+var defaultServerOrgID = "ECOLI";
+var allOrganismsLoaded =  false;
