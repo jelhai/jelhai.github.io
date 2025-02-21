@@ -1,0 +1,371 @@
+<html><head><title>B 8003 BioBIKE Listener v5.2  1107  JELHAI 88822:27</title>
+<SCRIPT LANGUAGE="Javascript" SRC="/newminieditor"> </SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="/jelhai-arglist-data"> </SCRIPT>
+<script type="text/javascript">
+function clearhack()
+{
+location="/clearhack.html?PKG=JELHAI88822"
+}
+</script>
+<script type="text/javascript">
+function clrhist()
+{
+location="/clearhistory.html?PKG=JELHAI88822"
+}
+</script>
+<script type="text/javascript">
+function mlreformat()
+{
+location="/ml-reformat.html?PKG=JELHAI88822"
+}
+</script>
+<title></title></head><body ONLOAD="document.onelineform.evalstring.focus();"><pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=1">&lt;1&gt;&gt;</a> :from-vpl
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=1&amp;VALUE=0">::</a> :FROM-VPL
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=2">&lt;2&gt;&gt;</a> :PA bbi
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=2&amp;VALUE=0">::</a> #&lt;The BBI package&gt;
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=3">&lt;3&gt;&gt;</a> (DEFUN In-vitro-translate-aux-hack (sequence &amp;KEY sample (user *username*))
+  &quot;Gives reproducible different genetic code to each user&quot;
+  (LET* ((codons (ALL-COMBINATIONS-OF &quot;ACGU&quot; OF-LENGTH 3))
+         (initial-lookup-string1
+             &quot;EWIRVLQIINL*SDLDAASPAGHLAFKGCTTRTRRYLGYSLFSVVPQ*SMVCTGN*EHSRPKPR&quot;)
+         (initial-lookup-string2 (REVERSE initial-lookup-string1))
+         (aa-table initial-lookup-string1)
+         (max-code 128)
+         (user-code 
+           (IF sample
+               0
+              (MOD 
+                (FOR-EACH letter in (STRING-OF user)
+                  ;  AS code = (LISP::CHAR-CODE (lisp::CHAR letter 0))
+                     AS code = (LISP::CHAR-CODE letter)
+                     SUM code)
+                max-code)))
+         (iterations 0)
+         (max-iterations 100)
+         )
+ 
+     (WHEN (&gt; user-code 63)
+           (SETF aa-table initial-lookup-string2)
+           (SETF user-code (- user-code 64)))
+     (SETF aa-table
+         (JOIN (SUBSEQ aa-table user-code)
+               (SUBSEQ aa-table 0 user-code)))
+     (IF sample
+         (SETF sequence (TRANSLITERATE sequence &quot;ACGU&quot; &quot;GAUC&quot;)))
+
+     (LOOP UNTIL (&gt; iterations max-iterations)
+           AS start = (1+ (bbi::RANDOM (- (LENGTH sequence) 1)))
+           AS aa-seq 
+               = (FOR-EACH codon IN (SPLIT (SUBSTRING sequence FROM start) EVERY 3)
+                      INITIALIZE peptide = &quot;&quot;
+                      AS codon-number = (bbi::POSITION codon codons :TEST 'EQUAL)
+                      AS aa = (IF codon-number
+                                 (SUBSEQ aa-table codon-number (1+ codon-number)))
+                      (IF (OR (EQUAL aa &quot;*&quot;) (NOT codon-number))
+                          (RETURN peptide)
+                          (SETF peptide (JOIN peptide aa)))
+                      FINALLY (RETURN peptide))
+           DO (INCF iterations)
+           WHEN (&gt; (LENGTH aa-seq) 0)
+              COLLECT  aa-seq)
+))
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=3&amp;VALUE=0">::</a> 
+Warning: The variable 'OF-LENGTH' was not defined within the function, and has not been defined using DEFINE.
+Warning: While compiling these undefined functions were referenced:
+         ALL-COMBINATIONS-OF.
+
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=3&amp;VALUE=1">&gt;</a> IN-VITRO-TRANSLATE-AUX-HACK
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=4">&lt;4&gt;&gt;</a> (ALL-COMBINATIONS-OF &quot;ACGU&quot; OF-LENGTH 3)
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=4&amp;VALUE=0">::</a> 
+Warning: While compiling these undefined functions were referenced:
+         ALL-COMBINATIONS-OF.
+
+*** An error occurred...
+ in the call to ALL-COMBINATIONS-OF  :: (ALL-COMBINATIONS-OF &quot;ACGU&quot; OF...
+
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=4&amp;VALUE=1">&gt;</a> &lt;&lt;&lt; Unbound variable: OF-LENGTH &gt;&gt;&gt;
+ Maybe you meant one of these?<br><table><tr><td>&nbsp;&nbsp;LENGTH&nbsp;&nbsp;</td><td>[f]&nbsp;&nbsp;</td><td><a HREF="/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=%28wb%3a%3ainto-editbox%20%27%28ALL-COMBINATIONS-OF%20%22ACGU%22%20LENGTH%203%29%29">[show modified form]</a>&nbsp;&nbsp;</td><td><a HREF="/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=%28ALL-COMBINATIONS-OF%20%22ACGU%22%20LENGTH%203%29">[execute modified form]</a></td></tr></table>
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=5">&lt;5&gt;&gt;</a> (jelhai::ALL-COMBINATIONS-OF &quot;ACGU&quot; OF-LENGTH 3)
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=5&amp;VALUE=0">::</a> 
+Warning: While compiling these undefined functions were referenced:
+         JELHAI::ALL-COMBINATIONS-OF.
+
+*** An error occurred...
+ in the call to JELHAI::ALL-COMBINATIONS-OF  :: (JELHAI::ALL-COMBINATIONS-OF &quot;...
+
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=5&amp;VALUE=1">&gt;</a> &lt;&lt;&lt; Unbound variable: OF-LENGTH &gt;&gt;&gt;
+ Maybe you meant one of these?<br><table><tr><td>&nbsp;&nbsp;LENGTH&nbsp;&nbsp;</td><td>[f]&nbsp;&nbsp;</td><td><a HREF="/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=%28wb%3a%3ainto-editbox%20%27%28JELHAI%3a%3aALL-COMBINATIONS-OF%20%22ACGU%22%20LENGTH%203%29%29">[show modified form]</a>&nbsp;&nbsp;</td><td><a HREF="/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=%28JELHAI%3a%3aALL-COMBINATIONS-OF%20%22ACGU%22%20LENGTH%203%29">[execute modified form]</a></td></tr></table>
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=6">&lt;6&gt;&gt;</a> (alien-world::ALL-COMBINATIONS-OF &quot;ACGU&quot; OF-LENGTH 3)
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=6&amp;VALUE=0">::</a> 
+Warning: While compiling these undefined functions were referenced:
+         ALIEN-WORLD::ALL-COMBINATIONS-OF.
+
+*** An error occurred...
+ in the call to ALIEN-WORLD::ALL-COMBINATIONS-OF  :: (ALIEN-WORLD::ALL-COMBINATIONS...
+
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=6&amp;VALUE=1">&gt;</a> &lt;&lt;&lt; Unbound variable: OF-LENGTH &gt;&gt;&gt;
+ Maybe you meant one of these?<br><table><tr><td>&nbsp;&nbsp;LENGTH&nbsp;&nbsp;</td><td>[f]&nbsp;&nbsp;</td><td><a HREF="/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=%28wb%3a%3ainto-editbox%20%27%28ALIEN-WORLD%3a%3aALL-COMBINATIONS-OF%20%22ACGU%22%20LENGTH%203%29%29">[show modified form]</a>&nbsp;&nbsp;</td><td><a HREF="/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=%28ALIEN-WORLD%3a%3aALL-COMBINATIONS-OF%20%22ACGU%22%20LENGTH%203%29">[execute modified form]</a></td></tr></table>
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=7">&lt;7&gt;&gt;</a> (DEFUN In-vitro-translate-aux-hack (sequence &amp;KEY sample (user *username*)
+  &quot;Gives reproducible different genetic code to each user&quot;
+  (LET* ((codons (ALL-STRINGS OF-LENGTH 3 USING &quot;ACGU&quot;))
+         (initial-lookup-string1
+             &quot;EWIRVLQIINL*SDLDAASPAGHLAFKGCTTRTRRYLGYSLFSVVPQ*SMVCTGN*EHSRPKPR&quot;)
+         (initial-lookup-string2 (REVERSE initial-lookup-string1))
+         (aa-table initial-lookup-string1)
+         (max-code 128)
+         (user-code 
+           (IF sample
+               0
+              (MOD 
+                (FOR-EACH letter in (STRING-OF user)
+                  ;  AS code = (LISP::CHAR-CODE (lisp::CHAR letter 0))
+                     AS code = (LISP::CHAR-CODE letter)
+                     SUM code)
+                max-code)))
+         (iterations 0)
+         (max-iterations 100)
+         )
+ 
+     (WHEN (&gt; user-code 63)
+           (SETF aa-table initial-lookup-string2)
+           (SETF user-code (- user-code 64)))
+     (SETF aa-table
+         (JOIN (SUBSEQ aa-table user-code)
+               (SUBSEQ aa-table 0 user-code)))
+     (IF sample
+         (SETF sequence (TRANSLITERATE sequence &quot;ACGU&quot; &quot;GAUC&quot;)))
+
+     (LOOP UNTIL (&gt; iterations max-iterations)
+           AS start = (1+ (bbi::RANDOM (- (LENGTH sequence) 1)))
+           AS aa-seq 
+               = (FOR-EACH codon IN (SPLIT (SUBSTRING sequence FROM start) EVERY 3)
+                      INITIALIZE peptide = &quot;&quot;
+                      AS codon-number = (bbi::POSITION codon codons :TEST 'EQUAL)
+                      AS aa = (IF codon-number
+                                 (SUBSEQ aa-table codon-number (1+ codon-number)))
+                      (IF (OR (EQUAL aa &quot;*&quot;) (NOT codon-number))
+                          (RETURN peptide)
+                          (SETF peptide (JOIN peptide aa)))
+                      FINALLY (RETURN peptide))
+           DO (INCF iterations)
+           WHEN (&gt; (LENGTH aa-seq) 0)
+              COLLECT  aa-seq)
+))) ; closing paren(s) added
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=7&amp;VALUE=0">::</a> &lt;&lt;&lt; Compilation of input form failed. Actual error: &gt;&gt;&gt;
+&lt;&lt;&lt; Argument list &amp;key parameter, Gives reproducible different genetic
+    code to each user, is invalid&gt;&gt;&gt;
+
+
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=8">&lt;8&gt;&gt;</a> (DEFUN In-vitro-translate-aux-hack (sequence &amp;KEY sample (user *username*))
+  &quot;Gives reproducible different genetic code to each user&quot;
+  (LET* ((codons (ALL-STRINGS OF-LENGTH 3 USING &quot;ACGU&quot;))
+         (initial-lookup-string1
+             &quot;EWIRVLQIINL*SDLDAASPAGHLAFKGCTTRTRRYLGYSLFSVVPQ*SMVCTGN*EHSRPKPR&quot;)
+         (initial-lookup-string2 (REVERSE initial-lookup-string1))
+         (aa-table initial-lookup-string1)
+         (max-code 128)
+         (user-code 
+           (IF sample
+               0
+              (MOD 
+                (FOR-EACH letter in (STRING-OF user)
+                  ;  AS code = (LISP::CHAR-CODE (lisp::CHAR letter 0))
+                     AS code = (LISP::CHAR-CODE letter)
+                     SUM code)
+                max-code)))
+         (iterations 0)
+         (max-iterations 100)
+         )
+ 
+     (WHEN (&gt; user-code 63)
+           (SETF aa-table initial-lookup-string2)
+           (SETF user-code (- user-code 64)))
+     (SETF aa-table
+         (JOIN (SUBSEQ aa-table user-code)
+               (SUBSEQ aa-table 0 user-code)))
+     (IF sample
+         (SETF sequence (TRANSLITERATE sequence &quot;ACGU&quot; &quot;GAUC&quot;)))
+
+     (LOOP UNTIL (&gt; iterations max-iterations)
+           AS start = (1+ (bbi::RANDOM (- (LENGTH sequence) 1)))
+           AS aa-seq 
+               = (FOR-EACH codon IN (SPLIT (SUBSTRING sequence FROM start) EVERY 3)
+                      INITIALIZE peptide = &quot;&quot;
+                      AS codon-number = (bbi::POSITION codon codons :TEST 'EQUAL)
+                      AS aa = (IF codon-number
+                                 (SUBSEQ aa-table codon-number (1+ codon-number)))
+                      (IF (OR (EQUAL aa &quot;*&quot;) (NOT codon-number))
+                          (RETURN peptide)
+                          (SETF peptide (JOIN peptide aa)))
+                      FINALLY (RETURN peptide))
+           DO (INCF iterations)
+           WHEN (&gt; (LENGTH aa-seq) 0)
+              COLLECT  aa-seq)
+))
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=8&amp;VALUE=0">::</a> IN-VITRO-TRANSLATE-AUX-HACK
+<a HREF="/inhistory.html?PKG=JELHAI88822&amp;WHICH=nil&amp;HISTORY=9">&lt;9&gt;&gt;</a> (DEFUN In-vitro-translate-aux-hack (sequence &amp;KEY sample (user *username*))
+  &quot;Gives reproducible different genetic code to each user&quot;
+  (LET* ((codons (ALL-STRINGS OF-LENGTH 3 USING &quot;ACGU&quot;))
+         (initial-lookup-string1
+             &quot;EWIRVLQIINL*SDLDAASPAGHLAFKGCTTRTRRYLGYSLFSVVPQ*SMVCTGN*EHSRPKPR&quot;)
+         (initial-lookup-string2 (REVERSE initial-lookup-string1))
+         (aa-table initial-lookup-string1)
+         (max-code 128)
+         (user-code 
+           (IF sample
+               0
+              (MOD 
+                (FOR-EACH letter in (STRING-OF user)
+                     AS code = (LISP::CHAR-CODE (lisp::CHAR letter 0))
+                   ; AS code = (LISP::CHAR-CODE letter)
+                     SUM code)
+                max-code)))
+         (iterations 0)
+         (max-iterations 100)
+         )
+ 
+     (WHEN (&gt; user-code 63)
+           (SETF aa-table initial-lookup-string2)
+           (SETF user-code (- user-code 64)))
+     (SETF aa-table
+         (JOIN (SUBSEQ aa-table user-code)
+               (SUBSEQ aa-table 0 user-code)))
+     (IF sample
+         (SETF sequence (TRANSLITERATE sequence &quot;ACGU&quot; &quot;GAUC&quot;)))
+
+     (LOOP UNTIL (&gt; iterations max-iterations)
+           AS start = (1+ (bbi::RANDOM (- (LENGTH sequence) 1)))
+           AS aa-seq 
+               = (FOR-EACH codon IN (SPLIT (SUBSTRING sequence FROM start) EVERY 3)
+                      INITIALIZE peptide = &quot;&quot;
+                      AS codon-number = (bbi::POSITION codon codons :TEST 'EQUAL)
+                      AS aa = (IF codon-number
+                                 (SUBSEQ aa-table codon-number (1+ codon-number)))
+                      (IF (OR (EQUAL aa &quot;*&quot;) (NOT codon-number))
+                          (RETURN peptide)
+                          (SETF peptide (JOIN peptide aa)))
+                      FINALLY (RETURN peptide))
+           DO (INCF iterations)
+           WHEN (&gt; (LENGTH aa-seq) 0)
+              COLLECT  aa-seq)
+))
+<a HREF="/out-history.html?PKG=JELHAI88822&amp;HISTORY=9&amp;VALUE=0">::</a> IN-VITRO-TRANSLATE-AUX-HACK
+</pre>
+<form NAME="onelineform" METHOD="POST" ACTION="/weblistener-evalstring-form-response.html">
+<input TYPE="text" NAME="evalstring" VALUE="(alien-world::ALL-COMBINATIONS-OF &quot;ACGU&quot; OF-LENGTH 3)" SIZE=85 ONKEYUP="minieditorkeyup(event, this, window.document.multilineform)">
+<input TYPE="SUBMIT" NAME="data" VALUE="[Enter]">
+<input TYPE="HIDDEN" NAME="formid" VALUE="wb-oneline">
+<input TYPE="HIDDEN" NAME="PKG" VALUE="JELHAI88822"></form>
+<form NAME="multilineform" METHOD="POST" ACTION="/weblistener-evalstring-form-response.html">
+<textarea NAME="evalstring" ROWS=32 COLS=80 ONKEYUP="minieditorkeyup(event, this, window.document.multilineform)" ONMOUSEUP="minieditorkeyup(event, this, window.document.multilineform)">(DEFUN In-vitro-translate-aux-hack (sequence &amp;KEY sample (user *username*))
+  &quot;Gives reproducible different genetic code to each user&quot;
+  (LET* ((codons (ALL-STRINGS OF-LENGTH 3 USING &quot;ACGU&quot;))
+         (initial-lookup-string1
+             &quot;EWIRVLQIINL*SDLDAASPAGHLAFKGCTTRTRRYLGYSLFSVVPQ*SMVCTGN*EHSRPKPR&quot;)
+         (initial-lookup-string2 (REVERSE initial-lookup-string1))
+         (aa-table initial-lookup-string1)
+         (max-code 128)
+         (user-code 
+           (IF sample
+               0
+              (MOD 
+                (FOR-EACH letter in (STRING-OF user)
+                     AS code = (LISP::CHAR-CODE (lisp::CHAR letter 0))
+                   ; AS code = (LISP::CHAR-CODE letter)
+                     SUM code)
+                max-code)))
+         (iterations 0)
+         (max-iterations 100)
+         )
+ 
+     (WHEN (&gt; user-code 63)
+           (SETF aa-table initial-lookup-string2)
+           (SETF user-code (- user-code 64)))
+     (SETF aa-table
+         (JOIN (SUBSEQ aa-table user-code)
+               (SUBSEQ aa-table 0 user-code)))
+     (IF sample
+         (SETF sequence (TRANSLITERATE sequence &quot;ACGU&quot; &quot;GAUC&quot;)))
+
+     (LOOP UNTIL (&gt; iterations max-iterations)
+           AS start = (1+ (bbi::RANDOM (- (LENGTH sequence) 1)))
+           AS aa-seq 
+               = (FOR-EACH codon IN (SPLIT (SUBSTRING sequence FROM start) EVERY 3)
+                      INITIALIZE peptide = &quot;&quot;
+                      AS codon-number = (bbi::POSITION codon codons :TEST 'EQUAL)
+                      AS aa = (IF codon-number
+                                 (SUBSEQ aa-table codon-number (1+ codon-number)))
+                      (IF (OR (EQUAL aa &quot;*&quot;) (NOT codon-number))
+                          (RETURN peptide)
+                          (SETF peptide (JOIN peptide aa)))
+                      FINALLY (RETURN peptide))
+           DO (INCF iterations)
+           WHEN (&gt; (LENGTH aa-seq) 0)
+              COLLECT  aa-seq)
+))</textarea><br>
+<input TYPE="SUBMIT" NAME="data" VALUE="Eval">
+<input TYPE="SUBMIT" NAME="mlreformat" VALUE="Reindent">
+ Info: 
+<input TYPE="text" NAME="closer" SIZE=48 VALUE="Package: BBI">
+<input TYPE="BUTTON" NAME="hack" VALUE="Clear" ONCLICK="clearhack();">
+<input TYPE="BUTTON" NAME="fred" VALUE="Clear History" ONCLICK="clrhist();">
+<input TYPE="HIDDEN" NAME="formid" VALUE="wb-multiline">
+<input TYPE="HIDDEN" NAME="PKG" VALUE="JELHAI88822">
+</form>
+<table><tr>
+<td><a HREF="/biolingua-toplevel-directories?PKG=JELHAI88822"><big>Browse Files</big></a></td>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+<td><a HREF="/previous-sessions-index?PKG=JELHAI88822" TARGET="_blank"><big>Session Logs</big></a></td>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+<td><a HREF="/editallprevious.html?PKG=JELHAI88822"><big>Files:</big></a> <a HREF="/editprevious.html?PKG=JELHAI88822"><big>Prev</big></a> <a HREF="/editallprevious.html?PKG=JELHAI88822"><big>All</big></a></td>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+<td><a HREF="/toplevel-frames.html?PKG=JELHAI88822"><big>Browse Frames</big></a></td>
+<td></td><td></td><td></td><td></td><td></td><td></td>
+<td><a HREF="/new-help/new-help-options?PKG=JELHAI88822" TARGET="_blank"><b><big><font COLOR="red">Help</font></big></b></a></td></tr></table>
+<a NAME="TAG"><table><tr><td VALIGN="top"><big><i><b>BioBIKE Listener v5.2</b></i></big></td><td>&nbsp;&nbsp;&nbsp;</td><td VALIGN="bottom"><form NAME="nav2"><select NAME="url" ONCHANGE="eval(document.nav2.url.options[document.nav2.url.selectedIndex].value)"><option SELECTED="selected">Help...</option>
+<option>------------</option>
+<option VALUE="document.location.href=&quot;/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=(help help)&quot;">Using (help)</option>
+<option VALUE="window.open('/weblistener-toplevel-doc-page.html?PKG=JELHAI88822')">BioBIKE Overview</option>
+<option VALUE="window.open('/weblistener-toplevel-doc-page.html?PKG=JELHAI88822#BIOLISP')">BioLisp Documentation</option>
+<option VALUE="window.open('http://ramsites.net/~biobike/help/index.html')">BBL Documentation</option>
+<option VALUE="window.open('/newdocprims?PKG=JELHAI88822&amp;MODE=nil&amp;PACKAGE=nil&amp;SYMBOL=nil&amp;STATE=nil')">BioLisp primitives</option>
+<option VALUE="window.open('/help/modules?PKG=JELHAI88822')">Available functions</option>
+<option VALUE="window.open('/new-help/help-glossary-url?PKG=JELHAI88822')">BioBIKE glossary</option>
+<option VALUE="window.open('http://www.lispworks.com/reference/HyperSpec/Front/index.htm')">Lisp Hyperspec</option>
+
+<option VALUE="document.location.href=&quot;/feedback-form?PKG=JELHAI88822&quot;">Send Feedback</option>
+<option VALUE="document.location.href=&quot;/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=(help::list-live-tutorials)&quot;">Live Tutorials</option></select></form></td><td>&nbsp;&nbsp;&nbsp;</td><td VALIGN="bottom"><form NAME="nav3"><select NAME="url" ONCHANGE="eval(document.nav3.url.options[document.nav3.url.selectedIndex].value)"><option SELECTED="selected">Tools...</option><option>------------</option><option VALUE="document.location.href=&quot;/weblistener-evalstring.html?PKG=JELHAI88822&amp;EVALSTRING=(my-stuff)&quot;">My Stuff</option><option VALUE="window.open('/prefs-gui?PKG=JELHAI88822')">Prefs...</option><option VALUE="window.open('/weblistener-getfile?PKG=JELHAI88822')">Upload File</option><option VALUE="window.open('/web-widget-index?PKG=JELHAI88822')">Web Widgets</option><option VALUE="document.location.href=&quot;/biologin&quot;">Switch Sessions</option></select></form></td></tr></table></a>
+</body></html>

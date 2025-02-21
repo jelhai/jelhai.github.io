@@ -1,0 +1,97 @@
+(DEFUN rRNAs-of (org)
+  (LET* ((nc-genes (NONCODING-GENES-OF org))
+         (nc-descrs (DESCRIPTIONS-OF nc-genes))
+        )
+    (FOR-EACH gene IN nc-genes
+     FOR-EACH descr IN nc-descrs
+         AS rRNA? = (OR
+                      (MATCHES-OF-ITEM "rRNA" IN descr)
+                      (MATCHES-OF-ITEM "ribosomal" IN descr)
+                      (MATCHES-OF-ITEM "rrn" IN (ELEMENT/S-OF gene .GENE-NAME))
+                      )
+         WHEN rRNA?
+           COLLECT gene)
+  ))
+
+(DEFUN tRNAs-of (org)
+  (LET* ((nc-genes (NONCODING-GENES-OF org))
+         (nc-descrs (DESCRIPTIONS-OF nc-genes))
+        )
+    (FOR-EACH gene IN nc-genes
+     FOR-EACH descr IN nc-descrs
+         AS tRNA? = (OR
+                      (MATCHES-OF-ITEM "tRNA" IN descr)
+                      (MATCHES-OF-ITEM "trn" IN (ELEMENT/S-OF gene .GENE-NAME))
+                      )
+         WHEN tRNA?
+           COLLECT gene)
+  ))
+
+(bbi::DEFINE-DF-SYNTACTIC-TOKENS RNA-composition-of
+        with-mRNA-fraction and-rRNA-fraction and-tRNA-fraction)
+(DEFINE-FUNCTION RNA-COMPOSITION-OF
+  REQUIRED (organism (with-mRNA-fraction) mRNA-fraction 
+                     (and-rRNA-fraction) rRNA-fraction
+                     (and-tRNA-fraction) tRNA-fraction)
+    TYPE organism = organism
+    TYPE mRNA-fraction = Nonnegative-number
+    TYPE tRNA-fraction = Nonnegative-number
+    TYPE rRNA-fraction = Nonnegative-number
+  FLAG as-counts
+  INITIALIZE mrna-genes = (CODING-GENES-OF organism)
+  INITIALIZE rRNA-genes = (rRNAS-OF organism)
+  INITIALIZE tRNA-genes = (tRNAS-OF organism)
+  INITIALIZE fraction-sum = 
+     (ROUND (SUM-OF mRNA-fraction tRNA-fraction rRNA-fraction)
+            TO-NEAREST 0.01)
+  INITIALIZE frequencies = NIL
+  BODY
+   (WHEN as-counts
+      (SETF mRNA-fraction (/ mRNA-fraction fraction-sum))
+      (SETF rRNA-fraction (/ rRNA-fraction fraction-sum))
+      (SETF tRNA-fraction (/ tRNA-fraction fraction-sum))
+      (SETF fraction-sum 1)
+      )
+   (IF (OR (< (LENGTH tRNA-genes) 30)
+           (< (LENGTH rRNA-genes) 3))
+       (ERROR "Organism ~A appears not to be annotated as to rRNA or tRNA."
+          organism))
+   (FOR-EACH n IN (LIST mRNA-fraction tRNA-fraction rRNA-fraction)
+       (IF (> n 1)
+           (ERROR "All fractions must be between 0 and 1, not '~A'" n)) 
+       )
+   (UNLESS (= fraction-sum 1)
+     (ERROR "Fractions must sum to 1.00, not ~A" fraction-sum))
+
+   (SETF frequencies
+      (SUM-OF
+         (FOR-EACH set IN (LIST mRNA-genes rRNA-genes tRNA-genes)
+          FOR-EACH factor IN (LIST mRNA-fraction rRNA-fraction tRNA-fraction)
+              AS raw-freqs = (BACKGROUND-FREQUENCIES-OF set) 
+              COLLECT (PRODUCT-OF factor raw-freqs)
+         )))
+    (DISPLAY-LINE "Calculated RNA composition of " organism)
+    (DISPLAY-LINE "")
+    (DISPLAY-LIST EACH
+      (JOIN
+        (LIST (LIST "A" "C" "G" "T"))
+        (LIST (ROUND (PRODUCT-OF 100 frequencies) TO-NEAREST 0.1))))
+    frequencies
+)
+
+(DEFINE-FUNCTION DNA-composition-of
+  REQUIRED organism
+    TYPE organism = organism
+  INITIALIZE frequencies = (BACKGROUND-FREQUENCIES-OF organism BOTH-STRANDS)
+  BODY  
+   (DISPLAY-LINE "Calculated DNA composition of " organism)
+      (DISPLAY-LINE "")
+      (DISPLAY-LIST EACH
+        (JOIN
+          (LIST (LIST "A" "C" "G" "T"))
+          (LIST (ROUND (PRODUCT-OF 100 frequencies) TO-NEAREST 0.1))))
+   frequencies
+)
+
+(BBI::ADD-DF-SYMBOL-TO-VPL-PALETTE 'RNA-COMPOSITION-OF)
+(BBI::ADD-DF-SYMBOL-TO-VPL-PALETTE 'DNA-COMPOSITION-OF)

@@ -1,0 +1,343 @@
+LOCUS       NP_066402                126 aa            linear   PRI 17-AUG-2016
+DEFINITION  histone H2B type 1-J [Homo sapiens].
+ACCESSION   NP_066402
+VERSION     NP_066402.2
+DBSOURCE    REFSEQ: accession NM_021058.3
+KEYWORDS    RefSeq.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 126)
+  AUTHORS   Kitazawa M, Ohnuma T, Takebayashi Y, Shibata N, Baba H, Ohi K,
+            Yasuda Y, Nakamura Y, Aleksic B, Yoshimi A, Okochi T, Ikeda M,
+            Naitoh H, Hashimoto R, Iwata N, Ozaki N, Takeda M and Arai H.
+  TITLE     No associations found between the genes situated at 6p22.1,
+            HIST1H2BJ, PRSS16, and PGBD1 in Japanese patients diagnosed with
+            schizophrenia
+  JOURNAL   Am. J. Med. Genet. B Neuropsychiatr. Genet. 159B (4), 456-464
+            (2012)
+   PUBMED   22488895
+  REMARK    GeneRIF: The genes HIST1H2BJ, PRSS16, and PGBD1 were not associated
+            with Japanese patients with schizophrenia.
+REFERENCE   2  (residues 1 to 126)
+  AUTHORS   de Mateo S, Castillo J, Estanyol JM, Ballesca JL and Oliva R.
+  TITLE     Proteomic characterization of the human sperm nucleus
+  JOURNAL   Proteomics 11 (13), 2714-2726 (2011)
+   PUBMED   21630459
+REFERENCE   3  (residues 1 to 126)
+  AUTHORS   Shi J, Levinson DF, Duan J, Sanders AR, Zheng Y, Pe'er I, Dudbridge
+            F, Holmans PA, Whittemore AS, Mowry BJ, Olincy A, Amin F, Cloninger
+            CR, Silverman JM, Buccola NG, Byerley WF, Black DW, Crowe RR,
+            Oksenberg JR, Mirel DB, Kendler KS, Freedman R and Gejman PV.
+  TITLE     Common variants on chromosome 6p22.1 are associated with
+            schizophrenia
+  JOURNAL   Nature 460 (7256), 753-757 (2009)
+   PUBMED   19571809
+  REMARK    GeneRIF: Observational study, meta-analysis, and genome-wide
+            association study of gene-disease association. (HuGE Navigator)
+REFERENCE   4  (residues 1 to 126)
+  AUTHORS   Benyamin B, McRae AF, Zhu G, Gordon S, Henders AK, Palotie A,
+            Peltonen L, Martin NG, Montgomery GW, Whitfield JB and Visscher PM.
+  TITLE     Variants in TF and HFE explain approximately 40% of genetic
+            variation in serum-transferrin levels
+  JOURNAL   Am. J. Hum. Genet. 84 (1), 60-65 (2009)
+   PUBMED   19084217
+REFERENCE   5  (residues 1 to 126)
+  AUTHORS   Marzluff WF, Gongidi P, Woods KR, Jin J and Maltais LJ.
+  TITLE     The human and mouse replication-dependent histone genes
+  JOURNAL   Genomics 80 (5), 487-498 (2002)
+   PUBMED   12408966
+REFERENCE   6  (residues 1 to 126)
+  AUTHORS   Kim HS, Cho JH, Park HW, Yoon H, Kim MS and Kim SC.
+  TITLE     Endotoxin-neutralizing antimicrobial proteins of the human placenta
+  JOURNAL   J. Immunol. 168 (5), 2356-2364 (2002)
+   PUBMED   11859126
+  REMARK    GeneRIF: Histone H2A and H2B antimicrobial peptides exhibit
+            antibacterial activity and endotoxin-neutralizing activity in the
+            placenta.
+REFERENCE   7  (residues 1 to 126)
+  AUTHORS   Albig W and Doenecke D.
+  TITLE     The human histone gene cluster at the D6S105 locus
+  JOURNAL   Hum. Genet. 101 (3), 284-294 (1997)
+   PUBMED   9439656
+REFERENCE   8  (residues 1 to 126)
+  AUTHORS   Frohm M, Gunne H, Bergman AC, Agerberth B, Bergman T, Boman A,
+            Liden S, Jornvall H and Boman HG.
+  TITLE     Biochemical and antibacterial analysis of human wound and blister
+            fluid
+  JOURNAL   Eur. J. Biochem. 237 (1), 86-92 (1996)
+   PUBMED   8620898
+REFERENCE   9  (residues 1 to 126)
+  AUTHORS   Alnemri ES and Litwack G.
+  TITLE     Glucocorticoid-induced lymphocytolysis is not mediated by an
+            induced endonuclease
+  JOURNAL   J. Biol. Chem. 264 (7), 4104-4111 (1989)
+   PUBMED   2917990
+REFERENCE   10 (residues 1 to 126)
+  AUTHORS   Zhong,R., Roeder,R.G. and Heintz,N.
+  TITLE     The primary structure and expression of four cloned human histone
+            genes
+  JOURNAL   Nucleic Acids Res. 11 (21), 7409-7425 (1983)
+   PUBMED   6647026
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from X00088.1.
+            On Apr 29, 2002 this sequence version replaced gi:10800146.
+            
+            Summary: Histones are basic nuclear proteins that are responsible
+            for the nucleosome structure of the chromosomal fiber in
+            eukaryotes. Two molecules of each of the four core histones (H2A,
+            H2B, H3, and H4) form an octamer, around which approximately 146 bp
+            of DNA is wrapped in repeating units, called nucleosomes. The
+            linker histone, H1, interacts with linker DNA between nucleosomes
+            and functions in the compaction of chromatin into higher order
+            structures. This gene is intronless and encodes a
+            replication-dependent histone that is a member of the histone H2B
+            family. Transcripts from this gene lack polyA tails but instead
+            contain a palindromic termination element. This gene is found in
+            the histone microcluster on chromosome 6p21.33. [provided by
+            RefSeq, Aug 2015].
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##RefSeq-Attributes-START##
+            Protein has antimicrobial activity :: PMID: 11859126
+            replication-dependent histone      :: PMID: 12408966
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..126
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="6"
+                     /map="6p22.1"
+     Protein         1..126
+                     /product="histone H2B type 1-J"
+                     /note="H2B histone family, member R; histone 1, H2bj;
+                     histone cluster 1, H2bj; histone H2B.1; histone H2B.r"
+                     /calculated_mol_wt=13773
+     mat_peptide     2..21
+                     /product="histone H2B type 1-J"
+                     /experiment="DESCRIPTION:antimicrobial peptide[PMID:
+                     11859126]"
+                     /calculated_mol_wt=2020
+     Site            2
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N-acetylproline. {ECO:0000250|UniProtKB:P23527};
+                     propagated from UniProtKB/Swiss-Prot (P06899.3)"
+     Region          3..102
+                     /region_name="Histone"
+                     /note="Core histone H2A/H2B/H3/H4; pfam00125"
+                     /db_xref="CDD:278551"
+     Site            6
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000269|PubMed:16283522,
+                     ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            6
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            12
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            12
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            13
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000269|PubMed:16283522,
+                     ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            13
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            15
+                     /site_type="phosphorylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Phosphoserine, by STK4/MST1.
+                     {ECO:0000269|PubMed:12757711}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            16
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000269|PubMed:16283522,
+                     ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            16
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            17
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            17
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            21
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000269|PubMed:16283522,
+                     ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            21
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            24
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000250|UniProtKB:P33778}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            24
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Region          28..124
+                     /region_name="H2B"
+                     /note="Histone H2B; smart00427"
+                     /db_xref="CDD:197718"
+     Site            35
+                     /site_type="modified"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-crotonyllysine, alternate.
+                     {ECO:0000269|PubMed:21925322}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            37
+                     /site_type="phosphorylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Phosphoserine, by AMPK. {ECO:0000250}; propagated
+                     from UniProtKB/Swiss-Prot (P06899.3)"
+     Site            47
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-methyllysine. {ECO:0000269|PubMed:16627869};
+                     propagated from UniProtKB/Swiss-Prot (P06899.3)"
+     Site            58
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6,N6-dimethyllysine.
+                     {ECO:0000269|PubMed:16627869}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            80
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Dimethylated arginine.
+                     {ECO:0000250|UniProtKB:Q96A08}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            86
+                     /site_type="acetylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-acetyllysine, alternate.
+                     {ECO:0000250|UniProtKB:Q96A08}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            86
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6,N6,N6-trimethyllysine, alternate.
+                     {ECO:0000250|UniProtKB:Q96A08}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            87
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Omega-N-methylarginine.
+                     {ECO:0000250|UniProtKB:Q96A08}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            93
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Omega-N-methylarginine.
+                     {ECO:0000250|UniProtKB:Q96A08}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     Site            109
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-methyllysine. {ECO:0000269|PubMed:16627869};
+                     propagated from UniProtKB/Swiss-Prot (P06899.3)"
+     Site            116
+                     /site_type="phosphorylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="Phosphothreonine. {ECO:0000250|UniProtKB:Q00729};
+                     propagated from UniProtKB/Swiss-Prot (P06899.3)"
+     Site            117
+                     /site_type="methylation"
+                     /experiment="experimental evidence, no additional details
+                     recorded"
+                     /note="N6-methylated lysine.
+                     {ECO:0000250|UniProtKB:Q00729}; propagated from
+                     UniProtKB/Swiss-Prot (P06899.3)"
+     CDS             1..126
+                     /gene="HIST1H2BJ"
+                     /gene_synonym="H2B/r; H2BFR; H2BJ"
+                     /coded_by="NM_021058.3:47..427"
+                     /db_xref="CCDS:CCDS4618.1"
+                     /db_xref="GeneID:8970"
+                     /db_xref="HGNC:HGNC:4761"
+                     /db_xref="HPRD:13657"
+                     /db_xref="MIM:615044"
+ORIGIN      
+        1 mpepaksapa pkkgskkavt kaqkkdgkkr krsrkesysi yvykvlkqvh pdtgisskam
+       61 gimnsfvndi feriageasr lahynkrsti tsreiqtavr lllpgelakh avsegtkavt
+      121 kytsak
+//
+

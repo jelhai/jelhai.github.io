@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="default">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Win98; U) [Netscape]"><title>Crick simulation - How many phage?</title>
+   
+<link href="../../../bnfo301.css" rel="stylesheet" type="text/css"></head><body><center><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td valign="top"><font color="#000000"><font size="+2">BNFO 491<font size="+3">&nbsp;</font></font></font></td>
+
+<td>
+<center><font size="+3"><a href="../../../index.html">Molecular Biology Through Discovery</a></font>
+<br><font size="+3"><A href="crick-1961-simulation.html">Crick et al (1961) simulation - Documentation</A>
+<BR>How many phages to use in an experiment?</font></center>
+</td>
+
+<td valign="top">
+<div align="right"><font color="#000000"><font size="+2">Fall 2012<font size="+3">&nbsp;</font></font></font></div>
+</td>
+</tr>
+</tbody></table></center>
+
+<center><table border="0" cellpadding="0" cellspacing="0" width="80%"> 
+<tbody><tr><td>
+
+<P><BR>
+<table style="width: 1014px; height: 434px;"><tbody><tr valign="top">
+<td><font size="+1">
+<br>Both the MUTAGENIZE and CROSS functions ask that you specify how many phages are
+used in the experiment. That's quite reasonable -- the more phages you mutagenize, the more mutants
+you'll get, and the more phages you cross, the more progeny you get. The simulation needs
+to know this number.
+
+<P>And so do you. If you choose a number too small, you'll get zero plaques -- useless. If you choose
+a number too large, you'll get so many plaques that they run together -- equally useless. In this simulation, 
+you can cram no more than 1500 plaques on a plate before they run together.
+
+<P>But there's much else you need to know in order to figure out how many phages to use in an experiment.
+
+<P>If you're doing a <B>mutagenesis</B> experiment, you need to know that [<a href="crick-1961-simulation-references.html" target="_blank">6</a>]:
+<UL>
+<LI>The mutagenesis process kills off ~75% of the phage
+<LI>Of those that survive, about 0.5% are R- mutants
+<LI>Of the R- mutants, most are from mutations in either rIIA or rIIB (mostly rIIA)
+<LI>For the purposes of this simulation, spontaneous mutation to R- doesn't happen
+</UL>
+
+<P>If you're doing a <B>cross</B>, you need to know that [<a href="crick-1961-simulation-references.html" target="_blank">8</a>]:
+<UL>
+<LI>The rate of recombination is proportional to the distance between the sites of interest
+<LI>The rate of recombination between a site at the beginning of rIIA and a site at the end of rIIA is about 5%
+<LI>rIIB is about half the size of rIIA
+<LI><B>For the purposes of this simulation, the recombination rate has been deemed to be ten-times the natural rate!</B>
+This is so to decrease the number of plaques you need to screen to get the desired constructs. I wanted to keep the simulation as 
+close as possible to reality, but reality took many many months so forgive me this change.
+</UL>
+
+
+</font></font></p></td></tr></tbody></table><br>
+<br>
+<br>
+</center></body></html>
