@@ -1,0 +1,25 @@
+DNA replication videos
+ (original) http://www.youtube.com/watch?v=-mtLXpgjHL0) (Switches 5'-3' and 3'-5')
+          = http://www.dnatube.com/video/2335/Video-for-DNA-Replication (2:04)
+  https://www.youtube.com/watch?v=TNKWgcFPHqw (too long, pretty mindless)
+  https://www.youtube.com/watch?v=-SCnqmJpfp4 (too long, mindless incantations)\
+  https://www.youtube.com/watch?v=5qSrmeiWsuc (explains 5')
+  http://www.dnatube.com/video/335/Animated-DNA-Replication
+  http://www.dnatube.com/video/29698/DNA-replication-schematic-view (shows both strands continuous replication!)
+  http://www.dnatube.com/video/3448/DNA-Replication-Video (good video but no labels or symbols at all)
+
+
+Meselon & Stahl
+  http://www.cell.com/trends/biochemical-sciences/fulltext/S0968-0004(98)01190-6 (historical and correct)
+  https://en.wikipedia.org/wiki/Meselson%E2%80%93Stahl_experiment (text mismatch with bogus figure)
+  http://bio.libretexts.org/TextMaps/Map%3A_Microbiology_(OpenStax)/11%3A_Mechanisms_of_Microbial_Genetics/11.2%3A_DNA_Replication 
+         (bogus account of dispersive and bogus prediction)
+  http://www.slideshare.net/badshah77/dna-replication-44687544 (bogus dispersive, slides 6-8, but gets
+         second round right in gradient (slide 9)
+  http://www.chegg.com/homework-help/questions-and-answers/image-depicts-three-alternative-models-dna-replication-proposed-meselson-stahl-devised-exp-q7108593 (bogus dispersive)
+  https://www.youtube.com/watch?v=JcUQ_TZCG0w (bogus dispersive)
+  https://www.youtube.com/watch?v=4gdWOWjioBE (2:33) (bogus dispersive, cut, replicate conservatively)
+         No gradient. Heavy DNA goes to bottom of tube
+  https://www.youtube.com/watch?v=6_rQlOeptdU (bogosity in 10 sec)
+  https://www.khanacademy.org/science/biology/dna-as-the-genetic-material/dna-replication/a/mode-of-dna-replication-meselson-stahl-experiment (got dispersive right, says they took their image from cnx, below, but...
+  http://cnx.org/contents/GFy_h8cu@9.87:FyPYFc6h@5/Basics-of-DNA-Replication (got dispersive wrong)

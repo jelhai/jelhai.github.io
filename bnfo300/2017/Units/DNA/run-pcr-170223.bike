@@ -1,0 +1,73 @@
+(bbi::DEFINE-DF-SYNTACTIC-TOKENS RUN-PCR using and amplifying-from)
+(DEFINE-FUNCTION Run-PCR
+  REQUIRED ((USING) primer1 (AND) primer2 (AMPLIFYING-FROM) genome)
+    TYPE (primer1 primer2) = String
+    TYPE genome = (OR Organism Contiguous-sequence String Gene)
+  BODY
+   (FLET ((rectify-hits (hits primer)
+            (LET ((len (LENGTH primer)))
+              (IF (NOT (LISTP (FIRST hits)))
+                  (SETF hits (LIST hits)))
+              (FOR-EACH (hit dir) IN hits
+                   AS new-hit =
+                      (IF (SAME dir :B)
+                      (+ hit len -1))
+                   COLLECT (LIST (OR new-hit hit) dir))
+            )))
+   (LET* ((entity
+             (COND
+                ((bbi::IS-ORGANISM? genome) (CHROMOSOME-OF genome))
+                ((bbi::TYPEP genome 'contiguous-sequence) genome)))
+         (target (SEQUENCE-OF (OR entity genome)))
+         (hits1 (RECTIFY-HITS
+                   (MATCHES-OF-ITEM primer1 target -TARGET-LABEL) primer1))
+         (hits2 (RECTIFY-HITS 
+                   (MATCHES-OF-ITEM primer2 target -TARGET-LABEL) primer2))
+         (hits 
+           (JOIN (IF (OR (NOT hits1)(LISTP (FIRST hits1))) 
+		             hits1 
+					 (LIST hits1))
+                 (IF (OR (NOT hits2)(LISTP (FIRST hits2))) 
+				     hits2 
+					 (LIST hits2))
+                 AS-LIST))
+         (sorted-hits 
+		        (IF (> (LENGTH hits) 1)
+				    (SORT hits)
+					hits))
+         (max-length 5000)
+         (amplified-regions
+            (FOR-EACH (new-hit new-dir) IN sorted-hits
+                 INITIALIZE old-hit = (NEGATIVE *big-number*)
+                 INITIALIZE old-dir = :F
+                 AS length = 
+                    (IF (AND (SAME old-dir :F) (SAME new-dir :B))
+                        (- new-hit old-hit -1))
+                 AS region-info =
+                    (IF (AND length (< length max-length))
+                        (LIST old-hit new-hit length))
+                AS genes =
+                   (IF (AND region-info entity)
+                       (GENES-OF entity FROM old-hit TO new-hit))
+                AS descrs = (DESCRIPTION-OF genes)
+                (IF genes 
+                    (ASSIGN region-info 
+                      (JOIN region-info (JOIN genes BY " | ") 
+                            (JOIN descrs BY " | "))))
+                (ASSIGN old-hit new-hit)
+                (ASSIGN old-dir new-dir)
+                WHEN region-info
+                   COLLECT region-info))
+        )
+      (IF amplified-regions
+       (DISPLAY-LIST EACH
+         (IF entity
+            (JOIN '(("Left coordinate" "Right coordinate" "Length" "Genes" "Descriptions"))
+                  '(("---------------" "----------------" "------" "-----" "------------"))
+                  amplified-regions)
+           (JOIN '(("Left coordinate" "Right coordinate" "Length"))
+                 '(("---------------" "----------------" "------"))))))
+    amplified-regions
+)))
+
+(BBI::ADD-DF-SYMBOL-TO-VPL-PALETTE 'RUN-PCR)

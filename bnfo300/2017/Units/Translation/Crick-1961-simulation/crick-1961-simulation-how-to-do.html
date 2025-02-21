@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="default">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Win98; U) [Netscape]"><title>Crick simulation - How to</title>
+   
+<link href="../../../bnfo301.css" rel="stylesheet" type="text/css"></head><body><center><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td valign="top"><font color="#000000"><font size="+2">BNFO 491<font size="+3">&nbsp;</font></font></font></td>
+
+<td>
+<center><font size="+3"><a href="../../../index.html">Molecular Biology Through Discovery</a></font>
+<br><font size="+3"><A href="crick-1961-simulation.html">Crick et al (1961) simulation - Documentation</A>
+<BR>How to do the simulation</font></center>
+</td>
+
+<td valign="top">
+<div align="right"><font color="#000000"><font size="+2">Fall 2012<font size="+3">&nbsp;</font></font></font></div>
+</td>
+</tr>
+</tbody></table></center>
+
+<center><table border="0" cellpadding="0" cellspacing="0" width="80%"> 
+<tbody><tr><td>
+
+<p><BR><font size="+2"><b><u>Where to get functions and strains for the simulation</u></b>
+<font size="+1">
+
+<table><tbody><tr valign="top"><td width="85%"><font size="+1">
+If you have entered ViroBIKE or PhAnToMe/BioBIKE and run the simulation file, then you
+should have a BioBIKE screen in front of you containing a blue FUNCTIONS button at the top.
+If you have not, then go to <A href="crick-1961-simulation-get-to-simulation.html" target="_blank">How to Get to the Simulation</A>
+and then come back here when you've gotten there.
+ 
+<P>If you mouse over the FUNCTIONS button, you'll see the special functions available
+to you for the simulation (shown at right). To use a function, click its name on the FUNCTIONS menu, 
+and fill in the entry boxes in the function that comes down into your work space.
+
+<p>Similarly, you have a list of strains available to you, under the VARIABLES button.
+</font>
+</p></td>
+<td><img src="crick-1961-simulation-functions.jpg">
+</td></tr></tbody></table>
+</font></P>
+
+<font size="+2"><b><u>Steps in doing the simulation</u></b>
+<font size="+1">
+
+<P>A. <U>Obtain suppressor mutants</U>
+<OL>
+<LI>Use the <A href="crick-1961-simulation-mutagenize.html" target="_blank">MUTAGENIZE</A> function
+to obtain mutants of strain FC0 (availabile from the VARIABLES button) that are R+, i.e. able to form 
+plaques on E. coli K12. Almost all of these should be the result of suppressor mutations.
+<BR>&nbsp;
+<LI>Use the <A href="crick-1961-simulation-define-strain.html" target="_blank">DEFINE-STRAIN</A> function to
+grow up and name phage strains from the plaques of the previous step.
+<BR>&nbsp;
+<LI>Use the <A href="crick-1961-simulation-cross.html" target="_blank">CROSS</A> function to
+separate the suppressor mutations in your new strains from the mutation found in FC0. 
+You can do this by crossing each of your new strains against the wild-type strain, all available
+from the VARIABLES button. Recombinants should differ from either parent (your new strain and wild-type)
+by having an R- phenotype and therefore forming large plaques on E. coli B.
+<BR>&nbsp;
+<LI>Use the <A href="crick-1961-simulation-define-strain.html" target="_blank">DEFINE-STRAIN</A> function to
+grow up and name phage strains from the plaques of the previous step.
+<BR>&nbsp;
+<LI>Use the <A href="crick-1961-simulation-cross.html" target="_blank">CROSS</A> function to determine which 
+of the new recombinants are phage carrying the FC0 mutation (hence redundant) or the new mutation made in
+Step A.1. You can do this by crossing the strains from Step 4 against FC0 to see if it is possible to 
+obtain wild-type (R+) recombinants, most easily detected by plating on E. coli K12.
+</OL>
+
+B. <U>Map the new mutations</U>
+<OL>
+<LI>Use the <A href="crick-1961-simulation-cross.html" target="_blank">CROSS</A> function to
+determine the frequency of recombination for each mutant crossed with reference mutants (available 
+from the VARIABLES button). The frequency of R+ recombinants when the cross is plated on E. coli K12 should be proportional to
+the distance between the mutations in the two strains. The positions of the mutations in the reference mutants sp-131 and FC30 are shown
+roughly below, and further information can be gained from Crick et al (1961) [<a href="crick-1961-simulation-references.html" target="_blank">1</a>], Benzer (1961) [<a href="crick-1961-simulation-references.html" target="_blank">9</a>], and Shinedling et al (1987) [<a href="crick-1961-simulation-references.html" target="_blank">10</a>]. 
+<BR><CENTER><IMG style="height: 80px;" src="rII-map.png"></CENTER>
+<LI>You might want to repeat step B.1 with a different standard mutant to get a more accurate map position
+or if you're not sure on what side of the reference mutation the unknown mutation lies.
+</OL>
+
+<P>C. <U>Construct mutants with multiple mutations</U>
+<OL>
+<LI>Use the <A href="crick-1961-simulation-cross.html" target="_blank">CROSS</A> function to
+recombine mutations of the same sign from mutants with different mutations of that sign. This is
+somewhat tedious, because the two parental strains will be R-, and the strain you're looking for 
+may also be R-. You will need to test many plaques. To minimize the number you need to test, choose
+parental mutants whose mutations are as far away from each other as possible.
+<BR>&nbsp;
+<LI>Use the <A href="crick-1961-simulation-define-strain.html" target="_blank">DEFINE-STRAIN</A> function to
+grow up and name phage strains from the plaques of the previous step.
+<BR>&nbsp;
+<LI>Use the <A href="crick-1961-simulation-cross.html" target="_blank">CROSS</A> function to
+test whether the new strain carries mutations from both phage parents. You can do this by performing 
+two crosses with each new strain: new strain vs parent 1 and new strain vs parent 2. If the new strain 
+carries both mutations, then both crosses should yield no wild-type (R+) recombinants when plated on
+E. coli K12.
+</OL>
+</font></p>
+</td></tr></tbody></table>
+</center></body></html>

@@ -1,0 +1,162 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="default">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Win98; U) [Netscape]">
+   <title>Protein Explorer Help</title>
+</head>
+<link href="../bnfo301.css" rel="stylesheet" type="text/css">
+
+<!--#include virtual="../header.html" -->
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" >
+<tr>
+<td VALIGN=TOP><font color="#000000"><font size=+2>BNFO 491<FONT size=+3>&nbsp;</FONT></font></font></td>
+
+<td>
+<center><font color="#000000"><font size=+3><a href="../index.html">Molecular Biology Through Discovery</a></font></font>
+<br><font size=+3>Protein Explorer - Help</font></center>
+</td>
+
+<td VALIGN=TOP>
+<div align=right><font size=+2>Fall 2012&nbsp;</font></div>
+</td>
+</tr>
+</table></center>
+
+<BR>
+<CENTER><TABLE border=0 cellspacing=0 cellpadding=0 width=80%> 
+<TR><TD><font size=+1>
+<b><font size=+2>Protein Explorer</font></b> is a resource that enables you to visualize
+proteins in three-dimensions and provides tools that help you focus on different features
+within the protein. It has great capabilities, but most of them require you to interact with 
+it through a specialized language. The language is simple, but even so, if you want a 
+menu-driven interface, you might prefer
+<A href="http://firstglance.jmol.org/">FirstGlance</A>,
+at the expense of some capabilities.
+
+<P>There is a lot of online help available through Protein Explorer. The purpose of this 
+web page is to help you find that help and figure out which brand is what you need.
+</TD>
+<TD><img src="gal+dna-cropped.gif" width=150>
+</TD>
+</TR>
+</TABLE></CENTER>
+
+<CENTER><TABLE border=0 cellspacing=0 cellpadding=0 width=80%> 
+<TR><TD><font size=+1>
+<b><font size=+2>Getting Started</font></b>
+<BLOCKQUOTE>
+Going to <A href="http://chemapps.stolaf.edu/pe/protexpl/htm/index.htm" target="_blank">Protein Explorer</A>
+gets you to the following page:
+<BLOCKQUOTE>
+<IMG src="PE-front-page.gif" width=800>
+</BLOCKQUOTE>
+Your ticket inside is a four-character PDB (Protein DataBase) code. If you know the protein you want but don't know its PDB code, you might be able to find it by searching the 
+<A href="http://www.rcsb.org/pdb/" target="_blank">Protein Data Base</A>.
+
+<P>
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<TR><TD><font size=+1>After you enter the PDB code, you'll be brought to the First View screen. There's little you can 
+do here that you can't do on the more powerful Quick View screen. Go there by clicking 'Quick'.
+</TD>
+<TD><IMG src="PE-first-view.gif">
+</TD></TR>
+</TABLE>
+
+<P>The Quick View screen allows you to do some things easily, using the preset interface at the top of the page. If you play with it, you'll be amazed at its abilities. Some things, however, require the flexibility offered by the command box at the bottom of the page. But what commands to use? The help pages described in the next section may be of some help.
+<TABLE border=0 cellspacing=0 cellpadding=0>
+<TR><TD><IMG src="PE-quick-view.gif">
+</TD>
+<TD><IMG src="PE-command-box.gif">
+</TD></TR>
+</TABLE>
+
+</BLOCKQUOTE> 
+<P><b><font size=+2>Summary of Help Resources</font></b>
+<UL>
+<LI><A href="http://www.umass.edu/microbio/rasmol/distrib/rasman.htm" target="_blank">RasMol Manual</A><BR>
+RasMol is one of the two languages that drive Protein Explorer. Its manual is gigantic. 
+There's a reasonable chance that what you're looking for is there, somewhere.
+<BR>&nbsp;
+
+<LI><a href="http://chemapps.stolaf.edu/pe/protexpl/htm/seleccmd.htm" target="_blank">Select 
+Commands in Jmol and Rasmol</a><BR>
+Jmol is the other language that drives Protein Explorer. The most common commands you'll use are those
+that select certain parts of the structure (e.g. specific chains or certain amino acids). This help
+page focuses on those commands.
+<BR>&nbsp;
+
+<LI><a href="http://chemapps.stolaf.edu/jmol/docs/" target="_blank">Jmol Command Summary</a><BR>
+List of available commands and links to full descriptions
+<BR>&nbsp;
+
+<LI><a href="http://chemapps.stolaf.edu/pe/protexpl/htm/igloss.htm" target="_blank">Index/Glossary (alphabetical)</a><BR>
+Once you scroll past the first page, an alphabetical list of concepts
+<BR>&nbsp;
+
+<LI><U>Some suggested commands</U><BR>
+<TABLE border=1 cellspacing=0 cellpadding=5>
+<TR>
+<TD><FONT size=+1><B>Command</B></TD>
+<TD><FONT size=+1><B>Meaning</B></TD>
+</TR>
+<TR>
+<TD><FONT size=+1>select glu
+<BR>select glu:A
+<BR>select 24
+<BR>select 24:A
+<BR>select glu24
+<BR>select glu24:A
+<BR>select all
+</TD>
+<TD><FONT size=+1>Selects all glutamates 
+<BR>Selects all glutamates only in chain A
+<BR>Selects residue #24 in all chains
+<BR>Selects residue #24 only in chain A
+<BR>Selects residue #24 only if it is a glutamate
+<BR>Selects residue #24 in chain A only if it is a glutamate
+<BR>Selects all atoms
+</TD>
+</TR>
+<TR>
+<TD><FONT size=+1>color red</TD>
+<TD><FONT size=+1>Changes color of selected atoms to red</TD>
+</TD></TR>
+<TD><FONT size=+1>cartoon only
+<BR>wireframe only
+<BR>spacefill only
+<BR>spacefill 1.0 only
+</TD>
+<TD><FONT size=+1>Represents selected atoms as secondary structure
+<BR>Represents selected atoms as atoms and bonds
+<BR>Represents selected atoms as spheres using Van der Waals radius
+<BR>Represents selected atoms as spheres using given radius (in Angstroms)
+</TD>
+</TR>
+<TR>
+<TD><FONT size=+1>zoom 200</TD>
+<TD><FONT size=+1>Zooms image to 200% of original</TD>
+</TR>
+<TR>
+<TD><FONT size=+1>hide :a
+<BR>display :a
+<BR>hide glu
+</TD>
+<TD><FONT size=+1>Make chain A disappear
+<BR>Make chain A reappear
+<BR>Make all glutamates disappear
+</TD>
+</TR>
+<TR>
+<TD><FONT size=+1>write c:\temp\filename.gif</TD>
+<TD><FONT size=+1>Writes currently displayed image to given file</TD>
+</TR>
+</TABLE>
+</UL>
+
+</TR></TD>
+</table></CENTER>
+
+</body>
+</html>

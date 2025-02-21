@@ -1,0 +1,145 @@
+Show full log
+<http://biobike-8003.csbc.vcu.edu/log-viewer?PKG=JELHAI10758&FILE=%2fhome%2fbiodemovcu%2fusers%2fjelhai%2fsession-logs%2ffugt-20170116-215918-85.log&MODE=full>
+
+
+      *Execution Log for JELHAI.
+      Connected to Biobike, port 8003.
+
+      Logged in: 01/16/17 21:59:18
+      Last activity: 01/17/17 03:26:15
+
+
+      Update
+      <http://biobike-8003.csbc.vcu.edu/vpl-refresh-execution-log?PKG=JELHAI10758&FILE=%2fhome%2fbiodemovcu%2fusers%2fjelhai%2fsession-logs%2ffugt-20170116-215918-85.log>
+      ------------------------------------------------------------------------
+      *
+
+
+----- 01/16/17 22:00:09
+form: (BBL-CODE (EVERYONES X))
+Value: NIL
+----- 01/16/17 22:02:47
+form: MARY-QUESTIONS
+Value: ((A1 "Mary had a little lamb") (A2 "Whose fleece was white as snow")
+----- 01/16/17 22:03:18
+form: (SHOW-ALL-RESULTS MARY-QUESTIONS)
+<<<
+Within the loop "(COMMON-LISP:LOOP BBI::FOR SYMBOL IN SYMBOLS ASSIG...",
+While executing the ASSIGN clause "(ASSIGN ANSWER-COUNT = (BBL-CODE
+(SHOW-RESULT QUES..."
+Before finishing the first iteration of the loop, an error was detected:
+attempt to call `SHOW-RESULT' which is an undefined function.>>>
+----- 01/16/17 22:03:37
+form: (DEFINE-FUNCTION SHOW-ALL-RESULTS REQUIRED (QUESTIONS) FLAGS
+          (LABELED SORTED) INIT (SYMBOLS) =
+          (FIRST IN-EACH QUESTIONS) BODY
+          (FOR-EACH SYMBOL IN SYMBOLS ASSIGN ANSWER-COUNT
+          =
+          (BBL-CODE
+          (SHOW-RESULT
+          QUESTIONS
+          SYMBOL
+          LABELED
+          :SORT
+          SORTED))
+          COLLECT ANSWER-COUNT))
+Value: SHOW-ALL-RESULTS
+----- 01/16/17 22:03:50
+form: (BBL-CODE (DEFMACRO SHOW-RESULT
+          (QUESTIONS SHOW LABELED &KEY SORT)
+          `(LET* ((QUESTION
+          (SECOND
+          (FIRST
+          (FILTER
+          ,QUESTIONS
+          KEEPING-ITEMS
+          SAME-AS
+          ,SHOW
+          BY-POSITION
+          1))))
+          (ANSWERS
+          (BBI::EVERYONES-AUX
+          ,SHOW
+          'IDENTITY
+          ,LABELED))
+          (GUARANTEED-ANSWERS
+          (COND
+          ((AND ,SORT ANSWERS)
+          (SORT ANSWERS))
+          (ANSWERS ANSWERS)
+          (T '("")))))
+          (DISPLAY-LINE QUESTION)
+          (DISPLAY-LINE (REPEAT
+          "="
+          (LENGTH-OF QUESTION)))
+          (DISPLAY-LIST EACH GUARANTEED-ANSWERS)
+          (DISPLAY-LINE "")
+          (LENGTH ANSWERS))))
+Value: SHOW-RESULT
+----- 01/16/17 22:03:54
+form: (DEFINE-FUNCTION SHOW-ALL-RESULTS REQUIRED (QUESTIONS) FLAGS
+          (LABELED SORTED) INIT (SYMBOLS) =
+          (FIRST IN-EACH QUESTIONS) BODY
+          (FOR-EACH SYMBOL IN SYMBOLS ASSIGN ANSWER-COUNT
+          =
+          (BBL-CODE
+          (SHOW-RESULT
+          QUESTIONS
+          SYMBOL
+          LABELED
+          :SORT
+          SORTED))
+          COLLECT ANSWER-COUNT))
+Value: SHOW-ALL-RESULTS
+----- 01/16/17 22:04:08
+form: (SHOW-ALL-RESULTS MARY-QUESTIONS)
+Value: (0 0 0 0 0 0)
+----- 01/16/17 22:35:25
+form: (RANDOMIZE '(1324 1342 1432 2143 2413 2431 3214 3241 3142 4132
+          4213 4231 4321))
+Value: (1342 2143 4213 4321 2413 1324 2431 3214 4231 3241 4132 3142 1432)
+----- 01/16/17 22:52:35
+form: (STRING/S-OF '(1342 2143 4213 4321 2413 1324 2431 3214 4231 3241
+          4132 3142 1432))
+Value: ("1342" "2143" "4213" "4321" "2413" "1324" "2431" "3214" "4231"
+"3241"
+----- 01/16/17 22:58:49
+form: (FOR-EACH ORDER IN
+          (STRING/S-OF '(1342 2143 4213 4321 2413 1324 2431 3214
+          4231 3241 4132 3142 1432))
+          BBL::INITIALIZE ORIGINAL = '("C" "A" "D" "B") ASSIGN
+          NEW-ORDER =
+          (APPLY-FUNCTION (ELEMENT/S-OF
+          ORIGINAL
+          (CONVERT LETTER TO INTEGER))
+          REPLACING (LETTER) WITH (SPLIT ORDER))
+          COLLECT (JOIN NEW-ORDER BY "-"))
+<<<
+Within the loop "(COMMON-LISP:LOOP BBL::INITIALIZE ORIGINAL = '(\"C\"...",
+While executing the ASSIGN clause "(ASSIGN NEW-ORDER = (APPLY-FUNCTION
+(ELEMENT/S-OF ..."
+Before finishing the first iteration of the loop, an error was detected:
+No conversion from object, "1", of type
+(COMMON-LISP:SIMPLE-ARRAY COMMON-LISP:CHARACTER (1)), to type INTEGER,
+exists.>>>
+----- 01/16/17 22:59:32
+form: (FOR-EACH ORDER IN
+          (STRING/S-OF '(1342 2143 4213 4321 2413 1324 2431 3214
+          4231 3241 4132 3142 1432))
+          BBL::INITIALIZE ORIGINAL = '("C" "A" "D" "B") ASSIGN
+          NEW-ORDER =
+          (APPLY-FUNCTION (ELEMENT/S-OF
+          ORIGINAL
+          (CONVERT LETTER TO NUMBER))
+          REPLACING (LETTER) WITH (SPLIT ORDER))
+          COLLECT (JOIN NEW-ORDER BY "-"))
+Value: ("C-D-B-A" "A-C-B-D" "B-A-C-D" "B-D-A-C" "A-B-C-D" "C-D-A-B"
+"A-B-D-C"
+----- 01/16/17 23:01:28
+form: (DISPLAY-LIST EACH *)
+Value: NIL
+
+
+      Update
+      <http://biobike-8003.csbc.vcu.edu/vpl-refresh-execution-log?PKG=JELHAI10758&FILE=%2fhome%2fbiodemovcu%2fusers%2fjelhai%2fsession-logs%2ffugt-20170116-215918-85.log>
+
