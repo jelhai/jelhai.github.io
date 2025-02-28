@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en" class="yui3-js-enabled"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1694549813257_2" href="index_files/combo.css"><script async="" src="index_files/gtm_005.js"></script><script type="text/javascript" async="" src="index_files/hotjar-2449904_005.js"></script><script type="text/javascript" async="" src="index_files/analytics_005.js"></script><script async="true" type="text/javascript" src="index_files/hotjar-2449904_004.js"></script><script async="true" type="text/javascript" src="index_files/analytics_004.js"></script><script async="" src="index_files/gtm_004.js"></script><script async="true" type="text/javascript" src="index_files/hotjar-2449904_003.js"></script><script async="true" type="text/javascript" src="index_files/analytics_003.js"></script><script async="" src="index_files/gtm_003.js"></script><script charset="utf-8" id="yui_3_17_2_1_1694549813257_4" src="index_files/combo_003" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694549813257_5" src="index_files/combo_002" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694549813257_6" src="index_files/combo" async=""></script><script async="" src="index_files/modules.70a1f565e966e4ccde7b.js" charset="utf-8"></script><script charset="utf-8" id="yui_3_17_2_1_1740507825883_2" src="index_files/combo_004" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1740507825883_3" src="index_files/combo_005" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1740507825883_4" src="index_files/combo_006" async=""></script><script async="" src="index_files/modules.ef5986d046c68a8c77c1.js" charset="utf-8"></script>
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #FF0000;} /* Red */
+.button2 {background-color: #04AA6D;} /* Green */
+</style>
+<script charset="utf-8" id="yui_3_17_2_1_1740623453706_2" src="index_files/combo_007" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1740623453706_3" src="index_files/combo_008" async=""></script><script async="" src="index_files/modules.70a1f565e966e4ccde7b_002.js" charset="utf-8"></script><script async="" src="index_files/modules.70a1f565e966e4ccde7b_003.js" charset="utf-8"></script><script charset="utf-8" id="yui_3_17_2_2_1740712496598_2" src="index_files/combo_009" async=""></script></head>
+
+<body onload="initOnWindowLoad()" class="yui-skin-sam pure-skin-BioCyc SYNEL" id="body"><span class="yui-resize-status"></span><span class="yui-resize-status"></span><span class="yui-resize-status"></span><span class="yui-resize-status"></span><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BioCyc:Algae contains &lt;i&gt;Cyanobacterial&lt;/i&gt; genomes and metabolic pathways, and provides extensive bioinformatics tools.">
+<title>CyanoCyc Cyanobacterial Pathway/Genome Databases</title>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="index_files/gtm_002.js"></script><script async="true" type="text/javascript" src="index_files/hotjar-2449904_002.js"></script><script async="true" type="text/javascript" src="index_files/analytics_002.js"></script><script type="text/javascript" async="" src="index_files/js"></script><script async="" src="index_files/analytics.js"></script><script async="true" type="text/javascript" src="index_files/hotjar-2449904.js"></script><script async="true" type="text/javascript" src="index_files/analytics.js"></script><script async="" src="index_files/gtm.js"></script><script type="text/javascript">
+      var forceOrgID = "SYNEL";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="/graphics2021/cyanologo.png">
+
+<script src="index_files/jquery-3.5.1.min.js"></script>
+<script src="index_files/jquery-migrate-3.3.2.min.js"></script>
+<script>
+var $j = jQuery.noConflict();
+</script>
+
+<!-- 
+<link rel="stylesheet" type="text/css" href="/yui/build/assets/skins/sam/skin.css"> 
+<link rel="stylesheet" type="text/css" href="/yui/build/assets/skins/sam/treeview.css">
+<link rel="stylesheet" type="text/css" href="/style.css" >
+
+User web site style sheet customization should use the following file:
+<link rel="stylesheet" type="text/css" href="/userWebsiteCustomization.css">
+
+The previous 4 .css files are combined at web start up time by the Lisp fn publish-combined-static-files generating the following combined.css file. For some
+reason it doesn't work for the yui gallery file to be combined -- the yui loader
+still looks for it as a separate file.
+-->
+<!--    <link rel="stylesheet" href="/pure/pure.css" type="text/css"> -->
+<style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link rel="stylesheet" href="index_files/base-min.css">
+<link rel="stylesheet" href="index_files/grids-min.css">
+<link rel="stylesheet" href="index_files/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="index_files/BioCyc_Extra.css" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="index_files/gallery-datatable-selection.css">
+<link rel="stylesheet" type="text/css" href="index_files/combined.css">
+<link rel="stylesheet" type="text/css" href="index_files/font-awesome.min.css">
+
+<!-- this has to go early -->
+<script type="text/javascript" src="index_files/yui-min.js"></script>
+<script src="index_files/prototype.min.js"></script>
+<script type="text/javascript" src="index_files/combined-early.js"></script>
+
+<!-- Google Tag Manager - Also needs to go early -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5T5DF7');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- paley:Jun-15-2017 Comment these out, let them be autoloaded from the cdn:
+<script type="text/javascript" src="/yui3/build/yui-base/yui-base-min.js"></script> 
+<script type="text/javascript" src="/yui3/build/base-build/base-build-min.js"></script> 
+<script type="text/javascript" src="/yui3/build/datatable-base/datatable-base-min.js"></script> 
+<script type="text/javascript" src="/yui3/build/event-custom-base/event-custom-base-min.js"></script> 
+
+These 2 files are not in the cloudflare cdn, so we need to load them from our own site.  They're in the combined-early file
+<script type="text/javascript" src="/yui3/build/gallery-datatable-selection/gallery-datatable-selection.js"></script>
+<script type="text/javascript" src="/yui3/build/gallery-timer/gallery-timer-min.js"></script>  
+
+These are bundled into the combined-early.js file:
+<script type="text/javascript" src="/yui/build/utilities/utilities.js"></script>
+   LOADED SEPARATELY (see above) <script TYPE="text/javascript" SRC="/wupub/prototype.js"></script> 
+<script TYPE="text/javascript" SRC="/image-map-resizer-master/js/imageMapResizer.min.js"></script>
+-->
+
+<!-- next 3 css for webgraphics -->
+<link rel="stylesheet" type="text/css" href="index_files/fonts-min.css">
+
+<!-- paley:Sep-10-2018 These are not found, and don't seem to be necessary.
+<link rel="stylesheet" type="text/css" href="/yui/build/button/assets/skins/sam/button.css" />
+<link rel="stylesheet" type="text/css" href="/yui/build/container/assets/skins/sam/container.css" />
+-->
+
+<script type="text/javascript" src="index_files/webgraphics.js"></script>
+
+<script type="text/javascript">  
+var onMenuBarReady = new YAHOO.util.CustomEvent("onMenuBarReady");
+/* This event fires when we change the current organism using the organism
+ * selector, so that subscribers can update the page accordingly.
+ */
+var organismChangedEvent = new YAHOO.util.CustomEvent("organismChanged");
+
+/* If you update the version number here, make sure you also update it in
+   pathwayTools.js (and the minified file)!!!
+ */
+YAHOO.util.Event.onContentReady("body", function() {
+  if (typeof(ptoolsJsVersion) == 'undefined' || ptoolsJsVersion !== '27.0') {
+      console.log('reloading because of outdated javascript file');
+      window.location.reload(true);
+      } else {
+  var img = document.getElementById("small-logo"); /* small-logo only on non-home pages, see template-after-beginning-body.shtml. */
+  console.log("orgID="+ orgID() +"  img=" + img);
+  if (img != null) {
+    switch (orgID()) {
+      case "ECOLI":
+        img.innerHTML = "<img src=\"/graphics2021/EcoCyc-logo-color.svg\" alt=\"EcoCyc\" onclick=\"window.location.href='https://ecocyc.org'\" style=\"display:block; margin-left:auto; width: 250px; height: 53px; margin-right:auto; cursor:pointer\">";
+        break;
+      case "META":
+        img.innerHTML = "<img src=\"/graphics2021/MetaCyc-logo-color.svg\" alt=\"MetaCyc\" onclick=\"window.location.href='https://metacyc.org'\" style=\"display:block; margin-left:auto; width: 250px; height: 49px; margin-right:auto; cursor:pointer\">";
+        break;
+      case "HUMAN":
+        img.innerHTML = "<img src=\"/graphics2021/HumanCyc-logo-color.svg\" alt=\"HumanCyc\" onclick=\"window.location.href='https://humancyc.org'\" style=\"display:block; margin-left:auto; width: 250px; height: 41px; margin-right:auto; cursor:pointer\">";
+        break;
+      case "BSUB":
+        img.innerHTML = "<img src=\"/graphics2021/BsubCyc-logo-color.svg\" alt=\"BsubCyc\" onclick=\"window.location.href='https://bsubcyc.org'\" style=\"display:block; margin-left:auto; width: 250px; height: 47px;margin-right:auto; cursor:pointer\">";
+        break;
+      default:
+        img.innerHTML = "<img src=\"/graphics2021/BioCyc.svg\" alt=\"BioCyc\" onclick=\"window.location.href='https://biocyc.org'\" style=\"display:block; margin-left:auto; width: 250px; height: 59px; margin-right:auto; cursor:pointer\">";
+  };
+  }}});
+</script>
+
+<script>
+</script>
+
+
+<!-- Base Pathway Tools JavaScript code -->
+
+<script type="text/javascript" src="index_files/pathwayTools-min.js"></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1694199087997_2" href="index_files/widget-base.css"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1694199087997_3" href="index_files/datatable-base.css"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1694199087997_4" href="index_files/datatable-message.css"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1694199087997_5" href="index_files/datatable-sort.css"><script charset="utf-8" id="yui_3_17_2_1_1694199087997_7" src="index_files/escape-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_8" src="index_files/array-extras-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_9" src="index_files/array-invoke-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_10" src="index_files/arraylist-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_11" src="index_files/oop-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_12" src="index_files/attribute-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_13" src="index_files/event-custom-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_14" src="index_files/event-custom-complex-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_15" src="index_files/attribute-observable-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_16" src="index_files/attribute-extras-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_17" src="index_files/attribute-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_18" src="index_files/base-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_19" src="index_files/base-observable-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_20" src="index_files/base-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_21" src="index_files/base-build-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_22" src="index_files/json-parse-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_23" src="index_files/model-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_24" src="index_files/model-list-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_25" src="index_files/event-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_26" src="index_files/dom-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_27" src="index_files/dom-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_28" src="index_files/selector-native-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_29" src="index_files/selector-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_30" src="index_files/node-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_31" src="index_files/dom-style-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_32" src="index_files/node-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_33" src="index_files/event-delegate-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_34" src="index_files/node-event-delegate-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_35" src="index_files/datatable-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_36" src="index_files/view-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_37" src="index_files/classnamemanager-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_38" src="index_files/datatable-head-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_39" src="index_files/datatable-body-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_40" src="index_files/datatable-table-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_41" src="index_files/attribute-complex-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_42" src="index_files/pluginhost-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_43" src="index_files/pluginhost-config-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_44" src="index_files/base-pluginhost-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_45" src="index_files/event-synthetic-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_46" src="index_files/event-focus-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_47" src="index_files/node-style-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_48" src="index_files/widget-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_49" src="index_files/widget-htmlparser-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_50" src="index_files/widget-skin-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_51" src="index_files/widget-uievents-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_52" src="index_files/datatable-base-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_53" src="index_files/datatable-column-widths-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_54" src="index_files/intl-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_55" src="index_files/datatable-message_en.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_56" src="index_files/datatable-message-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_57" src="index_files/datatable-mutable-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_58" src="index_files/datatable-sort_en.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_59" src="index_files/datatable-sort-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_60" src="index_files/plugin-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_61" src="index_files/datasource-local-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_62" src="index_files/datatable-datasource-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694199087997_63" src="index_files/datasource-get-min.js" async=""></script> 
+
+
+
+    <link rel="stylesheet" href="index_files/BioCyc_Extra_002.css" type="text/css">
+    <script type="module" src="index_files/lite-youtube.js"></script>
+  <script charset="utf-8" id="yui_3_17_2_2_1694199087997_2" src="index_files/node-pluginhost-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_3" src="index_files/dom-screen-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_4" src="index_files/node-screen-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_5" src="index_files/paginator-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_6" src="index_files/paginator-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_7" src="index_files/event-mouseenter-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_8" src="index_files/event-hover-min.js" async=""></script><link rel="preconnect" href="https://i.ytimg.com/"><script async="" src="index_files/modules.819bdb467a6bd2a2f5b5.js" charset="utf-8"></script>
+  <iframe id="_yuiResizeMonitor" title="Text Resize Monitor" tabindex="-1" role="presentation" style="position: absolute; visibility: visible; background-color: transparent; border-width: 0px; width: 2em; height: 2em; left: 0px; top: -27px;"></iframe><span class="yui-resize-status"></span>
+
+    <!-- ---------- OPEN OUTERMOST CONTAINER DIV ---------- -->
+    <!--next line is used for determining text size for sizing window, tooltips, buttons, etc billingt:Jul-7-2014 -->
+
+<!-- display: none is necessary or space will be left on the screen for this invisible area -->
+<span id="textSizeTestArea" style="visibility: hidden; display: none"></span>
+
+<!-- The top banner, we are in a body -->
+<!-- We need this div to have position:relative in order for the --
+  -- z-index of the menu stacking to work -->
+<div id="topBannerMenu" role="banner">
+  <div class="top-menubar-cell">
+    <title></title>
+
+<!-- ajaxUpdater defined in pathwayTools.js -->
+<div id="ilogin"><script></script></div>
+<script type="text/javascript">
+ajaxUpdater('ilogin', '/login-area');
+</script>
+
+
+<!-- Begininng temporary message. 
+     See file temporary-message-help.txt in this directory
+     for instructions on how to insert a temporary message -->
+
+ <!-- The set of BioCyc temporary messages must all be inside the following div  -->
+ <div id="biocycTmpMessages">
+   <div class="temporaryMsg" style="width: 0px; display: none;">
+   
+   </div>
+ </div> 
+
+ <!-- The set of EcoCyc temporary messages must all be inside the following div --> 
+ <div id="ecocycTmpMessages"> 
+   <div class="temporaryMsg" style="width: 0px; display: none;">
+   
+   </div>
+ </div>
+
+ <!-- The set of MetaCyc temporary messages must all be inside the following div --> 
+ <div id="metacycTmpMessages"> 
+   <div class="temporaryMsg" style="width: 0px; display: none;">
+   
+   </div>
+ </div> 
+
+ <!-- The set of HumanCyc temporary messages must all be inside the following div --> 
+ <div id="humancycTmpMessages">
+   <div class="temporaryMsg" style="width: 0px; display: none;">
+   
+   </div>
+ </div>
+ 
+ <!-- The set of BsubCyc temporary messages must all be inside the following div --> 
+ <div id="bsubcycTmpMessages">
+   <div class="temporaryMsg" style="width: 0px; display: none;">
+   
+   </div>
+ </div>
+
+
+  <!-- The set of CyanoCyc temporary messages must all be inside the following div --> 
+ <div id="cyanocycTmpMessages">
+   <div class="temporaryMsg" style="width: 0px; display: none;">
+
+   </div>
+ </div>
+
+<script>
+YAHOO.util.Event.onContentReady("body", function() {
+  if (typeof(defaultTypeObjectPage) == 'undefined') {
+      console.log('reloading');
+      window.location.reload(true);
+      }     
+      });
+</script>
+
+
+
+
+
+
+<div class="menubar-wide-margin-border" role="menubar" tabindex="0">
+  <div class="pure-g" style="margin-left:auto; margin-right:auto; max-width:1200px;">
+    <div class="pure-u-lg-5-12 pure-u-md-5-12 pure-u-sm-1-1">
+      <!-- BEGIN TOOLS MEGA MENU -->
+      <div class="toolbar-dropdown" role="menuitem" tabindex="-1">
+	<button class="toolbar-dropbtn" tabindex="-1">Tools <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="toolbar-dropdown-content" role="menu">
+
+	  <div class="mega-row">
+
+	    <div class="mega-column" id="MegaSearch" role="group">
+	      <h3>Search</h3>
+	      <div class="vl" id="MegaSearchList">
+		<hr>
+		<a href="https://cyanocyc.org/gene-search.shtml" role="menuitem" tabindex="-1">Search Genes, Proteins or RNAs</a>
+		<a href="https://cyanocyc.org/pwy-search.shtml" role="menuitem" tabindex="-1">Search Pathways</a>
+		<a href="https://cyanocyc.org/cpd-search.shtml" role="menuitem" tabindex="-1">Search Compounds</a>
+		<a href="https://cyanocyc.org/rxn-search.shtml" role="menuitem" tabindex="-1">Search Reactions</a>
+		
+		<a id="siteSearchItem" href="https://cyanocyc.org/site-search.shtml" role="menuitem" tabindex="-1">Search DNA or mRNA Sites</a>
+		
+		<a id="growthMediaMenuItem" href="https://cyanocyc.org/gm-search.shtml" role="menuitem" tabindex="-1">Search Growth Media</a>
+		<a href="https://cyanocyc.org/query.shtml" role="menuitem" tabindex="-1">Advanced Search</a>
+		<a id="crossOrgSearch" href="https://cyanocyc.org/cross-org-search" role="menuitem" tabindex="-1">Cross&nbsp;Organism&nbsp;Search</a>
+			
+		<a id="blastMenuItem" class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/blast.html" role="menuitem" tabindex="-1">BLAST Search Current Database</a>
+		
+		
+		<a id="blastAllMenuItem" class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/blast.html?refdb=ALL" role="menuitem" tabindex="-1"> BLAST All BioCyc</a>
+		
+		
+		<a id="patMatchMenuItem" class="orgspecificReplaced" href="https://cyanocyc.org/patmatch.shtml?organism=SYNEL" role="menuitem" tabindex="-1">Sequence Pattern Search</a>
+		
+		<a href="https://cyanocyc.org/full-text-search.shtml" role="menuitem" tabindex="-1">Google Search of this Site</a>
+	      </div> <!-- close vl -->
+	    </div>
+
+	    <div class="mega-column" id="MegaGenome" role="group">
+	      <h3>Genome</h3>
+	      <div class="vl">
+		<hr>
+		<a href="https://cyanocyc.org/SYNEL/select-gen-el" class="disable_for_multiorg orgspecificReplaced" role="menuitem" tabindex="-1">Genome&nbsp;Browser</a>
+		<a href="https://cyanocyc.org/overviewsWeb/genOv.shtml" class="disable_for_multiorg" role="menuitem" tabindex="-1">Genome&nbsp;Overview</a>
+		<a href="https://cyanocyc.org/cgweb" class="disable_for_multiorg" role="menuitem" tabindex="-1">Circular&nbsp;Genome&nbsp;Viewer</a>
+		<a href="https://cyanocyc.org/overviewsWeb/regOv.shtml" class="disable_for_multiorg" role="menuitem" tabindex="-1">Regulatory&nbsp;Overview</a>
+		<a class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/class-tree?object=Gene-Ontology-Terms" role="menuitem" tabindex="-1">Browse&nbsp;Gene&nbsp;Ontology</a>
+		<a href="https://cyanocyc.org/SYNEL/select-gen-el?type=MAP-SEQ-COORDS" class="disable_for_multiorg orgspecificReplaced" role="menuitem" tabindex="-1">Map&nbsp;Sequence&nbsp;Coordinates</a>
+		
+		<a href="https://cyanocyc.org/SYNEL/select-gen-el?type=POSTER" class="disable_for_multiorg orgspecificReplaced" role="menuitem" tabindex="-1">Generate&nbsp;Genome&nbsp;Poster</a>
+		
+
+		
+		<h3 style="padding-top: 10px">SmartTables</h3>
+		<hr>
+     		<a class="requiresLogin orgspecificReplaced" id="myFavoritesST" href="https://cyanocyc.org/group?id=FAVORITES" role="menuitem" tabindex="-1">My&nbsp;Favorites</a>
+     		<a class="requiresLogin orgspecificReplaced" href="https://cyanocyc.org/groups?orgid=SYNEL" role="menuitem" tabindex="-1">My&nbsp;SmartTables</a>
+     		<a class="orgspecificReplaced" href="https://cyanocyc.org/groups?tab=PUBLIC&amp;orgid=SYNEL" role="menuitem" tabindex="-1">Public&nbsp;SmartTables</a>
+     		<a class="orgspecificReplaced" href="https://cyanocyc.org/groups?tab=SPECIAL&amp;orgid=SYNEL" role="menuitem" tabindex="-1">Special&nbsp;SmartTables</a>
+		
+	      </div> <!-- close vl -->
+	    </div>
+
+	    <div class="mega-column" id="MegaMetabolism" role="group">
+	      <h3>Metabolism</h3>
+	      <div class="vl">
+		<hr>
+		<a class="disable_for_multiorg orgspecificReplaced" href="https://cyanocyc.org/overviewsWeb/celOv.shtml?orgid=SYNEL" role="menuitem" tabindex="-1">Cellular&nbsp;Overview</a>
+		<a href="https://cyanocyc.org/fba.shtml" class="disable_for_multiorg" role="menuitem" tabindex="-1">Run Metabolic Model</a>
+		<a href="https://cyanocyc.org/dead-end-form.shtml" role="menuitem" tabindex="-1">Dead-end&nbsp;Metabolites</a>
+		<a href="https://cyanocyc.org/chokepoint-form.shtml" role="menuitem" tabindex="-1">Chokepoint&nbsp;Reactions</a>
+		
+     		<a class="disable_for_multiorg orgspecificReplaced" href="https://cyanocyc.org/meteng?organism=SYNEL" role="menuitem" tabindex="-1">Metabolic Route Search</a>
+		
+     		<a class="orgspecificReplaced" href="https://cyanocyc.org/MetNetExplorer.shtml?orgid=SYNEL" role="menuitem" tabindex="-1">Metabolic Network Explorer</a>
+		<a href="https://cyanocyc.org/metabolite-translation-service.shtml" role="menuitem" tabindex="-1">Metabolite&nbsp;Translation&nbsp;Service</a>
+		<a href="https://cyanocyc.org/pathway-collage-info" role="menuitem" tabindex="-1">Pathway&nbsp;Collages</a>
+		<a class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/class-tree?object=Pathways" role="menuitem" tabindex="-1">Browse&nbsp;Pathway&nbsp;Ontology</a>
+		<a class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/class-tree?object=EC-Reactions" role="menuitem" tabindex="-1">Browse&nbsp;Enzyme&nbsp;Commission&nbsp;Ontology</a>
+		<a class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/class-tree?object=Compounds" role="menuitem" tabindex="-1">Browse&nbsp;Compound&nbsp;Ontology</a>
+		<a class="disable_for_multiorg orgspecificReplaced" href="https://cyanocyc.org/poster-cellov?orgid=SYNEL" role="menuitem" tabindex="-1">Generate&nbsp;Metabolic&nbsp;Map&nbsp;Poster</a>
+	      </div> <!-- close vl -->
+	    </div>
+
+	    <div class="mega-column" id="MegaAnalysis" role="group">
+	      <h3>Analysis</h3>
+	      <hr>
+	      <a href="https://cyanocyc.org/comp-genomics" role="menuitem" tabindex="-1">Comparative&nbsp;Analysis</a>
+	      <a href="https://cyanocyc.org/dashboard/genome-dashboard-compare.shtml" role="menuitem" tabindex="-1">Comparative&nbsp;Genome&nbsp;Dashboard<img src="index_files/new.png" height="12" width="31"></a>
+	      <a href="https://cyanocyc.org/PToolsWebsiteHowto.shtml#omicsDataAnalysis" role="menuitem" tabindex="-1">Omics&nbsp;Data&nbsp;Analysis</a>
+	      <a class="orgspecificReplaced" href="https://cyanocyc.org/dashboard/dashboard-intro.shtml?orgid=SYNEL" role="menuitem" tabindex="-1">Omics&nbsp;Dashboard</a>
+	      <a class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/organism-summary" role="menuitem" tabindex="-1">Summary&nbsp;Statistics</a>
+	      <a href="https://cyanocyc.org/cmpd-pwy-coverage.shtml" role="menuitem" tabindex="-1">Metabolomics&nbsp;Pathway&nbsp;Coverage</a>
+	      <a class="orgspecificReplaced" id="FuncGeneClusters" href="https://cyanocyc.org/SYNEL/genome-context" role="menuitem" tabindex="-1">List&nbsp;Functional&nbsp;Gene&nbsp;Clusters</a>
+	      <a class="orgspecificReplaced" href="https://cyanocyc.org/msa.shtml?organism=SYNEL&amp;seq=s.gff" role="menuitem" tabindex="-1">
+		Multiple&nbsp;Sequence&nbsp;Alignment
+	      </a> 
+	      <a href="https://cyanocyc.org/user-subscriptions.shtml" role="menuitem" tabindex="-1">Update&nbsp;Notifications</a>
+	      <div class="sub-toolbar-dropdown" role="menuitem" tabindex="-1">
+		<button class="sub-toolbar-dropbtn" style="color:
+		black;" tabindex="-1">Reports <i class="fa fa-caret-down"></i>
+		</button>
+		<div class="sub-toolbar-dropdown-content" role="menu">
+		  <div class="sub-vl">
+		    <a class="orgspecificReplaced" href="https://cyanocyc.org/SYNEL/release-notes" role="menuitem" tabindex="-1">History&nbsp;of&nbsp;updates</a>
+		    <a class="disable_for_multiorg orgspecificReplaced" href="https://cyanocyc.org/SYNEL/sort-by-score.html" role="menuitem" tabindex="-1">Pathway&nbsp;evidence&nbsp;(sorted&nbsp;by&nbsp;score)</a>
+		    <a class="disable_for_multiorg orgspecificReplaced" href="https://cyanocyc.org/SYNEL/hierarchical.html" role="menuitem" tabindex="-1">Pathway&nbsp;evidence&nbsp;(sorted&nbsp;by&nbsp;class)</a>
+		    <a class="disable_for_multiorg orgspecificReplaced" href="https://cyanocyc.org/SYNEL/missing-rxns.html" role="menuitem" tabindex="-1">Pathway&nbsp;holes</a>
+		  </div>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <!-- END OF TOOLS MEGA MENU -->
+
+      <div class="toolbar-dropdown" role="menuitem" tabindex="-1">
+	<button class="toolbar-dropbtn" tabindex="-1">Sites <i class="fa fa-caret-down"></i></button>
+	<div class="toolbar-dropdown-content" role="menu">
+	  <a href="https://biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">BioCyc</a>
+	  <a href="https://metacyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">MetaCyc</a>
+	  <a href="https://ecocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">EcoCyc</a>
+	  <a href="https://humancyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">HumanCyc</a>
+	  <a href="https://bsubcyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">BsubCyc</a>
+	  <a href="http://yeast.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">YeastCyc</a>
+	  <a href="https://cyanocyc.org/" role="menuitem" tabindex="-1">CyanoCyc</a>
+	  <a href="http://algae.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Algae</a>
+	  <a href="http://helicobacter.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Helicobacter pylori</a>
+	  <a href="http://listeria.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Listeria monocytogenes</a>
+	  <a href="http://mycobacterium.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Mycobacterium tuberculosis</a>
+	  <a href="http://clostridium.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Peptoclostridium difficile</a>
+	  <a href="http://pseudomonas.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Pseudomonas</a>
+	  <a href="http://salmonella.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Salmonella enterica</a>
+	  <a href="http://shigella.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Shigella flexneri</a>
+	  <a href="http://vibrio.biocyc.org/?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Vibrio cholerae</a>
+	</div>
+      </div>
+
+      
+      <div class="toolbar-dropdown" role="menuitem" tabindex="-1">
+	<button class="toolbar-dropbtn" tabindex="-1">Pathway Tools <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="toolbar-dropdown-content" role="menu">
+	  <p>
+	    Desktop Application<br>
+	    Bring the power of BioCyc.org securely in-house, with the abilities to create and<br>
+	    edit PGDBs, perform metabolic modeling, and query/update using APIs.
+	  </p>
+	  <a href="https://pathwaytools.com/" role="menuitem" tabindex="-1">More Information<br></a>
+	  <a href="https://biocyc.org/download-bundle.shtml?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906" role="menuitem" tabindex="-1">Academic Licenses</a>
+	  <a href="https://share.hsforms.com/13fwJvezjSDyUXl8BRPpkkQ3ipje" role="menuitem" tabindex="-1">Commercial Licenses</a>
+	</div>
+      </div>
+      
+
+      
+
+      <div class="toolbar-dropdown" role="menuitem" tabindex="-1">
+	<button class="toolbar-dropbtn" tabindex="-1">Help <i class="fa fa-caret-down"></i>
+	</button>
+	<div class="toolbar-dropdown-content" role="menu">
+	  <a href="https://cyanocyc.org/login-help.shtml" role="menuitem" tabindex="-1">Login/Account&nbsp;Help</a>
+	  <a href="https://cyanocyc.org/PToolsWebsiteHowto.shtml#SearchHelp" role="menuitem" tabindex="-1">Searching</a>
+	  <a href="https://cyanocyc.org/intro.shtml" role="menuitem" tabindex="-1">Intro to BioCyc</a>
+	  <a href="https://cyanocyc.org/PToolsWebsiteHowto.shtml" role="menuitem" tabindex="-1">Website&nbsp;User&nbsp;Guide</a>
+	  <a href="https://cyanocyc.org/samples.shtml" role="menuitem" tabindex="-1">BioCyc&nbsp;Guided&nbsp;Tour </a>
+	  <a href="https://cyanocyc.org/webinar.shtml" role="menuitem" tabindex="-1">BioCyc&nbsp;Online&nbsp;Tutorials</a>
+	  <a href="https://cyanocyc.org/PGDBConceptsGuide.shtml" role="menuitem" tabindex="-1">PGDB&nbsp;Concepts&nbsp;Guide</a>
+	  <a href="https://cyanocyc.org/BioCycUserGuide.shtml" role="UserGuide">Guide&nbsp;to&nbsp;BioCyc</a>
+	  <a href="https://cyanocyc.org/Troubleshoot-guide.shtml" role="menuitem" tabindex="-1">Troubleshooting </a>
+	  <a href="https://cyanocyc.org/publications.shtml" role="menuitem" tabindex="-1">How&nbsp;to&nbsp;Cite </a>
+	  <a href="https://cyanocyc.org/glossary.shtml" role="menuitem" tabindex="-1">Glossary</a>
+	  <a href="https://cyanocyc.org/contact.shtml" role="menuitem" tabindex="-1">Contact&nbsp;Us/Licensing/Support</a>
+	</div>
+      </div>
+    </div>
+
+    <div class="pure-u-lg-7-12 pure-u-md-7-12 pure-u-sm-1-1" style="height: 49px">
+      <div class="login pure-g" id="loginMenuBar">
+	<!-- ajaxUpdater defined in pathwayTools.js -->
+<div id="subscriptionBanner" style="display:flex;flex-direction:row;justify-content: space-around;width:100%"><div><a style="left:10px;">Individual&nbsp;subscriber</a></div><!-- end subscription -->
+  <div>
+  <a href="https://cyanocyc.org/preferences.html" role="menuitem" tabindex="-1">
+    Welcome: Jeff Elhai
+  </a>
+  </div> 
+  <div>
+  <div class="toolbar-dropdown" role="menuitem" tabindex="-1">
+    <button class="toolbar-dropbtn" tabindex="-1"> 
+      <img src="index_files/NewUserIcon.png" alt="Account" width="16">
+    </button>
+    <div class="toolbar-dropdown-content" role="menu">
+      <a href="https://cyanocyc.org/preferences.html" role="menuitem" tabindex="-1">My Account</a>
+      <a href="javascript:LogOut()" role="menuitem" tabindex="-1">Log Out</a>
+    </div>
+  </div>
+</div> <!-- end user -->
+</div>
+<script type="text/javascript">
+ajaxUpdater('subscriptionBanner', '/subscription-banner');
+</script>
+
+      </div>
+    </div>
+    <!-- Beginning of hidden/visible login overlay -->
+
+    <div style="text-align: left; float: right; position: relative; left: 0;">
+
+      
+      </div> 
+    </div>
+  </div>
+</div>
+	
+  </div>
+    <!-- The top menu bar END -->
+  <div class="pure-g">
+    <div class="pure-u-sm-1-1">
+      <div> <!-- begin not META/BSUB/HUMAN/ECOLI homepage only -->
+	<a href="https://cyanocyc.org/">
+	  <img src="index_files/cyanologo.png" alt="BioCyc" style="width: 500px; height: 130px; display:block; margin-left:auto;
+		      margin-right:auto; margin-top: 10px; cursor:pointer">
+	</a>
+      </div> <!-- end not META/BSUB/HUMAN/ECOLI homepage only -->
+    </div>
+  </div>
+
+<div class="pure-g">
+  <div class="pure-u-sm-1-1">
+    <div style="margin-right:auto; margin-left:auto; display:table;
+		margin-top: 20px; width: fit-content" role="search"> 
+      <!-- begin group db and search -->
+      <!-- Database name and change link -->
+      <div>
+	<button class="changeDBBtn pure-button" id="changeDBBtn" onclick="showChooser(setOrgAndCheckConsistency, getSpecialOrgBinomial(orgID()));" aria-expanded="false">
+	  Change&nbsp;Current&nbsp;Database
+	</button>
+	<span style="vertical-align: middle; padding-left: 11px; font-size: 16px;">Current Database: </span><i class="searchMenuDatabaseName"><a id="currentDatabaseName" class="dynDBName banner" href="file:///SYNEL/organism-summary">Synechococcus elongatus PCC 7942</a>&nbsp;&nbsp;</i>
+      </div>
+      <!-- End Database name and change link -->
+      <!-- Quick Search -->
+      <b style="font-size:16px">Search in Current Database:&nbsp;</b>
+      <form class="lgSearchMenu" id="qsform" action="/" name="substring" onsubmit="if (this.elements[1].value != '')
+		      {this.action= '/'+orgID()+'/substring-search?type=NIL&amp;object='+this.elements[1].value
+		      } else {
+		      return(false)};">
+	<input id="QSType" name="type" type="hidden" value="NIL">
+	<span id="QSContainer">
+	  <input id="QSTextBox" class="inputQuickSearch" name="object" size="47" spellcheck="false" placeholder="Enter a gene, protein, metabolite or pathway..." title="Enter one of the following (all searches conducted only within the selected organism, unless otherwise indicated):
+
+A name or synonym for a compound, gene, protein or pathway.  Spaces, punctuation and case are ignored. E.g. pyruvate, trpA
+
+Any substring of one of the above names, length &gt;= 3. E.g. kinase, pyr
+
+A full or partial EC number. E.g. 1.2.1.4, 1.3.1
+
+A full or partial InChI-key. E.g. CKLJMWTZIZZHCS
+
+An internal id (case-sensitive) for any compound, gene, protein, pathway, reaction or transcription-unit. E.g. CPLX0-3661, HEMN-RXN
+
+An id (case-sensitive) from another database to which this database contains links, e.g. UniProt, KEGG, ChEBI. Note that our set of links is not complete; even if an external id search returns no result the object may still be in our database. E.g. P00561, NP_414543, C00047
+
+A locus id for any gene of any organism on the BioCyc website. E.g. FTU_0031, YPA_0017
+
+(MetaCyc only) An organism or taxon name, to find pathways curated to that taxon. E.g. Bacillus, Shigella flexneri">
+	  <button onclick="qsSubmitFn();" title="Search" style="border:none; background: white;
+			 padding: 0;">
+	    <i class="fa fa-search" id="qsIcon"></i>
+	  </button>
+	</span>
+      </form>
+      <!-- End Quick Search -->
+    </div> <!-- end group db and search -->
+    <div role="navigation" aria-label="Tool Quick Links" id="toolQuickLinks">
+      <table>
+	<tbody><tr>
+	  <td>
+	    
+	    <a href="https://cyanocyc.org/groups?orgid=SYNEL" class="orgspecificReplaced">
+	      <img src="index_files/SmTIcon.png" alt="SmartTables" class="quickAccessST">
+	      SmartTables
+	    </a>
+	    
+	  </td>
+	  <td>
+	    
+	    <div class="dividerQuickAccessTools"></div>
+	    
+	  </td>
+	  
+	  <td>		    
+	    <a href="https://cyanocyc.org/SYNEL/select-gen-el" class="orgspecificReplaced">
+	      <img src="index_files/GenBroIcon.png" alt="Genome Browser" class="quickAccessGenBro">
+	      Genome Browser
+	    </a>
+	  </td>
+	  
+	  <td>
+	    <div class="dividerQuickAccessTools"></div>
+	  </td>
+	  <td>
+	    <a href="https://cyanocyc.org/overviewsWeb/celOv.shtml">
+	      <img src="index_files/map-icon.svg" alt="Cellular Overview" class="quickAccessCellov">
+	      Metabolic Map
+	    </a>
+	  </td>
+	  <td>
+	    
+	    <div class="dividerQuickAccessTools"></div>
+	    
+	  </td>
+	  
+	  <td>
+	    <a href="https://cyanocyc.org/dashboard/dashboard-intro.shtml">
+	      <img src="index_files/OmicsDashIcon.png" alt="Omics Dashboard" class="quickAccessODash">
+	      Omics Dashboard
+	    </a>
+	    <a>&nbsp;</a>
+	  </td>
+	  
+	</tr>
+      </tbody></table>
+    </div>
+  </div>
+</div>
+<!-- end topBannerMenu -->
+
+
+<!-- Begin template-require-login-overlay.shtml -->
+
+<!-- End template-require-login-overlay.shtml -->
+	
+
+<!-- Placeholder for popup messages -->
+<div id="msgPopup"></div>
+
+    <div class="content"> 
+      <!-- ---------- BEGIN margin to set max width ---------- -->
+      <div class="whitespace-wide-margin-border">
+	<!-- ---------- BEGIN PROMO SLIDE SHOW ---------- -->
+	<div class="pure-g">
+	  <div class="pure-u-xl-1-2 pure-u-lg-1-1 pure-u-md-1-1 pure-u-sm-1-1" style="margin-bottom: 68px">    
+
+	    	  <!-- ---------- BEGIN slideshow widget ---------- -->
+	    <div id="spiffySlides" style="height: 650px; max-width: 590px; margin-left: auto; margin-right:auto;">
+	      <ul class="slides">
+
+         	<li class="">
+		  <div class="slidePic">
+		     <picture>
+		      <source srcset="index_files/strom38.jpg 1x" type="image/jpb">
+		      <img class="pure-img" src="index_files/strom38.jpg" alt="photo of stromatolites along a seashore" width="582px" height="279px">
+		     </picture>
+		     <p class="caption">Image courtesy of John Burns (Cyanolab) and Cyanosite.</p>
+		     </div>
+		     <div class="slideText">
+		       <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;">Living Rocks</h2>
+                       <h3 class="subhead">Some cyanobacteria can make rocks like these living stromatolites in the alkaline (pH &gt; 9) Salda Lake in southern Turkey. </h3>
+                       <p style="line-height: 0.7em">
+		       </p>
+		     </div>
+		</li>
+
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/dashboard.webp 1x" type="image/webp">
+			<img class="pure-img" src="index_files/dashboard.webp" alt="A portion of an Omics Dashboard display,
+			     showing panels for Biosynthesis and
+			     Degradation, and a popup showing details
+			     for L-alanine biosynthesis." width="582px" height="278px">
+		    </picture>
+		    <p class="caption">Cellular Dashboard image generated by Pathway Tools.</p>
+		  </div>
+		  <div class="slideText">
+		    <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;">The Omics Dashboard: A New View of Omics Data</h2>
+		    <h3 class="subhead">Visualize omics data as a set of graphs 
+hierarchically organized by functional category. Drill down for more 
+detail in areas of interest.</h3>
+		    <p style="line-height: 0.7em">
+		      <a href="https://cyanocyc.org/dashboard/dashboard-intro.shtml" class="learn-more-href" aria-label="Learn more about the Omics Dashboard">Learn More</a>
+		    </p>
+		  </div>
+		</li>
+		
+		
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/bloom7.jpg 1x" type="image/jpg">
+			<img class="pure-img" srch="/dispatchImages/bloom7.jpg" alt="a body of water covered by algal bloom" width="582px" height="278px">
+		    </picture>
+		    <p class="caption">Image courtesy of Jeff Johansen (John Carrol University) and Cyanosite</p>
+		  </div>
+		  <div class="slideText">
+		    <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;">Harmful Algal Blooms</h2>
+		    <h3 class="subhead">This Slimy 'algal' bloom consists of the 
+cyanobacteria Microcystis aeruginosa and Anabaena circinalis on the St. 
+Johns River, FL,both of which can produce harmful cyanotoxins.</h3>
+		    <p style="line-height: 0.7em">
+		      
+		    </p>
+		  </div>
+		</li>
+
+		        
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/CyanoCellOv.jpg 1x" type="image/jpg">
+			<img class="pure-img" src="index_files/CyanoCellOv.jpg" alt="a portion of a Cellular Overview diagram,
+			     showing several pathway classes" width="582px" height="279px">
+		    </picture>
+		    <p class="caption">Cellular Overview image generated by Pathway Tools.</p>
+		  </div>
+		  <div class="slideText">
+		    <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;">Explore Metabolic Maps</h2>
+                    <h3 class="subhead">The Cellular Overview enables 
+you to browse through zoomable metabolic map diagrams for each 
+cyanobacterium, overlay omics data, and even print your own Metabolic 
+Map poster. </h3>
+                    <p style="line-height: 0.7em">
+		      <a href="http://biocyc.org/PToolsWebsiteHowto.shtml?sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906#celOverview" class="learn-more-href" aria-label="Learn more about the cellular overview diagram">Learn More</a>
+                    </p>
+		  </div>
+		</li>
+		
+		
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/SingleSpirulinaInMicroscope4WEB.jpg 1x" type="image/jpg">
+			<img class="pure-img" src="index_files/SingleSpirulinaInMicroscope4WEB.jpg" alt="Photo of a single Spirulina bacterium" width="582px" height="282px">
+		    </picture>
+		    <p class="caption">This image is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.</p>
+		  </div>
+		  <div class="slideText">
+		    <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;">Cyanobacterium as Food Supplement</h2>
+		    <h3 class="subhead">Did you know this cyanobacterium Arthrospira 
+platensis (formerly “Spirulina”) is one of several species used as a 
+food supplement, even as far back as the Aztecs?</h3>
+                    <p style="line-height: 0.7em">
+		    </p>
+		  </div>
+		</li>
+
+
+		
+         	<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/cyano-synec.jpg 1x" type="image/jpg">
+			<img class="pure-img" src="index_files/cyano-synec.jpg" alt="close-up photo of green bacteria in a
+			     bioreactor" width="582px" height="279px">
+		    </picture>
+		    <p class="caption">Image courtesy of Pacific Northwest National Laboratory.</p>
+		  </div>
+		  <div class="slideText">
+		    <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;">Biotechnological Applications</h2>
+                    <h3 class="subhead"><i>Synechococcus</i> sp. PCC 7002 growing in a photobioreactor, for biotechnological applications </h3>
+                    <p style="line-height: 0.7em">
+		      
+                    </p>
+		  </div>
+		</li>
+
+
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/CyanoCrossSpeciesSearch.webp 1x" type="image/webp">
+			<img class="pure-img" src="index_files/CyanoCrossSpeciesSearch.webp" width="400px" height="300px" alt="Screenshot of cross organism search
+			     page with organism selector panel open">
+		    </picture>
+		  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Search Cyanobacteria based on phenotypes or taxonomic names</h3>
+
+		    <a href="https://cyanocyc.org/cyanocyc-intro.shtml#othertools" class="learn-more-href" aria-label="Learn more about cross-organism search">Learn More</a>
+		  </div>
+		</li>
+		
+		
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/Prochlorococcus_marinus.jpg 1x" type="image/jpg">
+			<img class="pure-img" src="index_files/Prochlorococcus_marinus.jpg" width="582px" height="278px" alt="Photo of several green cyanobacteria as viewed
+			     through a microscope">
+		    </picture>
+		    <p class="caption">This image is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.</p>
+		  </div>
+		  <div class="slideText">
+		    <h2 class="whitespace-none" style="font-size: 1.5em; padding-top: 10px;"><i>Prochlorococcus</i>, the tiny but mighty marine unicellular cyanobacterium</h2>
+		    <h3 class="subhead">The smallest and most abundant cyanobacterium 
+contributes significantly to global carbon, oxygen and other 
+biogeochemical cycles.</h3>
+		    <p style="line-height: 0.7em">
+		      <a href="https://cyanocyc.org/cyanocyc-intro.shtml#moreaboutcyano" class="learn-more-href">Learn More</a>
+		    </p>
+		  </div>
+		</li>	
+
+
+
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/CyanoMultipleSeqAlignment.webp 1x" type="image/webp">
+			<img src="index_files/CyanoMultipleSeqAlignment.webp" width="582px" height="278px" alt="a multiple sequence alignment of
+			     gene kaiT across 14 cyanobacterial genomes">
+		    </picture>
+		    <p class="caption">Multiple Sequence Alignment results generated by Pathway Tools using <a href="https://cyanocyc.org/www.drive5.com/muscle">MUSCLE</a>.</p>
+		  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Multiple Sequence Alignments</h3>
+		    <h3 class="subhead">Generate multiple sequence alignments for genes or proteins - within a genome or between genomes.</h3>
+		    <a href="https://cyanocyc.org/cyanocyc-intro.shtml#alignsequence" class="learn-more-href" aria-label="Learn more about the multiple
+				   sequence alignment viewer">Learn More</a>
+		  </div>
+		</li>
+
+
+		
+		<li class="">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/CyanoPatMatch.webp 1x" type="image/webp">
+			<img src="index_files/CyanoPatMatch.jpeg" width="592px" height="296px" alt="Screenshots of PatMatch query and
+			     results pages">
+		    </picture>
+		    <p class="caption"><a href="http://www.ncbi.nlm.nih.gov/pubmed/15980466">PatMatch</a> query and results by Pathway Tools.</p>
+		  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Sequence Pattern Searches</h3>
+		    <h3 class="subhead">Search a selected organism for exact or degenerate short patterns of nucleotides or peptides.</h3>
+		    <a href="https://cyanocyc.org/cyanocyc-intro.shtml#othertools" class="learn-more-href" aria-label="Learn more about the sequence
+				   pattern searches">Learn More</a>
+		  </div>
+		</li>
+
+
+		<li class="active">
+		  <div class="slidePic">
+		    <picture>
+		      <source srcset="index_files/Figure-2.png 1x" type="image/webp&quot;">
+		    <img src="index_files/Figure-2.png" alt="Pathway display with popup bar charts
+			      showing changing metabolic flux over time for different reactions.">
+		    </picture>
+		    <p class="caption">Metabolic Modeling with MetaFlux</p>
+		  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Build quantitative metabolic models for BioCyc organisms using the MetaFlux metabolic modeling component of Pathway Tools.</h3>
+		    <a href="http://bioinformatics.ai.sri.com/ptools/metaflux.shtml" class="learn-more-href" aria-label="Learn more about MetaFlux">Learn More</a>
+		  </div>
+		</li>
+
+	
+		<!-- Disabled dispatches -->
+		<!--
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/enrichmentDialog.png">
+		    <p class="caption">SmartTable display generated by Pathway Tools.</p>  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Metabolomics Data Analysis</h3>
+		    <h3 class="subhead">Multiple tools are available in this website for metabolomics data analysis.</h3>
+		    <a href="/PToolsWebsiteHowto.shtml#omicsDataAnalysis" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/pigeon-mail.png">
+		    <p class="caption"></p> </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Receive Notifications of New Research in your Interest Area</h3>
+		    <h3 class="subhead"> Identify specific genes or pathways of interest to your work, and let BioCyc notify you by email when new curated information is available.</h3>
+		    <a href="/user-subscriptions.shtml" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/soil_community.png" alt="MetaFlux Community Models">
+		    <p class="caption">&nbsp;</p>  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Model communities of organisms using MetaFlux.</h3>
+		    <h3 class="subhead">MetaFlux (Pathway Tools version 19.0) can solve flux balance models based on a community of interacting organisms.</h3>
+		    <a href="http://bioinformatics.ai.sri.com/ptools/metaflux.shtml" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/pythoncyc_dispatch_2.png" alt="PythonCyc">
+		    <p class="caption">PythonCyc logo designed by Dan Weaver and Kai Chen</p></div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Use Python to interact with Pathway Tools</h3>
+		    <h3 class="subhead">By using PythonCyc, the Python programming language can be used to query and modify any organism database (i.e., PGDB) created with Pathway Tools.</h3>
+		    <a href="http://bioinformatics.ai.sri.com/ptools/pythoncyc.html" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/card_catalog_instructions.png" alt="Card catalog">
+		    <p class="caption">Image of Peabody Visual Aids poster by <a href="https://www.flickr.com/photos/68103485@N05/">char booth</a>. Used under creative commons <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">license</a>.</p></div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Search BioCyc by Locus ID </h3>
+		    <h3 class="subhead">You can now enter locus IDs into the BioCyc quick search box.  There is no need to first select the correct BioCyc organism database - if the organism is part of BioCyc, the unique locus ID will automatically find it.  Some example locus IDs look like this: MSM_0046, MXAN_1061. </h3>
+		  </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/BioCyc-App-Small.png" alt="E. coli, bacteria, cryo FIB-SEM, dotted with silver nanoparticles">
+		    <p class="caption">BioCyc iOS App for iPhone/iPad</p> </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">BioCyc at your Fingertips via iPhone/iPad</h3>
+		    <h3 class="subhead">Have you ever wanted to quickly find out what is known about a gene, protein or pathway that was just mentioned in a talk or on a poster? Download the free BioCyc iPhone app to browse BioCyc on the go!  Try the iPad version as well.</h3>
+
+		    <a href="https://itunes.apple.com/sn/app/ecocyc/id414535548?mt=8" class="learn-more-href">Download Here</a>
+		  </div>
+		</li>
+
+ 		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/Figure-2.png">
+		    <p class="caption">Metabolic Modeling with MetaFlux</p>  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Build quantitative metabolic models for BioCyc organisms using the MetaFlux metabolic modeling component of Pathway Tools.</h3>
+		    <a href="http://bioinformatics.ai.sri.com/ptools/metaflux.shtml" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/crossOrganismSearch.png">
+		    <p class="caption">Cross-Organism Search form generated by Pathway Tools.</p>  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Search All of BioCyc for Genes, Proteins, Pathways</h3>
+		    <h3 class="subhead">Search all of BioCyc or designated taxonomic groups for named genes, proteins, metabolites, pathways.</h3>
+		    <a href="/PToolsWebsiteHowto.shtml#cross_org_search" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/alignment.png" alt="Multiple Sequence Alignment Image">
+		    <p class="caption">Multiple Sequence Alignment results generated by Pathway Tools using <a href="www.drive5.com/muscle">MUSCLE</a>.</p>
+		  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Multiple Sequence Alignments</h3>
+		    <h3 class="subhead">You can now generate multiple sequence alignments for genes or proteins - within a genome or between genomes.</h3>
+		    <a href="/PToolsWebsiteHowto.shtml#alignmentViewer" class="learn-more-href">Learn More</a> </div>
+		</li>
+
+		<li>
+		  <div class="slidePic"> <img src="/dispatchImages/patmatch.png">
+		    <p class="caption"><a href="http://www.ncbi.nlm.nih.gov/pubmed/15980466">PatMatch</a> query and results by Pathway Tools.</p>  </div>
+		  <div class="slideText">
+		    <h3 class="whitespace-none">Sequence Pattern Searches</h3>
+		    <h3 class="subhead">Search a selected organism for exact or degenerate short patterns of nucleotides or amino acids.</h3>
+		    <a href="/PToolsWebsiteHowto.shtml#patmatch" class="learn-more-href">Learn More</a> </div>
+		</li>
+		--> 
+
+	      </ul>
+	      <ul class="controls" style="bottom: -10px">
+	      <!-- <span class="paused">paused...</span> -->
+		<li class="slide-nav"><a href="#slide-1" title="show slide 1">1</a></li>
+		<li class="slide-nav"><a href="#slide-2" title="show slide 2">2</a></li>
+		<li class="slide-nav"><a href="#slide-3" title="show slide 3">3</a></li>
+		<li class="slide-nav"><a href="#slide-4" title="show slide 4">4</a></li>
+		<li class="slide-nav"><a href="#slide-5" title="show slide 5">5</a></li>
+		<li class="slide-nav"><a href="#slide-6" title="show slide 6">6</a></li>
+		<li class="slide-nav"><a href="#slide-7" title="show slide 7">7</a></li>
+		<li class="slide-nav"><a href="#slide-8" title="show slide 8">8</a></li>
+		<li class="slide-nav"><a href="#slide-9" title="show slide 9">9</a></li>
+	        <li class="slide-nav"><a href="#slide-10" title="show slide 10">10</a></li>
+	        <li class="slide-nav active"><a href="#slide-11" title="show slide 11">11</a></li>
+	      </ul>
+	    </div>
+	    <!-- ---------- END slideshow widget ---------- --> 
+	    <!-- ---------- END PROMO SLIDE SHOW ---------- --> 
+	  </div>
+	<!-- ---------- BEGIN INTRO BLURB ---------- -->
+	<div class="pure-u-xl-1-2 pure-u-lg-1-1 pure-u-md-1-1 pure-u-sm-1-1">
+	  <div class="l-box-home" style="height: 750px; max-width: 750px; margin-left: auto; margin-right:auto;">
+	    <table>
+	     
+		<tbody><tr><td> <h2 class="splash-head"><font color="#009A17"> <center> CyanoCyc: Cyanobacterial Pathways+Genomes</center></font></h2></td> 
+	    </tr></tbody></table>
+		
+
+         <details>
+		  <summary><b>Capabilities of CyanoCyc</b></summary>
+		  <div>
+	      <ul>
+		    <li><font color="red">Sane functional annotation</font> based on literature citations
+			    <small>(<a href="https://biocyc.org/gene?orgid=GCF_000009725&amp;id=SGL_RS15310-MONOMER&amp;sid=biocyc17-3949588722" target="_blank">example</a>)</small></li>
+			<li>Organism-specific summaries of <font color="red">metabolic pathwaysdata</font>
+			    <small>(<a href="https://biocyc.org/pathway?orgid=GCF_000009725&amp;id=PWY2PN3-6" target="_blank">example</a>)</small></li>
+			<li>Transcriptional <font color="red">data integrated</font> with genomic maps</li>
+			<li><font color="red">Expression data overlaid</font> on metabolic maps</li>
+			<li><font color="red">Alignments of sequences</font> across organisms</li>
+			<li><font color="red">Alignments of genetic maps</font> across organisms
+				<small>(<a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/genome-alignment-example.jpg" target="_blank">example</a>)</small></li>
+			<li>Subsets of <font color="red">cyanobacteria by phenotypes</font>
+			    <small>(<a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/cyanobacteria-sublists.html" target="_blank">list</a>)</small></li>
+			<li>Proteins by <font color="red">motif</font>, by <font color="red">evidence</font>, and other criteria</li>
+		  </ul>
+		  </div></details>
+		  
+		 <div class="accordion" id="AccordionWebinar">
+         <details>
+		  <summary><b>What genomes are in CyanoCyc?</b></summary>
+		  <div>
+	   
+	    <ul> 
+             <li>Hundreds of cyanobacterial genomes (click <a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/all-cyanobacteria.html" target="_blank">here</a> for list)
+			 </li><li>Six curated from the cyanobacterial literature:
+	       <ul>
+		 <li><a href="https://cyanocyc.org/GCF_000009705/organism-summary"><i>Anabaena/Nostoc</i> PCC 7120 </a></li>
+		 <li><a href="https://biocyc.org/SS120/organism-summary?object=SS120&amp;sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906"> <i>Prochlorococcus marinus</i>  SS120 </a></li>
+		 <li> <a href="https://biocyc.org/MED4/organism-summary?object=MED4&amp;sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906"><i> Prochlorococcus marinus </i> MED4 </a></li>
+		 <li> <a href="https://biocyc.org/organism-summary?object=GCF_000009725&amp;sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906"> <i>Synechocystis sp.</i> PCC 6803 substr. Kazusa</a></li>
+		 <li> <a href="https://biocyc.org/SYNEL/organism-summary?object=SYNEL&amp;sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906"> <i>Synechococcus elongatus </i> PCC 7942 </a></li>
+		 <li> <a href="https://biocyc.org/organism-summary?object=SYNWH8102&amp;sid=biocyc18-3897913906&amp;sid=biocyc18-3897913906"> <i>Synechococcus sp.</i> WH8102 </a></li>
+		 </ul>
+	      </li><li>Access to thousands of other bacterial databases (click <a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/BioCyc-all-databases.html" target="_blank">here</a> for list)
+	    </li></ul>
+		</div></details>
+
+		  		
+		<details>
+		  <summary><b>Elements of CyanoCyc</b></summary>
+		  <div>
+	      <ul>
+		    <li><div class="accordion" id="AccordionWebinar2">
+			    <details>
+		       	<summary>Introduction to BioCyc (videos)</summary>
+		        <div>
+		    <ul>
+		      <li>BioCyc Overview (14:04) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/01-intro/INTROBIOCYC01.mp4" target="_blank">mp4</a> or <a href="https://youtu.be/e7f-XluS3aA" target="_blank">YouTube</a>]</small>
+		      </li><li>Searching in BioCyc (17:00) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2021webinars/2021INTROBIOCYC02.mp4" target="_blank">mp4</a> or <a href="https://youtu.be/vPbJUyyMrbo" target="_blank">YouTube</a>]</small>
+		      </li><li>Genome Browsing, Searching, and Alignment (15:38)  <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2021webinars/2021INTROBIOCYC04.mp4" target="_blank">mp4</a> or <a href="https://youtu.be/pGVYGq_z5lg" target="_blank">YouTube</a>]</small>
+		      </li><li>Pathways (13:19) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2021webinars/2021INTROBIOCYC05.mp4" target="_blank">mp4</a> or <a href="http://youtu.be/vmanLbAOlFw%20target=" _blank""="">YouTube</a>]</small>
+		      </li><li>Reactions (3:37) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2021webinars/2021INTROBIOCYC06.mp4%20target=" _blank"="">mp4</a> or <a href="http://youtu.be/A0POxCr7I_E" target="_blank">YouTube</a>]</small>
+		      </li><li>Compounds (6:42) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2021webinars/2021INTROBIOCYC07.mp4%20target=" _blank"="">mp4</a> or <a href="http://youtu.be/FjMmDLpDZb4%20target=" _blank""="">YouTube</a>]</small>
+		    </li></ul></div></details>
+		  </div></li> 
+        	<li><a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/how-to-get-help.html" target="_blank">How to get help</a></li>
+			<li><a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/how-to-report-problems.html" target="_blank">How to report problems or make suggestions</a></li>
+			<li>How and why to select an organism? <small>(<a href="https://cyanocyc.org/help/change-current-database.pdf" target="_blank">tutorial</a> or <a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/change-current-database.html" target="_blank">summary</a>)</small></li>
+			<li>How and why to select a gene? <small>(<a href="https://cyanocyc.org/help/select-genes.pdf" target="_blank">tutorial</a> or <a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/select-genes.html" target="_blank">summary</a>)</small></li>
+			
+			<li><div class="accordion" id="AccordionWebinar2">
+			    <details>
+		       	<summary>Introduction to metabolic maps, tools, networks <small>(videos)</small></summary>
+		  <div>
+		    <ul>
+		      <li>The Cellular Overview: Navigating metabolic networks (17:15) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS01.mp4%20target=" _blank"="">mp4</a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS01.mov" target="_blank">QuickTime</a> or <a href="https://youtu.be/D1auFR-YtyA" target="_blank">YouTube</a>]</small>
+		      </li><li>Comparative Genomics (21:06) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS03.wmv" target="_blank">Windows Media</a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS03.mov" target="_blank">QuickTime</a>]</small>
+		      </li><li>Ortholog Viewing (10:02) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS04.wmv" target="_blank">Windows Media</a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS04.mov" target="_blank">QuickTime</a>]</small>
+		      </li><li>The Regulatory Overview -- exploring transcriptional regulatory networks (15:21) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-compomics/WEBINARCOMPOMICS05.mp4" target="_blank">mp4</a> or <a href="https://youtu.be/AtXsbRwBFvo" target="_blank">YouTube</a>]</small> 
+		    </li></ul></div></details></div></li>
+	   
+	   <li><div class="accordion" id="AccordionWebinar2">
+	   <details>
+		  <summary>Transcript and metabolite data analysis <small>(videos)</small></summary>
+		  <div>
+		    <ul>
+		      <li>Transcriptomics Analysis Tools 
+			  <br>- brief tour (2:40) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2020webinars/2020TRANSCRIPTOMICSOVERVIEW.mp4" target="_blank">mp4</a> or <a href="https://youtu.be/3jMXIo2BTsk" target="_blank">YouTube</a>]</small> 
+			  <br>- detailed tutorial (21:36) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2020webinars/2020BIOCYCTRANSCRIPTOMICS.mp4" target="_blank">mp4</a> or <a href="https://youtu.be/k6ZUBjHDH_0" target="_blank">YouTube]</a></small></li>
+		      <li>Metabolomics Analysis Tools 
+			  <br>- brief tour (3:26) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2020webinars/2020METABOLOMICSOVERVIEW.mp4" target="_blank">mp4</a> or <a href="https://www.youtube.com/watch?v=gDiNdp3hnWg" target="_blank">YouTube]</a></small> 
+			  <br>- detailed tutorial (24:09) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2020webinars/2020BIOCYCMETABOLOMICS.mp4" target="_blank">mp4</a> or <a href="https://www.youtube.com/watch?v=RVkmpDTdcIU&amp;t=2s" target="_blank">YouTube]</a></small> </li> 
+		      <li>Omics Dashboard Part 1 (16:35) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/dashboard/2017Dashboard-Part1.mp4" target="_blank">mp4</a>, or <a href="https://youtu.be/lfea1lKsiWk" target="_blank">YouTube]</a></small>
+		      </li>
+		      <li>Omics Dashboard Part 2 (24:29) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/dashboard/2017Dashboard-Part2.mp4" target="_blank">mp4</a>, or <a href="https://youtu.be/eDMcTDAMVXU" target="_blank">YouTube]</a></small>
+		      </li></ul></div></details></div></li>
+		
+		<li><div class="accordion" id="AccordionWebinar2">
+	   	<details>
+		  <summary>Introduction to SmartTables <small>(videos)</small></summary>
+		  <div>
+		      <ul>
+		      <li>SmartTables Overview (4:30) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2019webinars/2019SMARTTABLES01.mp4">mp4</a> or <a href="https://youtu.be/lNfHYqSAkwE">YouTube</a>]</small>
+		      </li><li>SmartTables Basics (12:43)  <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/groups/02_Groups-Basics/02_BioCyc-Groups_Basics_120414.mov">QuickTime</a>]</small>
+		      </li><li>SmartTables Transformations (8:08)  <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/groups/03_Groups-Transformations/03_Transformations_021915.mov">QuickTime</a>]</small>
+		      </li><li>SmartTables Import and Export (9:00)  <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/groups/04_Groups-Import-Export/04_Import_Export_ST_Data_021915.mov">QuickTime</a>]</small>
+		      </li><li>SmartTables Gene Expression Analysis (7:40) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/groups/05_Groups-Gene-Expression-Analysis/EcoCyc-Groups_Gene-Expression-Analysis_081913.mov">QuickTime</a>]</small>
+		      </li><li>Metabolomics Analysis with SmartTables (6:45) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/groups/06_Groups-Metabolomics/06_BioCyc-Groups_Metabolomics_120913.mov">QuickTime </a>]</small>
+		    </li></ul></div></details></div></li>
+		
+		</ul></div></details>	   
+
+	   
+	   <details>
+		  <summary><b>How to do things in CyanoCyc</b></summary>
+		  <div>
+	      <ul>
+		     <li>Get information about genes <small>(<a href="https://www.youtube.com/watch?v=y4dJ_5SrOYs" target="_blank">YouTube</a>)</small></li>
+			 <li>Get information about metabolites and pathways <small>(<a href="https://youtu.be/nF03Eun5xt4" target="_blank">YouTube</a>)</small></li>
+			 <li>Get sequences of genes, proteins, and regions <small>(<a href="https://youtu.be/PZ5hjYyIX8o" target="_blank">YouTube</a>)</small></li>
+			 <li>Compare information about multiple genes <small>(<a href="https://youtu.be/wolj5WUHAB8" target="_blank">YouTube</a>)</small></li>
+			 <li><div class="accordion" id="AccordionWebinar2"><details><summary>Search for...</summary>
+		        <div><ul>
+		            <li>...proteins, genes, or sequences by BLAST <small>(<a href="" target="_blank">summary</a>)</small></li>
+			        <li>...orthologs of proteins <small>(<a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/ortholog-search.html" target="_blank">summary</a>)</small></li>
+        	        <li>...proteins/nucleotides using conserved motifs <small>(<a href="https://www.youtube.com/watch?v=QAlaWtsHVow" target="_blank">YouTube</a>)</small></li>
+				    <li><div class="accordion" id="AccordionWebinar2"><details><summary>...proteins using complex criteria (videos)</summary>
+		              <div>
+			            <ul> 			 
+		                <li>Short (6:27) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2009webinars/2009SAQPQUICK.wmv">Windows Media</a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/2009webinars/2009SAQPQUICK.m4v">mp4</a> or <a href="https://youtu.be/3fT1T6nu3C4">YouTube</a>]</small></li>
+		                <li>Long (42:15) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2009webinars/2009SAQP.wmv">Windows Media </a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/2009webinars/2009SAQP.m4v">mp4</a> or <a href="https://youtu.be/4RSexCHLbI8">YouTube</a>]</small></li>
+		                </ul></div>
+		              </details></div></li>
+		            </ul></div>
+			        </details></div></li>
+			<li><div class="accordion" id="AccordionWebinar2"><details><summary>Using genetic maps...</summary>
+		     	<div><ul>
+		            <li>Browse map of genome <small>(<a href="https://www.youtube.com/watch?v=Py3rLBSny8I" target="_blank">YouTube</a>)</small></li>
+			        <li>Align genetic maps centered around a gene <small>(<a href="https://www.youtube.com/watch?v=c25WghdphM8" target="_blank">YouTube</a>)</small></li>
+			   		</ul></div>
+		            </details></div></li>
+			<li><div class="accordion" id="AccordionWebinar2"><details><summary>Using metabolic pathways...</summary>
+		     	<div><ul>
+		            <li>Superimpose gene expression on a metabolic map <small>(<a href="https://www.youtube.com/watch?v=tmsiimv55JE" target="_blank">YouTube</a>)</small></li>
+			        <li>Compare metabolic potentials of organisms <small>(<a href="https://youtu.be/8sXzuXLDyhU" target="_blank">YouTube</a>)</small></li>
+			        <li>Make pathway collages (22:39) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/2016webinars/2016Pathway-Collage.mp4">mp4 video</a>, <a href="http://bioinformatics.ai.sri.com/ptools/webinars/2016webinars/2016Pathway-Collage.mov">QuickTime Video</a> or <a href="https://www.youtube.com/watch?v=WW0nVpXAusg&amp;feature=youtu.be">YouTube</a>]</small></li>
+		       		</ul></div>
+		            </details></div></li>			 		
+			 <li><div class="accordion" id="AccordionWebinar2">
+	        	<details>
+		        <summary>Create a database for your own organism (videos)</summary>
+		        <div>
+		        <ul>
+      		      <li>Introduction to Database Building and Pathologic (14:04) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/06-creating/PATHOLOGIC01A.mp4">MP4</a> or <a href="https://youtu.be/8GTifTlmnZA">YouTube</a>]</small></li>
+		      <li>Building a Database: Detailed Pathologic Example (23:53) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/06-creating/PATHOLOGIC01B.mp4">MP4 Video</a> or <a href="https://youtu.be/bn1DHXBpVQk">YouTube</a>]</small></li>
+		      <li>General Editing Strategies (8:00) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02A.wmv">Windows Media </a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02A.mov">QuickTime</a> or <a href="https://youtu.be/va6UY6OdW1k">YouTube</a>]</small></li>
+		      <li>Creating and Editing Reactions and Compounds (17:32) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02B.wmv">Windows Media </a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02B.mov">QuickTime </a> or <a href="https://youtu.be/eeMVaP9H7-k">YouTube</a>]</small></li>
+		      <li>Updating Proteins, Citations, GO Terms, and Enzymatic Reactions (26:10) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02C.wmv">Windows Media</a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02C.mov">QuickTime </a> or <a href="https://youtu.be/msYOJ3lwzck">YouTube</a>]</small></li>
+		      <li>Making and Editing Pathways (9:42) <small>[<a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02D.wmv">Windows Media</a> or <a href="http://bioinformatics.ai.sri.com/ptools/webinars/webinars-makemod/MAKINGMOD02D.mov">QuickTime</a> or <a href="https://youtu.be/06kXAwJUUj0">YouTube</a>]</small></li>
+		    </ul>
+		  </div>
+		</details>	 
+			 
+			 </div></li>
+			</ul>
+			</div></details>
+			
+		 
+		<details>
+		  <summary><b>Cyanobacteria community resources</b></summary>
+		  <div>
+	      
+	     <ul>
+		 <li><a href="https://cyano.world/" target="_blank"><b>Cyano.world</b></a>: Seminars</li>
+		 <li><a href="http://cyanoexpress.sysbiolab.eu/" target="_blank"><b>CyanoEXpress</b></a>: Expression data</li>
+		 <li><a href="https://www.eawag.ch/en/department/uchem/projects/cyanometdb/" target="_blank"><b>CyanoMetDB</b></a>: Secondary metabolites</li>
+		 <li><a href="https://www-cyanosite.bio.purdue.edu/" target="_blank"><b>CyanoSite</b></a>: Photos, media, protocols, links</li>
+		 <li><a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/CyanoCyc-resources-meetings.html" target="_blank"><b>Meeting announcements</b></a></li>
+		 <li><a href="" target="_blank"><b>Photos of cyanobacteriologists</b></a></li>
+		 </ul>
+		 </div></details>
+
+        <details>
+		  <summary><b>There is a subscription fee for extended use of CyanoCyc... why?</b></summary>
+		  <div>
+		  <a href="https://ecocyc.org/" target="_blank">EcoCyc</a> (covering E. coli) and 
+		  <a href="https://metacyc.org/" target="_blank">MetaCyc</a> (covering all domains 
+		  of life from afar) were developed with public funding and are freely available to the public.
+		  <a href="https://biocyc.org/" target="_blank">BioCyc</a> (covering thousands of organisms) and 
+		  CyanoCyc (covering cyanobacteria) were not (though not for want of trying), yet they also need 
+		  to pay for servers and support people. Somehow.
+		  
+		  <p>At present, the cost of supporting CyanoCyc is borne by those who use it.
+		  Biocyc is constantly looking for ways of reducing the burden on individual researchers,
+		  perhaps at some point eliminating the cost of subscription altogether. The more people 
+		  actively use BioCyc, the more this becomes possible.
+		  </p></div></details>
+		  
+        <details>
+		  <summary><b>Ways to subscribe to CyanoCyc</b></summary>
+		  <div>
+		  </div></details>
+		
+	    </div>
+		
+	  </div>
+        </div>
+
+	</div> <!-- close top row pure-g-r -->
+	
+	
+<a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/get-help.html" target="_blank"><button class="button button1"><b>Help!</b></button></a>
+<a href="file:///C:/Users/home/Documents/1-230404/Lab/Bioinformatics-tool-group/CyanoCyc/report-problem.html" target="_blank"><button class="button button2"><b>Problems/Suggestions</b></button></a>
+
+      <!-- ---------- BEGIN FOOTER ---------- -->
+      
+    </div>
+    <script type="text/javascript" src="index_files/promoSlideShow.js"></script>
+    <!-- end pageContentDynamic -->
+<!-- This is stuff that used to go in the head and now should go towards the end of pages for efficiency -->
+<!-- <script type="text/javascript" src="/yui/build/container/container-min.js"></script>  -->
+<!-- <script type="text/javascript" src="/yui/build/datasource/datasource-min.js"></script> -->
+<!-- <script type="text/javascript" src="/yui/build/autocomplete/autocomplete-min.js"></script> -->
+<!-- <script type="text/javascript" src="/yui/build/menu/menu-min.js"></script>  -->
+<!-- <script type="text/javascript" src="/yui/build/tabview/tabview-min.js"></script>  -->
+<!-- <script type="text/javascript" src="/yui/build/treeview/treeview-min.js"></script> -->
+<!-- Tooltip libraries -->
+<!-- <script type="text/javascript" src="/overLIB/Mini/overlib_mini.js"> -\-></script> -->
+<!-- <script type="text/javascript" src="/overLIB/Mini/overlib_exclusive_mini.js"></script> -->
+<!-- <script type="text/javascript" src="/overLIB/Mini/overlib_positioncap_mini.js"></script> -->
+<!-- <script type="text/javascript" src="/overLIB/Mini/overlib_centerpopup_mini.js"></script> -->
+<!-- <script TYPE="text/javascript" SRC="/wupub/wuwei.js"></script> -->
+<script type="text/javascript" src="index_files/combined-1.js"></script> 
+<script src="index_files/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="index_files/jquery-ui.css">
+
+<!-- The style and JavaScript for Pathway Tools Server -->
+  <!-- The following file is generated on the fly by the server -->
+  <script type="text/javascript" src="index_files/get-organisms-fast.js"></script>
+  <script type="text/javascript" src="index_files/get-user-data.js"></script>
+  <!-- User web site JavaScript customization should use the following file --> 
+  <script type="text/javascript" src="index_files/userWebsiteCustomization.js"></script> 
+
+  <script type="text/javascript" src="index_files/paywall-unhidelogin.js"></script>
+
+
+<script type="text/javascript">
+
+/* This code needs to be here to avoid the menu and other Yahoo widgets to flicker
+   on the screen. */
+
+
+// Do this as early as possible to minimize flicker:
+YAHOO.util.Event.onAvailable("body", function () {
+    updateBannerClass();
+});
+
+YAHOO.util.Event.onContentReady("topBannerMenu", function () {
+    /*
+         Instantiate a MenuBar, passing in the id of the HTML element 
+         representing the MenuBar.
+
+
+    var oMenuBar = new YAHOO.widget.MenuBar("pathwayToolsMenubar", 
+                                            {autosubmenudisplay: true, 
+                                             shadow: false, 
+                                             hidedelay: 700
+                                             });
+        OR NOT !!
+    */
+
+
+    // Add dynamically all the menubar commands and menus here if need be.
+    addContextSpecificToolbarMenus();
+
+    // User sites can define this fn in userWebsiteCustomization.js in 
+    // order to programmatically alter the menus.
+    addSiteSpecificMenuItems();
+ 
+    /*
+    onMenuBarReady.fire([]);
+
+    // Render the MenuBar instance
+    oMenuBar.render();
+    $$('.yuimenu').each(Element.show); <!-- re-show menus -->
+    */
+});
+
+// Make sticky overLIB popups draggable:
+function setOverlibDraggable() {
+  if (o3_sticky) $j('#overDiv').draggable();
+}
+registerHook("olMain", setOverlibDraggable, FAFTER);
+
+</script>
+
+
+
+
+
+
+<!-- End of BioCyc userFooterCustomization.shtml -->
+
+<div id="orgSelectorDialogCC"></div>
+
+<!-- Multi Organism Chooser Template -->
+
+<div class="yui-panel-container yui-dialog yui-overlay-hidden shadow" id="multiorgSelectorDialog_c" style="visibility: hidden; z-index: 1000; left: 630px; top: 763px;"><div class="yui-panel-container yui-dialog yui-overlay-hidden shadow" id="multiorgSelectorDialog_c" style="visibility: hidden; z-index: 1000; left: 0px; top: -342px;"><div class="yui-panel-container yui-dialog yui-overlay-hidden shadow" id="multiorgSelectorDialog_c" style="visibility: hidden; z-index: 1000; left: 51px; top: 45px;"><div class="yui-panel-container yui-dialog yui-overlay-hidden shadow" id="multiorgSelectorDialog_c" style="visibility: hidden; z-index: 1000; left: -51px; top: 293px;"><div class="yui-panel-container yui-dialog yui-overlay-hidden shadow" id="multiorgSelectorDialog_c" style="visibility: hidden; z-index: 1000; left: 0px; top: -27px;"><div id="multiorgSelectorDialog" style="display: none; visibility: inherit;" class="resizableDialog yui-module yui-overlay yui-panel yui-resize"><a class="container-close" href="#">Close</a><a class="container-close" href="#">Close</a><a class="container-close" href="#">Close</a><a class="container-close" href="#">Close</a><a class="container-close" href="#">Close</a>
+  <div class="hd" style="cursor: move;" id="multiorgSelectorDialog_h"><b>Specify List of Organism Databases</b></div>
+  <div class="bd" id="multiorgSelectorBody">
+    <form id="multiorgSelectorForm" action="/">
+      <div id="legend" style="max-width:900px"></div>
+      <div id="multiorg3columns">
+        <div>
+            <h3>Select One or More Databases: <span id="multiorgMaxLabel"></span></h3>
+            <div id="multiorgSelectorTabs" class="yui-navset" style="min-width:504px">
+              <ul class="yui-nav">
+                <li class="selected"><a href="#nameTab"><em>By Name</em></a></li>
+                <li><a href="#taxTab"><em>By Taxonomy</em></a></li>
+		
+		  <li><a href="#metadataTab"><em>By Organism Properties</em></a>		  </li>
+	        
+	        
+                <li><a href="#savedTab"><em>My Lists</em></a></li>
+	        
+              </ul>
+              <div class="yui-content">
+                <div id="multiorgNameTab" class="multiorgselectorTab">
+                  <table border="0">
+                    <tbody><tr>
+                      <td id="multiorgCentercontent" valign="top" style="width: 15px; border-style:solid; border-width:1px; padding-left:3px">
+                        <a href="javascript:alphabetClick('a')">A</a><br>
+                        <a href="javascript:alphabetClick('b')">B</a><br>
+                        <a href="javascript:alphabetClick('c')">C</a><br>
+                        <a href="javascript:alphabetClick('d')">D</a><br>
+                        <a href="javascript:alphabetClick('e')">E</a><br>
+                        <a href="javascript:alphabetClick('f')">F</a><br>
+                        <a href="javascript:alphabetClick('g')">G</a><br>
+                        <a href="javascript:alphabetClick('h')">H</a><br>
+                        <a href="javascript:alphabetClick('i')">I</a><br>
+                        <a href="javascript:alphabetClick('j')">J</a><br>
+                        <a href="javascript:alphabetClick('k')">K</a><br>
+                        <a href="javascript:alphabetClick('l')">L</a><br>
+                        <a href="javascript:alphabetClick('m')">M</a><br>
+                        <a href="javascript:alphabetClick('n')">N</a><br>
+                        <a href="javascript:alphabetClick('o')">O</a><br>
+                        <a href="javascript:alphabetClick('p')">P</a><br>
+                        <a href="javascript:alphabetClick('q')">Q</a><br>
+                        <a href="javascript:alphabetClick('r')">R</a><br>
+                        <a href="javascript:alphabetClick('s')">S</a><br>
+                        <a href="javascript:alphabetClick('t')">T</a><br>
+                        <a href="javascript:alphabetClick('u')">U</a><br>
+                        <a href="javascript:alphabetClick('v')">V</a><br>
+                        <a href="javascript:alphabetClick('w')">W</a><br>
+                        <a href="javascript:alphabetClick('x')">X</a><br>
+                        <a href="javascript:alphabetClick('y')">Y</a><br>
+                        <a href="javascript:alphabetClick('z')">Z</a><br>
+                      </td>
+                      <td style="width: 460px" valign="top">
+                         <div id="multiorgRightcontent">
+			     <div id="multiorgFilterOptions" style="text-align: right; font-size: smaller">
+			       Organism Filter: <select id="multiorgFilter" onchange="updateMultiOrgFilter()">
+			       </select>
+			     </div>
+                           <div id="multiorgselectorAutoComplete">
+                             <input id="multiorgInput" type="text"> 
+                             <div id="multiorgContainer" style="font-style:italic"></div>
+                           </div>
+                           <div id="multiorgnum"></div>
+                         </div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </div>
+                <div id="multiorgTaxTab" style="overflow-y:auto" class="multiorgselectorTab">
+                  <div id="multiorgTaxAutoComplete">
+                    <span style="padding-right:5px">Find in tree:
+                    </span>
+                    <input id="multiorgTaxName" type="text" style="width:360px">
+                    <div id="multiorgTaxContainer"></div>
+                  </div>
+                  <div id="multiorgTaxTreeContainer" style="min-width:489px;overflow-y:auto;margin-top:12px">
+                    <div id="multiorgSelectorTaxTree" class="ygtv-checkbox"></div>
+                  </div>
+                </div>
+ 
+<div id="multiorgMetadataTab" style="min-width:489px;overflow-y:auto" class="multiorgselectorTab">
+      Find organism databases according to:
+      <ul style="line-height:118%;margin-top:4px">
+	<li>Organism characteristics, e.g. pathogenicity = human
+	</li><li>Collection metadata, e.g. human microbiome body site = blood
+	</li><li>Database properties, e.g. # (number) of Genes &lt; 500
+      </li></ul>
+  <div id="mclause0">
+  <table><tbody><tr>
+    <td>
+      <select id="mmdSlot0" onchange='updateMetadataSlot(0, "m")'>
+        <option value="false" selected="selected">Select Property</option>
+      </select>
+    </td>
+    <td>
+      <select id="mmdConstraint0" onchange='updateMetadataSlot(0, "m")'>
+        <option value="c" selected="selected">is</option>
+        <option value="nc">is not</option>
+        <option value="a">has any value</option>
+        <option value="n">has no value</option>
+      </select>
+    </td>
+  </tr></tbody></table>
+  <table><tbody><tr>
+    <td>
+      <span id="mkeywordInput0" style="display:none">
+	<table><tbody><tr>
+          <td>
+            <select id="mmdKeywordOp0" onchange="updateForOp(0, 'mmdKeywordOp0', 'mmdSubstringAC0', 'm')">
+              <option value="enum" selected="selected">Exact Match</option>
+              <option value="substr">Substring Match</option>
+            </select>
+          </td>
+	  <td>
+	    <div class="mdSubstringInput" id="mmdSubstringAC0"> 
+              <input id="mmdKeyword0" type="text"> 
+              <div id="mmdKWContainer0"></div>
+            </div>
+          </td>
+        </tr></tbody></table>
+      </span>
+      <span id="mnumericInput0" style="display:none">
+	<table><tbody><tr>
+	  <td>
+            <select id="mmdNumOp0" onchange="updateForOp(0, 'mmdNumOp0', 'mmdNum0', 'm')">
+              <option value="e" selected="selected">= (approx.)</option>
+              <option value="lt">&lt;</option>
+              <option value="lte">≤</option>
+              <option value="gt">&gt;</option>
+              <option value="gte">≥</option>
+              <option value="enum">Select Values</option>
+            </select>
+          </td>
+          <td>
+            <input id="mmdNum0" type="text"> 
+          </td>
+        </tr></tbody></table>
+      </span>
+    </td>
+    <td id="mmdEnumContainer0" style="display:none">
+      <select id="mmdEnum0" multiple="multiple">
+      </select>
+    </td>    
+  </tr></tbody></table>
+  </div>
+  <div id="mclause1" style="display:none">
+    <select id="mconnector1">
+      <option value="AND" selected="selected">AND</option>
+      <option value="OR">OR</option>
+    </select>
+    <input id="mmdDelete1" type="button" value="Remove Constraint" onclick='mdRemoveClause(1, "m")'> 
+    <br>
+  <table><tbody><tr>
+    <td>
+      <select id="mmdSlot1" onchange='updateMetadataSlot(1, "m")'>
+        <option value="false" selected="selected">Select Property</option>
+      </select>
+    </td>
+    <td>
+      <select id="mmdConstraint1" onchange='updateMetadataSlot(1, "m")'>
+        <option value="c" selected="selected">is</option>
+        <option value="nc">is not</option>
+        <option value="a">has any value</option>
+        <option value="n">has no value</option>
+      </select>
+    </td>
+  </tr></tbody></table>
+  <table><tbody><tr>
+    <td>
+      <span id="mkeywordInput1" style="display:none">
+	<table><tbody><tr>
+          <td>
+            <select id="mmdKeywordOp1" onchange="updateForOp(1, 'mmdKeywordOp1', 'mmdSubstringAC1', 'm')">
+              <option value="enum" selected="selected">Exact Match</option>
+              <option value="substr">Substring Match</option>
+            </select>
+          </td>
+	  <td>
+	    <div class="mdSubstringInput" id="mmdSubstringAC1"> 
+              <input id="mmdKeyword1" type="text"> 
+              <div id="mmdKWContainer1"></div>
+            </div>
+          </td>
+        </tr></tbody></table>
+      </span>
+      <span id="mnumericInput1" style="display:none">
+	<table><tbody><tr>
+	  <td>
+            <select id="mmdNumOp1" onchange="updateForOp(1, 'mmdNumOp1', 'mmdNum1', 'm')">
+              <option value="e" selected="selected">= (approx.)</option>
+              <option value="lt">&lt;</option>
+              <option value="lte">≤</option>
+              <option value="gt">&gt;</option>
+              <option value="gte">≥</option>
+              <option value="enum">Select Values</option>
+            </select>
+          </td>
+          <td>
+            <input id="mmdNum1" type="text"> 
+          </td>
+        </tr></tbody></table>
+      </span>
+    </td>
+    <td id="mmdEnumContainer1" style="display:none">
+      <select id="mmdEnum1" multiple="multiple">
+      </select>
+    </td>    
+  </tr></tbody></table>
+  </div>
+  <div id="mclause2" style="display:none">
+    <select id="mconnector2">
+      <option value="and" selected="selected">AND</option>
+      <option value="or">OR</option>
+    </select>
+    <input id="mmdDelete2" type="button" value="Remove Constraint" onclick='mdRemoveClause(2, "m")'> 
+    <br>
+  <table><tbody><tr>
+    <td>
+      <select id="mmdSlot2" onchange='updateMetadataSlot(2, "m")'>
+        <option value="false" selected="selected">Select Property</option>
+      </select>
+    </td>
+    <td>
+      <select id="mmdConstraint2" onchange='updateMetadataSlot(2, "m")'>
+        <option value="c" selected="selected">is</option>
+        <option value="nc">is not</option>
+        <option value="a">has any value</option>
+        <option value="n">has no value</option>
+      </select>
+    </td>
+  </tr></tbody></table>
+  <table><tbody><tr>
+    <td>
+      <span id="mkeywordInput2" style="display:none">
+	<table><tbody><tr>
+          <td>
+            <select id="mmdKeywordOp2" onchange="updateForOp(2, 'mmdKeywordOp2', 'mmdSubstringAC', 'm')">
+              <option value="enum" selected="selected">Exact Match</option>
+              <option value="substr">Substring Match</option>
+            </select>
+          </td>
+	  <td>
+	    <div class="mdSubstringInput" id="mmdSubstringAC2"> 
+              <input id="mmdKeyword2" type="text"> 
+              <div id="mmdKWContainer2"></div>
+            </div>
+          </td>
+        </tr></tbody></table>
+      </span>
+      <span id="mnumericInput2" style="display:none">
+	<table><tbody><tr>
+	  <td>
+            <select id="mmdNumOp2" onchange="updateForOp(2, 'mmdNumOp2', 'mmdNum2', 'm')">
+              <option value="e" selected="selected">= (approx.)</option>
+              <option value="lt">&lt;</option>
+              <option value="lte">≤</option>
+              <option value="gt">&gt;</option>
+              <option value="gte">≥</option>
+              <option value="enum">Select Values</option>
+            </select>
+          </td>
+          <td>
+            <input id="mmdNum2" type="text"> 
+          </td>
+        </tr></tbody></table>
+      </span>
+    </td>
+    <td id="mmdEnumContainer2" style="display:none">
+      <select id="mmdEnum2" multiple="multiple">
+      </select>
+    </td>    
+  </tr></tbody></table>
+  </div>
+  <div id="mclause3" style="display:none">
+    <select id="mconnector3">
+      <option value="and" selected="selected">AND</option>
+      <option value="or">OR</option>
+    </select>
+    <input id="mmdDelete3" type="button" value="Remove Constraint" onclick='mdRemoveClause(3, "m")'> 
+    <br>
+  <table><tbody><tr>
+    <td>
+      <select id="mmdSlot3" onchange='updateMetadataSlot(3, "m")'>
+        <option value="false" selected="selected">Select Property</option>
+      </select>
+    </td>
+    <td>
+      <select id="mmdConstraint3" onchange='updateMetadataSlot(3, "m")'>
+        <option value="c" selected="selected">is</option>
+        <option value="nc">is not</option>
+        <option value="a">has any value</option>
+        <option value="n">has no value</option>
+      </select>
+    </td>
+  </tr></tbody></table>
+  <table><tbody><tr>
+    <td>
+      <span id="mkeywordInput3" style="display:none">
+	<table><tbody><tr>
+          <td>
+            <select id="mmdKeywordOp3" onchange="updateForOp(3, 'mmdKeywordOp3', 'mmdSubstringAC3', 'm')">
+              <option value="enum" selected="selected">Exact Match</option>
+              <option value="substr">Substring Match</option>
+            </select>
+          </td>
+	  <td>
+	    <div class="mdSubstringInput" id="mmdSubstringAC3"> 
+              <input id="mmdKeyword3" type="text"> 
+              <div id="mmdKWContainer3"></div>
+            </div>
+          </td>
+        </tr></tbody></table>
+      </span>
+      <span id="mnumericInput3" style="display:none">
+	<table><tbody><tr>
+	  <td>
+            <select id="mmdNumOp3" onchange="updateForOp(3, 'mmdNumOp3', 'mmdNum3', 'm')">
+              <option value="e" selected="selected">= (approx.)</option>
+              <option value="lt">&lt;</option>
+              <option value="lte">≤</option>
+              <option value="gt">&gt;</option>
+              <option value="gte">≥</option>
+              <option value="enum">Select Values</option>
+            </select>
+          </td>
+          <td>
+            <input id="mmdNum3" type="text"> 
+          </td>
+        </tr></tbody></table>
+      </span>
+    </td>
+    <td id="mmdEnumContainer3" style="display:none">
+      <select id="mmdEnum3" multiple="multiple">
+      </select>
+    </td>    
+  </tr></tbody></table>
+  </div>
+  <div id="mclause4" style="display:none">
+    <select id="mconnector4">
+      <option value="and" selected="selected">AND</option>
+      <option value="or">OR</option>
+    </select>
+    <input id="mmdDelete4" type="button" value="Remove Constraint" onclick='mdRemoveClause(4, "m")'> 
+    <br>
+  <table><tbody><tr>
+    <td>
+      <select id="mmdSlot4" onchange='updateMetadataSlot(4, "m")'>
+        <option value="false" selected="selected">Select Property</option>
+      </select>
+    </td>
+    <td>
+      <select id="mmdConstraint4" onchange='updateMetadataSlot(4, "m")'>
+        <option value="c" selected="selected">is</option>
+        <option value="nc">is not</option>
+        <option value="a">has any value</option>
+        <option value="n">has no value</option>
+      </select>
+    </td>
+  </tr></tbody></table>
+  <table><tbody><tr>
+    <td>
+      <span id="mkeywordInput4" style="display:none">
+	<table><tbody><tr>
+          <td>
+            <select id="mmdKeywordOp4" onchange="updateForOp(4, 'mmdKeywordOp4', 'mmdSubstringAC4', 'm')">
+              <option value="enum" selected="selected">Exact Match</option>
+              <option value="substr">Substring Match</option>
+            </select>
+          </td>
+	  <td>
+	    <div class="mdSubstringInput" id="mmdSubstringAC4"> 
+              <input id="mmdKeyword4" type="text"> 
+              <div id="mmdKWContainer4"></div>
+            </div>
+          </td>
+        </tr></tbody></table>
+      </span>
+      <span id="mnumericInput4" style="display:none">
+	<table><tbody><tr>
+	  <td>
+            <select id="mmdNumOp4" onchange="updateForOp(4, 'mmdNumOp4', 'mmdNum4', 'm')">
+              <option value="e" selected="selected">= (approx.)</option>
+              <option value="lt">&lt;</option>
+              <option value="lte">≤</option>
+              <option value="gt">&gt;</option>
+              <option value="gte">≥</option>
+              <option value="enum">Select Values</option>
+            </select>
+          </td>
+          <td>
+            <input id="mmdNum4" type="text"> 
+          </td>
+        </tr></tbody></table>
+      </span>
+    </td>
+    <td id="mmdEnumContainer4" style="display:none">
+      <select id="mmdEnum4" multiple="multiple">
+      </select>
+    </td>    
+  </tr></tbody></table>
+  </div>
+  <div id="mclause5" style="display:none">
+    <select id="mconnector5">
+      <option value="and" selected="selected">AND</option>
+      <option value="or">OR</option>
+    </select>
+    <input id="mmdDelete5" type="button" value="Remove Constraint" onclick='mdRemoveClause(5, "m")'> 
+    <br>
+  <table><tbody><tr>
+    <td>
+      <select id="mmdSlot5" onchange='updateMetadataSlot(5, "m")'>
+        <option value="false" selected="selected">Select Property</option>
+      </select>
+    </td>
+    <td>
+      <select id="mmdConstraint5" onchange='updateMetadataSlot(5, "m")'>
+        <option value="c" selected="selected">is</option>
+        <option value="nc">is not</option>
+        <option value="a">has any value</option>
+        <option value="n">has no value</option>
+      </select>
+    </td>
+  </tr></tbody></table>
+  <table><tbody><tr>
+    <td>
+      <span id="mkeywordInput5" style="display:none">
+	<table><tbody><tr>
+          <td>
+            <select id="mmdKeywordOp5" onchange="updateForOp(5, 'mmdKeywordOp5', 'mmdSubstringAC5', 'm')">
+              <option value="enum" selected="selected">Exact Match</option>
+              <option value="substr">Substring Match</option>
+            </select>
+          </td>
+	  <td>
+	    <div class="mdSubstringInput" id="mmdSubstringAC5"> 
+              <input id="mmdKeyword5" type="text"> 
+              <div id="mmdKWContainer5"></div>
+            </div>
+          </td>
+        </tr></tbody></table>
+      </span>
+      <span id="mnumericInput5" style="display:none">
+	<table><tbody><tr>
+	  <td>
+            <select id="mmdNumOp5" onchange="updateForOp(5, 'mmdNumOp5', 'mmdNum5', 'm')">
+              <option value="e" selected="selected">= (approx.)</option>
+              <option value="lt">&lt;</option>
+              <option value="lte">≤</option>
+              <option value="gt">&gt;</option>
+              <option value="gte">≥</option>
+              <option value="enum">Select Values</option>
+            </select>
+          </td>
+          <td>
+            <input id="mmdNum5" type="text"> 
+          </td>
+        </tr></tbody></table>
+      </span>
+    </td>
+    <td id="mmdEnumContainer5" style="display:none">
+      <select id="mmdEnum5" multiple="multiple">
+      </select>
+    </td>    
+  </tr></tbody></table>
+  </div>
+  <br>
+  <table><tbody><tr>
+    <td>
+      <input id="maddClause" type="button" value="Add Constraint" onclick='mdAddClause("m")' style="display:none"> 
+    </td>
+    <td>
+  <input id="mmdSearch" type="button" value="Find Organisms" onclick='processMdQuery(true, "m")'> 
+    </td>
+    <td style="vertical-align:middle;padding-left: 16px">
+      <div id="mmdProgress"></div>
+    </td>    
+  </tr></tbody></table>
+  <br>
+  <div id="instructions" style="display:none">
+  Shift-click to select a range; Ctrl-click to select multiple non-contiguous organisms.
+  </div>
+  <div id="tableControls" style="display:none">
+    <input type="button" value="Select All" onclick="resultsTableSelectAll()">
+    <a download="" onclick='this.href=tableToDataURI("#mmdResults")'><input type="button" value="Download Results"></a>
+  </div>
+  <div id="mmdResults" class="yui3-skin-sam"></div>
+</div>
+ 
+
+                <div id="multiorgSavedTab" class="multiorgselectorTab" style="overflow-y:auto">
+                  <div style="padding-bottom:20px"><span>Database
+                  lists include both predefined lists and lists that
+                  are saved as SmartTables that you can edit from
+                  your <a href="https://cyanocyc.org/smarttables" target="new.window">My
+                  SmartTables</a> page. To add all organisms from a saved list, check the box next to the list name and then click the "Add" button.</span></div>
+                  <div id="multiorgSavedTree" class="ygtv-checkbox"></div>
+                  <div class="requiresLogin" style="padding-top:50px">
+                    <span class="requiresNoSavedOrglist requiresLogin">
+                      You have no saved database lists
+                    </span>
+                  </div>
+                  <div class="requiresNotLoggedIn" style="padding-top:50px">
+                    Log in and reload this page to access your saved database lists.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+  <div id="tierKey" style="padding-top:3px">
+  <span class="tier1">Tier 1</span> and <span class="tier2">Tier 2</span> databases are displayed with orange and blue backgrounds, respectively.
+  </div>
+          </div>
+          <div class="buttons">
+            <table>
+              <tbody><tr id="multiorgSelectAllRow"><td style="text-align:center">
+                <input type="button" id="multiorgSelectAllBtn" class="disableWhenAllSelected" value="Select All" onclick="multiorgSelectAll()">
+              </td></tr>
+              <tr><td style="text-align:center">
+                <input type="button" id="multiorgAddToList" class="disableWhenAllSelected" value="Add →" onclick="addNewSelections()">
+              </td></tr>
+              <tr><td style="text-align:center">
+                <input type="button" id="multiorgDeleteFromList" class="disableWhenAllSelected" value="Remove ←" onclick="deleteMultiorgOptions(false)">
+              </td></tr>
+              <tr><td style="text-align:center">
+                <input type="button" id="multiorgClearAll" value="Clear All" onclick="deleteMultiorgOptions(true)">
+              </td></tr>
+            </tbody></table>
+          </div>
+          <div>
+            <h3>Current Selection</h3>
+            <span id="multiNumSelected">0</span> databases or taxa currently selected.
+            <p>
+	    </p><div id="multiorgSelectionDiv">
+            <select multiple="multiple" id="multiorgSelection">
+            </select>
+	    </div>
+	    
+	    <div class="requiresLogin" id="rememberAsST">
+	      <div style="padding-top:3px"> Remember Selection as SmartTable:</div>
+	      <label>
+		<input type="radio" name="stSave" value="new" checked="checked"> Create New
+	      </label>
+	      <label>
+		<input type="radio" name="stSave" value="old"> Update Existing
+	      </label>
+	      <div style="padding-top:3px">
+		<input type="text" id="orglistname" style="width:200px" placeholder="Enter SmartTable Name"> 
+                <select id="savedOrglistUpdate" class="savedOrglistSelectEl" aria-label="Select an organism SmartTable to update" style="display:none">
+                </select>
+                <input type="button" value="Save" title="Clicking this button will save or update
+		       the specified organism SmartTable to refer to
+		       the currently selected databases. It will not
+		       close this dialog or submit your choices.  If
+		       no databases are currently selected, clicking
+		       this button will cause the named SmartTable to
+		       be deleted. SmartTables saved here can be
+		       accessed from the My Lists tab.">
+	      </div>
+	    </div>
+	    <div class="requiresNotLoggedIn" style="padding-top:3px">
+              Note: if you create a user account and log in, you can save your database lists for next time.
+	    </div>
+	    
+          </div>
+      </div>
+    </form>
+  </div>
+<div id="yui-gen0" class="yui-resize-handle yui-resize-handle-br"><div class="yui-resize-handle-inner-br"></div></div><div class="ft"><span class="button-group"><button type="button" class="default">OK</button><button type="button">Cancel</button></span></div><div id="yui-gen0yui-gen1" class="yui-resize-handle yui-resize-handle-br"><div class="yui-resize-handle-inner-br"></div></div><div id="yui-gen0yui-gen1yui-gen0yui-gen2" class="yui-resize-handle yui-resize-handle-br"><div class="yui-resize-handle-inner-br"></div></div><div id="yui-gen0yui-gen1yui-gen0yui-gen2yui-gen0yui-gen1yui-gen0yui-gen3" class="yui-resize-handle yui-resize-handle-br"><div class="yui-resize-handle-inner-br"></div></div><div id="yui-gen0yui-gen1yui-gen0yui-gen2yui-gen0yui-gen1yui-gen0yui-gen3yui-gen0yui-gen1yui-gen0yui-gen2yui-gen0yui-gen1yui-gen0yui-gen4" class="yui-resize-handle yui-resize-handle-br"><div class="yui-resize-handle-inner-br"></div></div></div></div></div></div></div></div>
+<script type="text/javascript">
+multiorg_maxOrgs = 70
+</script>
+<!-- End Multi Organism Chooser Template -->
+
+<script type="text/javascript">
+if (forceOrgID && forceOrgID != "DEFAULT") setOrganism(forceOrgID);
+</script>
+
+<script src="index_files/popper.min.js"></script>
+<script src="index_files/tippy-bundle.umd.min.js"></script>
+
+<script>
+  /* following relates to tooltips for template-top-menubar */
+
+var subTipContent;
+
+  
+  
+
+  var accelTipContent = "Create a free account to access SmartTables, run metabolic models, customize appearance, and more."
+
+if (subTipContent) {
+  tippy('#subscribe', {
+    content: subTipContent,
+    theme: 'biocyc',
+    placement: 'bottom'
+  });
+}
+  
+  tippy('#account', {
+    content: accelTipContent,
+    theme: 'biocyc',
+    placement: 'bottom'
+  });
+  
+  /* following relates to tooltip for MetaCyc */
+
+  tippy('#metacycRef', {
+    theme: 'biocyc',
+    placement: 'right'
+  });
+
+</script>
+
+
+    <!-- ---------- END FOOTER ---------- --> 
+    
+    <!-- ---------- CLOSE OUTERMOST CONTAINER DIV ---------- --> 
+    <script src="index_files/tippy-bundle.umd.min.js"></script>
+
+    <script>
+      /* following supports Change Database button on home page (this file, index.shtml) */
+      var shortOrgName = "T. variabilis ATCC 29413";
+ 
+      var allOrganismsCount = "20042";
+
+      var buttonTitleString =
+      '<i class="fa fa-window-close" onclick="changeButtonTooltip.hide()" style="float:right"></i>Searches apply to the currently selected organism database:<br><b>'+shortOrgName+'</b><br><br>Click <i>Change Current Database</i> to search one of '+ allOrganismsCount +' other organism databases.';
+
+      function qsSubmitFn () { document.getElementById('qsform').submit(); };
+
+      var changeButton = document.getElementById('changeDBBtn');
+      var changeButtonTooltip = tippy(changeButton, {
+      content: buttonTitleString,
+      theme: 'biocyc',
+      interactive: true,
+      allowHTML: true,
+      placement: 'top',
+      trigger: 'manual',
+      offset: [0,6],
+      });
+
+      var keyPressCount = 0;
+
+      function newUserOrgCheck () {
+      if (keyPressCount < 1) {
+        var cookieValue = get_cookie("usedOrgChooser");
+        if (!cookieValue || cookieValue == "false") {
+            changeButtonTooltip.show();
+            keyPressCount += 1;
+            set_cookie("usedOrgChooser", "true");
+          } 
+	}};
+
+    </script>
+
+
+  
+
+<iframe id="_hjSafeContext_26002016" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="index_files/a_002_002.htm" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.3011175939007076', methodName, methodArgs }, 'https://cyanocyc.org');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script><canvas id="WGoverlayCanvas" style="position: absolute; left: 0px; top: 0px; background-color: transparent; z-index: 98; pointer-events: none;" width="1263" height="843"></canvas><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.5856109124967991', methodName, methodArgs }, 'null');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script><iframe id="_hjSafeContext_85047993" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="index_files/a_003.htm" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><canvas id="WGoverlayCanvas" style="position: absolute; left: 0px; top: 0px; background-color: transparent; z-index: 98; pointer-events: none;" width="1263" height="843"></canvas></div><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.6934371577472799', methodName, methodArgs }, 'null');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script><canvas id="WGoverlayCanvas" style="position: absolute; left: 0px; top: 0px; background-color: transparent; z-index: 98; pointer-events: none;" width="1364" height="932"></canvas><iframe id="_hjSafeContext_80002823" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="index_files/a_004.htm" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="_hjSafeContext_86282707" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="index_files/a_005_002.htm" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="_hjSafeContext_28089970" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="index_files/a_005_002.htm" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.7476472796450528', methodName, methodArgs }, 'null');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script><canvas id="WGoverlayCanvas" style="position: absolute; left: 0px; top: -346px; background-color: transparent; z-index: 98; pointer-events: none;" width="1263" height="826"></canvas><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.44047833235389033', methodName, methodArgs }, 'null');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script><canvas id="WGoverlayCanvas" style="position: absolute; left: 0px; top: -318.883px; background-color: transparent; z-index: 98; pointer-events: none;" width="1263" height="826"></canvas></body></html>
