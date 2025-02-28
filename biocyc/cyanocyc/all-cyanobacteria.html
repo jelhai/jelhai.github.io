@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="yui3-js-enabled"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1694549813257_2" href="CyanoCyc-rev_files/combo.css"><script charset="utf-8" id="yui_3_17_2_1_1694549813257_4" src="CyanoCyc-rev_files/combo_003" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694549813257_5" src="CyanoCyc-rev_files/combo_002" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1694549813257_6" src="CyanoCyc-rev_files/combo" async=""></script><script async="" src="CyanoCyc-rev_files/modules.70a1f565e966e4ccde7b.js" charset="utf-8"></script></head><body onload="initOnWindowLoad()" class="yui-skin-sam pure-skin-BioCyc SYNEL" id="body"><span class="yui-resize-status"></span><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BioCyc:Algae contains &lt;i&gt;Cyanobacterial&lt;/i&gt; genomes and metabolic pathways, and provides extensive bioinformatics tools.">
+<title>CyanoCyc Cyanobacterial Pathway/Genome Databases</title>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="CyanoCyc-rev_files/gtm_002.js"></script><script async="true" type="text/javascript" src="CyanoCyc-rev_files/hotjar-2449904_002.js"></script><script async="true" type="text/javascript" src="CyanoCyc-rev_files/analytics_002.js"></script><script type="text/javascript" async="" src="CyanoCyc-rev_files/js"></script><script async="" src="CyanoCyc-rev_files/analytics.js"></script><script async="true" type="text/javascript" src="CyanoCyc-rev_files/hotjar-2449904.js"></script><script async="true" type="text/javascript" src="CyanoCyc-rev_files/analytics.js"></script><script async="" src="CyanoCyc-rev_files/gtm.js"></script><script type="text/javascript">
+      var forceOrgID = "SYNEL";
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="/graphics2021/cyanologo.png">
+
+<script src="CyanoCyc-rev_files/jquery-3.5.1.min.js"></script>
+<script src="CyanoCyc-rev_files/jquery-migrate-3.3.2.min.js"></script>
+<script>
+var $j = jQuery.noConflict();
+</script>
+
+<!--    <link rel="stylesheet" href="/pure/pure.css" type="text/css"> -->
+<style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link rel="stylesheet" href="CyanoCyc-rev_files/base-min.css">
+<link rel="stylesheet" href="CyanoCyc-rev_files/grids-min.css">
+<link rel="stylesheet" href="CyanoCyc-rev_files/grids-responsive-min.css">
+
+    <link rel="stylesheet" href="CyanoCyc-rev_files/BioCyc_Extra.css" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="CyanoCyc-rev_files/gallery-datatable-selection.css">
+<link rel="stylesheet" type="text/css" href="CyanoCyc-rev_files/combined.css">
+<link rel="stylesheet" type="text/css" href="CyanoCyc-rev_files/font-awesome.min.css">
+
+<!-- this has to go early -->
+<script type="text/javascript" src="CyanoCyc-rev_files/yui-min.js"></script>
+<script src="CyanoCyc-rev_files/prototype.min.js"></script>
+<script type="text/javascript" src="CyanoCyc-rev_files/combined-early.js"></script>
+
+<!-- Google Tag Manager - Also needs to go early -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5T5DF7');</script>
+<!-- End Google Tag Manager -->
+
+<!-- next 3 css for webgraphics -->
+<link rel="stylesheet" type="text/css" href="CyanoCyc-rev_files/fonts-min.css">
+
+    <link rel="stylesheet" href="CyanoCyc-rev_files/BioCyc_Extra_002.css" type="text/css">
+    <script type="module" src="CyanoCyc-rev_files/lite-youtube.js"></script>
+  <script charset="utf-8" id="yui_3_17_2_2_1694199087997_2" src="CyanoCyc-rev_files/node-pluginhost-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_3" src="CyanoCyc-rev_files/dom-screen-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_4" src="CyanoCyc-rev_files/node-screen-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_5" src="CyanoCyc-rev_files/paginator-core-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_6" src="CyanoCyc-rev_files/paginator-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_7" src="CyanoCyc-rev_files/event-mouseenter-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_2_1694199087997_8" src="CyanoCyc-rev_files/event-hover-min.js" async=""></script><link rel="preconnect" href="https://i.ytimg.com/"><script async="" src="CyanoCyc-rev_files/modules.819bdb467a6bd2a2f5b5.js" charset="utf-8"></script>
+  <iframe id="_yuiResizeMonitor" title="Text Resize Monitor" tabindex="-1" role="presentation" style="position: absolute; visibility: visible; background-color: transparent; border-width: 0px; width: 2em; height: 2em; left: 0px; top: -27px;"></iframe><span class="yui-resize-status"></span>
+
+<!-- display: none is necessary or space will be left on the screen for this invisible area -->
+<span id="textSizeTestArea" style="visibility: hidden; display: none"></span>
+
+<!-- The top banner, we are in a body -->
+<!-- We need this div to have position:relative in order for the --
+  -- z-index of the menu stacking to work -->
+<div id="topBannerMenu" role="banner">
+  <div class="top-menubar-cell">
+    <title></title>
+
+<!-- ajaxUpdater defined in pathwayTools.js -->
+<div id="ilogin"><script></script></div>
+<script type="text/javascript">
+ajaxUpdater('ilogin', '/login-area');
+</script>
+
+ <div class="pure-g">
+    <div class="pure-u-sm-1-1">
+      <div> <!-- begin not META/BSUB/HUMAN/ECOLI homepage only -->
+	<a href="https://cyanocyc.org/">
+	  <img src="CyanoCyc-rev_files/cyanologo.png" alt="BioCyc" style="width: 500px; height: 130px; display:block; margin-left:auto;
+		      margin-right:auto; margin-top: 59px; cursor:pointer">
+	</a>
+      </div> <!-- end not META/BSUB/HUMAN/ECOLI homepage only -->
+    </div>
+</div>
+
+<div class="pure-u-xl-1-2 pure-u-lg-1-1 pure-u-md-1-1 pure-u-sm-1-1">
+	  <div class="l-box-home" style="height: 750px; max-width: 750px; margin-left: auto; margin-right:auto;">
+	    <table>
+	     
+		<tbody><tr><td> <h2 class="splash-head"><font color="#009A17"> <center> All cyanobacterial databases (6 Jan 2023)</center></font></h2></td>
+		</tr>
+		<tr><td><font="#000000">
+		<BR><A href="https://biocyc.org/GCF_000018105/organism-summary" target="_blank">Acaryochloris marina MBIC11017</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000238775/organism-summary" target="_blank">Acaryochloris sp. CCMEE 5410</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000952155/organism-summary" target="_blank">Aliterella atlantica CENA595</A>                                                    
+<BR><A href="https://biocyc.org/GCF_014697625/organism-summary" target="_blank">Anabaena azotica FACHB-119</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000317695/organism-summary" target="_blank">Anabaena cylindrica PCC 7122</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000312705/organism-summary" target="_blank">Anabaena sp. 90</A>                                                                 
+<BR><A href="https://biocyc.org/GCF_000332135/organism-summary" target="_blank">Anabaena sp. PCC 7108</A>                                                           
+<BR><A href="https://biocyc.org/GCF_001277295/organism-summary" target="_blank">Anabaena sp. WA102</A>                                                              
+<BR><A href="https://biocyc.org/GCF_002367975/organism-summary" target="_blank">Anabaenopsis circularis NIES-21</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000521175/organism-summary" target="_blank">Aphanizomenon flos-aquae NIES-81</A>                                                
+<BR><A href="https://biocyc.org/GCF_000817745/organism-summary" target="_blank">Aphanocapsa montana BDHKU210001</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000307915/organism-summary" target="_blank">Arthrospira platensis C1</A>                                                        
+<BR><A href="https://biocyc.org/APLAT/organism-summary" target="_blank">Arthrospira platensis NIES-39</A>                                                           
+<BR><A href="https://biocyc.org/GCF_000175415/organism-summary" target="_blank">Arthrospira platensis Paraca</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000176895/organism-summary" target="_blank">Arthrospira sp. PCC 8005</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000332355/organism-summary" target="_blank">Baaleninema simplex PCC 7105</A>                                                    
+<BR><A href="https://biocyc.org/GCF_002367995/organism-summary" target="_blank">Calothrix brevissima NIES-22</A>                                                    
+<BR><A href="https://biocyc.org/GCF_002368095/organism-summary" target="_blank">Calothrix parasitica NIES-267</A>                                                   
+<BR><A href="https://biocyc.org/GCF_900185595/organism-summary" target="_blank">Calothrix rhizosoleniae SC01 isolate 1</A>                                          
+<BR><A href="https://biocyc.org/GCF_000734895/organism-summary" target="_blank">Calothrix sp. 336/3</A>                                                             
+<BR><A href="https://biocyc.org/GCF_000317435/organism-summary" target="_blank">Calothrix sp. PCC 6303</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000331305/organism-summary" target="_blank">Calothrix sp. PCC 7103</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000316575/organism-summary" target="_blank">Calothrix sp. PCC 7507</A>                                                          
+<BR><A href="https://biocyc.org/GCF_019977735/organism-summary" target="_blank">Calothrix sp. PCC 7716</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000025125/organism-summary" target="_blank">Candidatus Atelocyanobacterium thalassa ALOHA</A>                                   
+<BR><A href="https://biocyc.org/GCF_002018015/organism-summary" target="_blank">Candidatus Synechococcus spongiarum LMB bulk15N</A>                                 
+<BR><A href="https://biocyc.org/GCF_000586015/organism-summary" target="_blank">Candidatus Synechococcus spongiarum SH4</A>                                         
+<BR><A href="https://biocyc.org/GCF_000317145/organism-summary" target="_blank">Chamaesiphon minutus PCC 6605</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000317285/organism-summary" target="_blank">Chlorogloeopsis fritschii PCC 6912</A>                                              
+<BR><A href="https://biocyc.org/GCF_000317125/organism-summary" target="_blank">Chroococcidiopsis thermalis PCC 7203</A>                                            
+<BR><A href="https://biocyc.org/GCF_001904655/organism-summary" target="_blank">Chroogloeocystis siderophila 5.2 s.c.1</A>                                          
+<BR><A href="https://biocyc.org/GCF_000155555/organism-summary" target="_blank">Coleofasciculus chthonoplastes PCC 7420</A>                                         
+<BR><A href="https://biocyc.org/GCF_000317495/organism-summary" target="_blank">Crinalium epipsammum PCC 9333</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000169335/organism-summary" target="_blank">Crocosphaera chwakensis CCY0110</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000017845/organism-summary" target="_blank">Crocosphaera subtropica ATCC 51142</A>                                              
+<BR><A href="https://biocyc.org/GCF_000231425/organism-summary" target="_blank">Crocosphaera subtropica ATCC 51472</A>                                              
+<BR><A href="https://biocyc.org/GCF_000167195/organism-summary" target="_blank">Crocosphaera watsonii WH 8501</A>                                                   
+<BR><A href="https://biocyc.org/GCF_001039555/organism-summary" target="_blank">Crocosphaera watsonii WH 8502</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000317675/organism-summary" target="_blank">Cyanobacterium aponinum PCC 10605</A>                                               
+<BR><A href="https://biocyc.org/GCF_000829235/organism-summary" target="_blank">cyanobacterium endosymbiont of Epithemia turgida isolate EtSB Lake Yunoko DNA</A>   
+<BR><A href="https://biocyc.org/GCF_003574135/organism-summary" target="_blank">cyanobacterium endosymbiont of Rhopalodia gibberula</A>                             
+<BR><A href="https://biocyc.org/GCF_000332255/organism-summary" target="_blank">cyanobacterium PCC 7702</A>                                                         
+<BR><A href="https://biocyc.org/CSTA292563/organism-summary" target="_blank">Cyanobacterium stanieri PCC 7202</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000316515/organism-summary" target="_blank">Cyanobium gracile PCC 6307</A>                                                      
+<BR><A href="https://biocyc.org/GCF_900088535/organism-summary" target="_blank">Cyanobium sp. NIES-981</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000155635/organism-summary" target="_blank">Cyanobium sp. PCC 7001</A>                                                          
+<BR><A href="https://biocyc.org/CSP860575/organism-summary" target="_blank">Cyanothece sp. ATCC 51472</A>                                                           
+<BR><A href="https://biocyc.org/GCF_000022045/organism-summary" target="_blank">Cyanothece sp. PCC 7425</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000024045/organism-summary" target="_blank">Cyanothece sp. PCC 8802</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000175835/organism-summary" target="_blank">Cylindrospermopsis raciborskii CS-505</A>                                           
+<BR><A href="https://biocyc.org/GCF_001676585/organism-summary" target="_blank">Cylindrospermopsis raciborskii CS505</A>                                            
+<BR><A href="https://biocyc.org/GCF_006523545/organism-summary" target="_blank">Cylindrospermopsis raciborskii GIHE 2018</A>                                        
+<BR><A href="https://biocyc.org/GCF_000317535/organism-summary" target="_blank">Cylindrospermum stagnale PCC 7417</A>                                               
+<BR><A href="https://biocyc.org/GCF_000317615/organism-summary" target="_blank">Dactylococcopsis salina PCC 8305</A>                                                
+<BR><A href="https://biocyc.org/GCF_000426925/organism-summary" target="_blank">Dolichospermum circinale AWQC310F</A>                                               
+<BR><A href="https://biocyc.org/GCF_002368115/organism-summary" target="_blank">Dolichospermum compactum NIES-806</A>                                               
+<BR><A href="https://biocyc.org/GCF_015207785/organism-summary" target="_blank">Dolichospermum flos-aquae LEGE 04289</A>                                            
+<BR><A href="https://biocyc.org/GCF_007904085/organism-summary" target="_blank">Euhalothece natronophila Z-M001</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000380225/organism-summary" target="_blank">filamentous cyanobacterium ESFC-1</A>                                               
+<BR><A href="https://biocyc.org/GCF_000317245/organism-summary" target="_blank">Fischerella muscicola SAG 1427-1 = PCC 73103</A>                                    
+<BR><A href="https://biocyc.org/GCF_001548455/organism-summary" target="_blank">Fischerella sp. NIES-3754</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000517105/organism-summary" target="_blank">Fischerella sp. PCC 9605</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000231365/organism-summary" target="_blank">Fischerella thermalis JSC-11</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000317225/organism-summary" target="_blank">Fischerella thermalis PCC 7521</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000332295/organism-summary" target="_blank">Fortiea contorta PCC 7126</A>                                                       
+<BR><A href="https://biocyc.org/GCF_002368275/organism-summary" target="_blank">Fremyella diplosiphon NIES-3275</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000317045/organism-summary" target="_blank">Geitlerinema sp. PCC 7407</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000332235/organism-summary" target="_blank">Geminocystis herdmanii PCC 6308</A>                                                 
+<BR><A href="https://biocyc.org/GCF_001548095/organism-summary" target="_blank">Geminocystis sp. NIES-3708</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001548115/organism-summary" target="_blank">Geminocystis sp. NIES-3709</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000484535/organism-summary" target="_blank">Gloeobacter kilaueensis JS1</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000011385/organism-summary" target="_blank">Gloeobacter violaceus PCC 7421</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000332035/organism-summary" target="_blank">Gloeocapsa sp. PCC 73106</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000317555/organism-summary" target="_blank">Gloeocapsa sp. PCC 7428</A>                                                         
+<BR><A href="https://biocyc.org/GCF_015207655/organism-summary" target="_blank">Gloeocapsopsis crepidinum LEGE 06123</A>                                            
+<BR><A href="https://biocyc.org/GCF_002964865/organism-summary" target="_blank">Gloeocapsopsis dulcis AAB1</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001870225/organism-summary" target="_blank">Gloeomargarita lithophora Alchichica-D10</A>                                        
+<BR><A href="https://biocyc.org/GCF_000021825/organism-summary" target="_blank">Gloeothece citriformis PCC 7424</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000147335/organism-summary" target="_blank">Gloeothece verrucosa PCC 7822</A>                                                   
+<BR><A href="https://biocyc.org/GCF_002075285/organism-summary" target="_blank">Halomicronema hongdechloris C2206</A>                                               
+<BR><A href="https://biocyc.org/GCF_000317635/organism-summary" target="_blank">Halothece sp. PCC 7418</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000332155/organism-summary" target="_blank">Kamptonema formosum PCC 6407</A>                                                    
+<BR><A href="https://biocyc.org/GCF_002142495/organism-summary" target="_blank">Leptolyngbya boryana dg5</A>                                                        
+<BR><A href="https://biocyc.org/GCF_002142475/organism-summary" target="_blank">Leptolyngbya boryana IAM M-101</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000353285/organism-summary" target="_blank">Leptolyngbya boryana PCC 6306</A>                                                   
+<BR><A href="https://biocyc.org/GCF_015207065/organism-summary" target="_blank">Leptolyngbya cf. LEGE 11479</A>                                                     
+<BR><A href="https://biocyc.org/GCF_003003795/organism-summary" target="_blank">Leptolyngbya frigida ULC18</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000482245/organism-summary" target="_blank">Leptolyngbya sp. Heron Island J</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000763385/organism-summary" target="_blank">Leptolyngbya sp. KIOST-1</A>                                                        
+<BR><A href="https://biocyc.org/GCF_001485215/organism-summary" target="_blank">Leptolyngbya sp. NIES-2104</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001548435/organism-summary" target="_blank">Leptolyngbya sp. NIES-3755</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001548395/organism-summary" target="_blank">Leptolyngbya sp. O-77</A>                                                           
+<BR><A href="https://biocyc.org/GCF_000332095/organism-summary" target="_blank">Leptolyngbya sp. PCC 6406</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000316115/organism-summary" target="_blank">Leptolyngbya sp. PCC 7375</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000316605/organism-summary" target="_blank">Leptolyngbya sp. PCC 7376</A>                                                       
+<BR><A href="https://biocyc.org/GCF_001637395/organism-summary" target="_blank">Leptolyngbya valderiana BDU 20041</A>                                               
+<BR><A href="https://biocyc.org/GCF_000972705/organism-summary" target="_blank">Limnoraphis robusta CS-951</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000973065/organism-summary" target="_blank">Limnospira indica PCC 8005</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001904615/organism-summary" target="_blank">Limnothrix rosea IAM M-220</A>                                                      
+<BR><A href="https://biocyc.org/GCF_015207425/organism-summary" target="_blank">Lusitaniella coriacea LEGE 07157</A>                                                
+<BR><A href="https://biocyc.org/GCF_000478195/organism-summary" target="_blank">Lyngbya aestuarii BL J</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000817775/organism-summary" target="_blank">Lyngbya confervoides BDU141951</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000169095/organism-summary" target="_blank">Lyngbya sp. PCC 8106</A>                                                            
+<BR><A href="https://biocyc.org/GCF_000315565/organism-summary" target="_blank">Mastigocladopsis repens PCC 10914</A>                                               
+<BR><A href="https://biocyc.org/GCF_000934435/organism-summary" target="_blank">Mastigocladus laminosus UU774</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000472885/organism-summary" target="_blank">Mastigocoleus testarum BC008</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000317515/organism-summary" target="_blank">Microcoleus sp. PCC 7113</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000214075/organism-summary" target="_blank">Microcoleus vaginatus FGP-2</A>                                                     
+<BR><A href="https://biocyc.org/MAER449447/organism-summary" target="_blank">Microcystis aeruginosa 1020</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000312205/organism-summary" target="_blank">Microcystis aeruginosa 7941</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000332585/organism-summary" target="_blank">Microcystis aeruginosa DIANCHI905</A>                                               
+<BR><A href="https://biocyc.org/GCF_001704955/organism-summary" target="_blank">Microcystis aeruginosa NIES-2481</A>                                                
+<BR><A href="https://biocyc.org/GCF_000981785/organism-summary" target="_blank">Microcystis aeruginosa NIES-2549</A>                                                
+<BR><A href="https://biocyc.org/GCF_000010625/organism-summary" target="_blank">Microcystis aeruginosa NIES-843</A>                                                 
+<BR><A href="https://biocyc.org/GCF_001578075/organism-summary" target="_blank">Microcystis aeruginosa NIES-88</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000307995/organism-summary" target="_blank">Microcystis aeruginosa PCC 9432</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000312185/organism-summary" target="_blank">Microcystis aeruginosa PCC 9443</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000312265/organism-summary" target="_blank">Microcystis aeruginosa PCC 9809</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000330925/organism-summary" target="_blank">Microcystis aeruginosa TAIHU98</A>                                                  
+<BR><A href="https://biocyc.org/GCF_001264245/organism-summary" target="_blank">Microcystis panniformis FACHB-1757</A>                                              
+<BR><A href="https://biocyc.org/GCF_003945305/organism-summary" target="_blank">Microcystis viridis NIES-102</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000211815/organism-summary" target="_blank">Moorea producens 3L</A>                                                             
+<BR><A href="https://biocyc.org/GCF_001854205/organism-summary" target="_blank">Moorea producens JHB</A>                                                            
+<BR><A href="https://biocyc.org/GCF_001767235/organism-summary" target="_blank">Moorea producens PAL-8-15-08-1</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000756305/organism-summary" target="_blank">Myxosarcina sp. GI1</A>                                                             
+<BR><A href="https://biocyc.org/GCF_000775285/organism-summary" target="_blank">Neosynechococcus sphagnicola CAUP A 1101</A>                                        
+<BR><A href="https://biocyc.org/GCF_000309385/organism-summary" target="_blank">Nodosilinea nodulosa PCC 7104</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000340565/organism-summary" target="_blank">Nodularia spumigena CCY9414</A>                                                     
+<BR><A href="https://biocyc.org/GCF_003054475/organism-summary" target="_blank">Nodularia spumigena UHCC 0039</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000196515/organism-summary" target="_blank">Nostoc azollae 0708</A>                                                             
+<BR><A href="https://biocyc.org/GCF_001904715/organism-summary" target="_blank">Nostoc calcicola FACHB-389</A>                                                      
+<BR><A href="https://biocyc.org/GCF_002368155/organism-summary" target="_blank">Nostoc carneum NIES-2107</A>                                                        
+<BR><A href="https://biocyc.org/GCF_002813575/organism-summary" target="_blank">Nostoc flagelliforme CCNUN1</A>                                                     
+<BR><A href="https://biocyc.org/GCF_002368035/organism-summary" target="_blank">Nostoc linckia NIES-25</A>                                                          
+<BR><A href="https://biocyc.org/GCF_001298445/organism-summary" target="_blank">Nostoc piscinale CENA21</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000020025/organism-summary" target="_blank">Nostoc punctiforme ATCC 29133; PCC 73102</A>                                        
+<BR><A href="https://biocyc.org/GCF_001548375/organism-summary" target="_blank">Nostoc sp. NIES-3756</A>                                                            
+<BR><A href="https://biocyc.org/GCF_000316625/organism-summary" target="_blank">Nostoc sp. PCC 7107</A>                                                             
+<BR><A href="https://biocyc.org/GCF_000009705/organism-summary" target="_blank">Nostoc sp. PCC 7120</A>                                                             
+<BR><A href="https://biocyc.org/GCF_000316645/organism-summary" target="_blank">Nostoc sp. PCC 7524</A>                                                             
+<BR><A href="https://biocyc.org/GCF_003443655/organism-summary" target="_blank">Nostoc sphaeroides Kutzing En</A>                                                   
+<BR><A href="https://biocyc.org/GCF_014698475/organism-summary" target="_blank">Nostoc spongiaeforme FACHB-130</A>                                                  
+<BR><A href="https://biocyc.org/GCF_002163975/organism-summary" target="_blank">Nostocales cyanobacterium HT-58-2</A>                                               
+<BR><A href="https://biocyc.org/GCF_000317105/organism-summary" target="_blank">Oscillatoria acuminata PCC 6304</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000317475/organism-summary" target="_blank">Oscillatoria nigro-viridis PCC 7112</A>                                             
+<BR><A href="https://biocyc.org/GCF_000332335/organism-summary" target="_blank">Oscillatoria sp. PCC 10802</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000309945/organism-summary" target="_blank">Oscillatoriales cyanobacterium JSC-12</A>                                           
+<BR><A href="https://biocyc.org/GCF_001482745/organism-summary" target="_blank">Oscillatoriales cyanobacterium MTP1</A>                                             
+<BR><A href="https://biocyc.org/GCF_001904725/organism-summary" target="_blank">Phormidium ambiguum IAM M-71</A>                                                    
+<BR><A href="https://biocyc.org/GCF_001904775/organism-summary" target="_blank">Phormidium tenue NIES-30</A>                                                        
+<BR><A href="https://biocyc.org/GCF_001276715/organism-summary" target="_blank">Planktothricoides sp. SR001</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000710505/organism-summary" target="_blank">Planktothrix agardhii NIVA-CYA 126/8</A>                                            
+<BR><A href="https://biocyc.org/GCF_000464785/organism-summary" target="_blank">Planktothrix rubescens NIVA-CYA 407</A>                                             
+<BR><A href="https://biocyc.org/GCF_015207665/organism-summary" target="_blank">Plectonema cf. LEGE 06105</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000332195/organism-summary" target="_blank">Pleurocapsa sp. PCC 7319</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000317025/organism-summary" target="_blank">Pleurocapsa sp. PCC 7327</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000015645/organism-summary" target="_blank">Prochlorococcus marinus AS9601</A>                                                  
+<BR><A href="https://biocyc.org/SS120/organism-summary" target="_blank">Prochlorococcus marinus marinus CCMP1375</A>                                                
+<BR><A href="https://biocyc.org/GCF_000759855/organism-summary" target="_blank">Prochlorococcus marinus MIT 9107</A>                                                
+<BR><A href="https://biocyc.org/GCF_000158595/organism-summary" target="_blank">Prochlorococcus marinus MIT 9202</A>                                                
+<BR><A href="https://biocyc.org/GCF_000018585/organism-summary" target="_blank">Prochlorococcus marinus MIT 9211</A>                                                
+<BR><A href="https://biocyc.org/GCF_000018065/organism-summary" target="_blank">Prochlorococcus marinus MIT 9215</A>                                                
+<BR><A href="https://biocyc.org/GCF_000015965/organism-summary" target="_blank">Prochlorococcus marinus MIT 9301</A>                                                
+<BR><A href="https://biocyc.org/PMAR59922/organism-summary" target="_blank">Prochlorococcus marinus MIT 9303</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000012645/organism-summary" target="_blank">Prochlorococcus marinus MIT 9312</A>                                                
+<BR><A href="https://biocyc.org/GCF_000015665/organism-summary" target="_blank">Prochlorococcus marinus MIT 9515</A>                                                
+<BR><A href="https://biocyc.org/GCF_000011485/organism-summary" target="_blank">Prochlorococcus marinus MIT9313</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000015685/organism-summary" target="_blank">Prochlorococcus marinus NATL1A</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000012465/organism-summary" target="_blank">Prochlorococcus marinus NATL2A</A>                                                  
+<BR><A href="https://biocyc.org/MED4/organism-summary" target="_blank">Prochlorococcus marinus pastoris CCMP1986</A>                                                
+<BR><A href="https://biocyc.org/GCF_000760175/organism-summary" target="_blank">Prochlorococcus sp. MIT 0601</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000760215/organism-summary" target="_blank">Prochlorococcus sp. MIT 0603</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000757845/organism-summary" target="_blank">Prochlorococcus sp. MIT 0604</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000757865/organism-summary" target="_blank">Prochlorococcus sp. MIT 0801</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000332315/organism-summary" target="_blank">Prochlorothrix hollandica PCC 9006</A>                                              
+<BR><A href="https://biocyc.org/GCF_000332215/organism-summary" target="_blank">Pseudanabaena biceps PCC 7429</A>                                                   
+<BR><A href="https://biocyc.org/GCF_003967015/organism-summary" target="_blank">Pseudanabaena sp. ABRG5-3</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000332175/organism-summary" target="_blank">Pseudanabaena sp. PCC 6802</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000317065/organism-summary" target="_blank">Pseudanabaena sp. PCC 7367</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000175855/organism-summary" target="_blank">Raphidiopsis brookii D9</A>                                                         
+<BR><A href="https://biocyc.org/GCF_002368135/organism-summary" target="_blank">Raphidiopsis curvata NIES-932</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000613065/organism-summary" target="_blank">Richelia intracellularis</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000350105/organism-summary" target="_blank">Richelia intracellularis HH01</A>                                                   
+<BR><A href="https://biocyc.org/GCF_000350125/organism-summary" target="_blank">Richelia intracellularis HM01</A>                                                   
+<BR><A href="https://biocyc.org/GCF_014698825/organism-summary" target="_blank">Richelia sinica FACHB-800</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000021805/organism-summary" target="_blank">Rippkaea orientalis PCC 8801</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000316665/organism-summary" target="_blank">Rivularia sp. PCC 7116</A>                                                          
+<BR><A href="https://biocyc.org/GCF_015207255/organism-summary" target="_blank">Romeria aff. LEGE 07310</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000473895/organism-summary" target="_blank">Rubidibacter lacunae KORDI 51-2</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000346485/organism-summary" target="_blank">Scytonema hofmannii PCC 7110</A>                                                    
+<BR><A href="https://biocyc.org/GCF_000817735/organism-summary" target="_blank">Scytonema millei VB511283</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000828085/organism-summary" target="_blank">Scytonema tolypothrichoides VB-61278</A>                                            
+<BR><A href="https://biocyc.org/GCF_001586785/organism-summary" target="_blank">Sphaerospermopsis aphanizomenoides BCCUSP55</A>                                     
+<BR><A href="https://biocyc.org/GCF_002368075/organism-summary" target="_blank">Sphaerospermopsis kisseleviana NIES-73</A>                                          
+<BR><A href="https://biocyc.org/GCF_001890765/organism-summary" target="_blank">Spirulina major PCC 6313</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000314005/organism-summary" target="_blank">Spirulina subsalsa PCC 9445</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000317575/organism-summary" target="_blank">Stanieria cyanosphaera PCC 7437</A>                                                 
+<BR><A href="https://biocyc.org/GCF_002355455/organism-summary" target="_blank">Stanieria sp. NIES-3757</A>                                                         
+<BR><A href="https://biocyc.org/GCF_003846445/organism-summary" target="_blank">Synechococcus elongatus PCC 11801</A>                                               
+<BR><A href="https://biocyc.org/GCF_009498715/organism-summary" target="_blank">Synechococcus elongatus PCC 11802</A>                                               
+<BR><A href="https://biocyc.org/GCF_000010065/organism-summary" target="_blank">Synechococcus elongatus PCC 6301</A>                                                
+<BR><A href="https://biocyc.org/SYNEL/organism-summary" target="_blank">Synechococcus elongatus PCC 7942</A>                                                        
+<BR><A href="https://biocyc.org/GCF_003011125/organism-summary" target="_blank">Synechococcus lacustris Tous</A>                                                    
+<BR><A href="https://biocyc.org/GCF_002754935/organism-summary" target="_blank">Synechococcus lividus PCC 6715</A>                                                  
+<BR><A href="https://biocyc.org/GCF_000153805/organism-summary" target="_blank">Synechococcus sp. BL107</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000179235/organism-summary" target="_blank">Synechococcus sp. CB0101</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000179255/organism-summary" target="_blank">Synechococcus sp. CB0205</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000014585/organism-summary" target="_blank">Synechococcus sp. CC9311</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000012625/organism-summary" target="_blank">Synechococcus sp. CC9605</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000515235/organism-summary" target="_blank">Synechococcus sp. CC9616</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000012505/organism-summary" target="_blank">Synechococcus sp. CC9902</A>                                                        
+<BR><A href="https://biocyc.org/GCF_900473955/organism-summary" target="_blank">Synechococcus sp. GEYO</A>                                                          
+<BR><A href="https://biocyc.org/GCF_001039265/organism-summary" target="_blank">Synechococcus sp. GFB01</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000013225/organism-summary" target="_blank">Synechococcus sp. JA-2-3Ba(2-13) JA-2-3B'a(2-13)</A>                                
+<BR><A href="https://biocyc.org/GCF_000013205/organism-summary" target="_blank">Synechococcus sp. JA-3-3Ab</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000737535/organism-summary" target="_blank">Synechococcus sp. KORDI-100</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000737575/organism-summary" target="_blank">Synechococcus sp. KORDI-49</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000737595/organism-summary" target="_blank">Synechococcus sp. KORDI-52</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001632165/organism-summary" target="_blank">Synechococcus sp. MIT S9508</A>                                                     
+<BR><A href="https://biocyc.org/GCF_001631935/organism-summary" target="_blank">Synechococcus sp. MIT S9509</A>                                                     
+<BR><A href="https://biocyc.org/GCF_900474045/organism-summary" target="_blank">Synechococcus sp. N19</A>                                                           
+<BR><A href="https://biocyc.org/GCF_900473975/organism-summary" target="_blank">Synechococcus sp. N26</A>                                                           
+<BR><A href="https://biocyc.org/GCF_900473895/organism-summary" target="_blank">Synechococcus sp. N32</A>                                                           
+<BR><A href="https://biocyc.org/GCF_900473925/organism-summary" target="_blank">Synechococcus sp. N5</A>                                                            
+<BR><A href="https://biocyc.org/GCF_000485815/organism-summary" target="_blank">Synechococcus sp. NKBG15041c</A>                                                    
+<BR><A href="https://biocyc.org/GCF_005577135/organism-summary" target="_blank">Synechococcus sp. PCC 11901</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000316685/organism-summary" target="_blank">Synechococcus sp. PCC 6312</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000019485/organism-summary" target="_blank">Synechococcus sp. PCC 7002</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001693255/organism-summary" target="_blank">Synechococcus sp. PCC 7003</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001693275/organism-summary" target="_blank">Synechococcus sp. PCC 7117</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001521855/organism-summary" target="_blank">Synechococcus sp. PCC 73109</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000155595/organism-summary" target="_blank">Synechococcus sp. PCC 7335</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000332275/organism-summary" target="_blank">Synechococcus sp. PCC 7336</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000317085/organism-summary" target="_blank">Synechococcus sp. PCC 7502</A>                                                      
+<BR><A href="https://biocyc.org/GCF_001693295/organism-summary" target="_blank">Synechococcus sp. PCC 8807</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000063525/organism-summary" target="_blank">Synechococcus sp. RCC307 genomic DNA sequence.</A>                                  
+<BR><A href="https://biocyc.org/GCF_000153825/organism-summary" target="_blank">Synechococcus sp. RS9916</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000153065/organism-summary" target="_blank">Synechococcus sp. RS9917 RS9917; RCC556</A>                                         
+<BR><A href="https://biocyc.org/GCF_000817325/organism-summary" target="_blank">Synechococcus sp. UTEX 2973</A>                                                     
+<BR><A href="https://biocyc.org/GCF_900473935/organism-summary" target="_blank">Synechococcus sp. UW105</A>                                                         
+<BR><A href="https://biocyc.org/GCF_900474015/organism-summary" target="_blank">Synechococcus sp. UW106</A>                                                         
+<BR><A href="https://biocyc.org/GCF_900474295/organism-summary" target="_blank">Synechococcus sp. UW140</A>                                                         
+<BR><A href="https://biocyc.org/GCF_900473965/organism-summary" target="_blank">Synechococcus sp. UW179A</A>                                                        
+<BR><A href="https://biocyc.org/GCF_900474245/organism-summary" target="_blank">Synechococcus sp. UW179B</A>                                                        
+<BR><A href="https://biocyc.org/GCF_900474185/organism-summary" target="_blank">Synechococcus sp. UW69</A>                                                          
+<BR><A href="https://biocyc.org/GCF_900474085/organism-summary" target="_blank">Synechococcus sp. UW86</A>                                                          
+<BR><A href="https://biocyc.org/GCF_000153045/organism-summary" target="_blank">Synechococcus sp. WH 5701</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000063505/organism-summary" target="_blank">Synechococcus sp. WH 7803 complete genome sequence.</A>                             
+<BR><A href="https://biocyc.org/GCF_000153285/organism-summary" target="_blank">Synechococcus sp. WH 7805</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000230675/organism-summary" target="_blank">Synechococcus sp. WH 8016</A>                                                       
+<BR><A href="https://biocyc.org/GCF_001040845/organism-summary" target="_blank">Synechococcus sp. WH 8020</A>                                                       
+<BR><A href="https://biocyc.org/GCF_004209775/organism-summary" target="_blank">Synechococcus sp. WH 8101</A>                                                       
+<BR><A href="https://biocyc.org/SYNWH8102/organism-summary" target="_blank">Synechococcus sp. WH 8102</A>                                                           
+<BR><A href="https://biocyc.org/GCF_001182765/organism-summary" target="_blank">Synechococcus sp. WH 8103</A>                                                       
+<BR><A href="https://biocyc.org/GCF_000161795/organism-summary" target="_blank">Synechococcus sp. WH 8109</A>                                                       
+<BR><A href="https://biocyc.org/GCF_015207985/organism-summary" target="_blank">Synechocystis salina LEGE 00031</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000478825/organism-summary" target="_blank">Synechocystis sp. PCC 6714</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000270265/organism-summary" target="_blank">Synechocystis sp. PCC 6803 GT-S</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000340785/organism-summary" target="_blank">Synechocystis sp. PCC 6803 PCC-M</A>                                                
+<BR><A href="https://biocyc.org/GCF_000284135/organism-summary" target="_blank">Synechocystis sp. PCC 6803 substr. GT-I</A>                                         
+<BR><A href="https://biocyc.org/GCF_000009725/organism-summary" target="_blank">Synechocystis sp. PCC 6803 substr. Kazusa</A>                                       
+<BR><A href="https://biocyc.org/GCF_000284215/organism-summary" target="_blank">Synechocystis sp. PCC 6803 substr. PCC-N</A>                                        
+<BR><A href="https://biocyc.org/GCF_000284455/organism-summary" target="_blank">Synechocystis sp. PCC 6803 substr. PCC-P</A>                                        
+<BR><A href="https://biocyc.org/GCF_000332075/organism-summary" target="_blank">Synechocystis sp. PCC 7509</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000011345/organism-summary" target="_blank">Thermosynechococcus elongatus BP-1</A>                                              
+<BR><A href="https://biocyc.org/GCF_003555505/organism-summary" target="_blank">Thermosynechococcus elongatus PKUAC-SCTE542</A>                                     
+<BR><A href="https://biocyc.org/GCF_000505665/organism-summary" target="_blank">Thermosynechococcus sp. NK55a NK55</A>                                              
+<BR><A href="https://biocyc.org/GCF_003990665/organism-summary" target="_blank">Thermosynechococcus vulcanus NIES-2134</A>                                          
+<BR><A href="https://biocyc.org/GCF_000760695/organism-summary" target="_blank">Tolypothrix bouteillei VB521301</A>                                                 
+<BR><A href="https://biocyc.org/GCF_000300115/organism-summary" target="_blank">Tolypothrix sp. PCC 7601 = UTEX B 481</A>                                           
+<BR><A href="https://biocyc.org/GCF_002368295/organism-summary" target="_blank">Tolypothrix tenuis PCC 7101</A>                                                     
+<BR><A href="https://biocyc.org/GCF_000014265/organism-summary" target="_blank">Trichodesmium erythraeum IMS101</A>                                                 
+<BR><A href="https://biocyc.org/GCF_009856605/organism-summary" target="_blank">Trichormus variabilis 0441</A>                                                      
+<BR><A href="https://biocyc.org/GCF_000204075/organism-summary" target="_blank">Trichormus variabilis ATCC 29413</A>                                                
+<BR><A href="https://biocyc.org/GCF_000332055/organism-summary" target="_blank">Xenococcus sp. PCC 7305</A>                                                         
+<BR><A href="https://biocyc.org/GCF_000733415/organism-summary" target="_blank">[Leptolyngbya] sp. JSC-1</A>                                                        
+<BR><A href="https://biocyc.org/GCF_000582685/organism-summary" target="_blank">[Scytonema hofmanni] UTEX 2349</A>                                                  
+
+
+		</td></tr>
+	    </tbody></table>
+</div></div>
+
+
+
+
