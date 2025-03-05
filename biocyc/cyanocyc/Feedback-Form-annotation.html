@@ -1,0 +1,115 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>User Feedback Form - Annotation</title>
+<link rel="stylesheet" type="text/css" href="index_files/style.css">
+
+<script language="Javascript">
+<!--
+var submitcount=0;
+
+function setReferrer () {
+   loc = new String(location);
+   index = loc.indexOf("?");
+   if (index > -1) {
+      document.bugreport.object.value = decodeURIComponent(loc.substring(index + 1, loc.length));
+   }
+}
+
+function checkFields () {
+   var emailRE = "^s*(([0-9a-zA-Z]+[-._+&amp;])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6})?s*$";
+   var email = document.bugreport.email.value;
+
+   if ( email == "" ) {
+      var email_empty_ok = confirm("Did you intend to submit an anonymous question/comment? If not, please choose 'Cancel' and provide an email so we may contact you for further details.");
+      if ( email_empty_ok == false ) {
+         return false;
+      }
+   }
+
+   if (document.bugreport.description.value=="") {
+      alert("Please include a brief description of the problem.");
+      return false;
+   }
+   else if (!document.bugreport.email.value.match(emailRE)) {
+      alert("You may omit the email address if you do not wish a response, but if you submit one, please make sure it is a valid email address.")
+      return false;
+   }
+   else {
+      if (submitcount == 0) {
+         submitcount++;
+         return true;
+      }
+      else {
+         return false;
+      }
+   }
+}
+   
+
+//-->
+</script>
+</head>
+
+<body class="noBanner" onload="setReferrer()">
+<center>
+<h2>Feedback Form - Annotation</h2>
+</center>
+
+BioCyc relies on the collective expertise of those in the field to improve the evidence-based annotation of genes and proteins in its databases. If you see something wrong or lacking, please indicate below how the page can be improved, along with the evidence underlying the suggestion.
+
+<P>Note that as of now, only <B>Tier 1</B> and <B>Tier 2</B> databases (not <B>Tier 3</B>) have a mechanism that allows modification of the pages. You can tell the tier of an organism by going to that organism's summary page (e.g. by clicking the name of the organism. You will see at the top, just under the organism's name "<B>Tier <I>X</I></B>...", where <I>X</I> is 1, 2, or 3.
+
+<P>If you wish to send an attachment, please do so by an email to <a href="mailto:biocyc-support@ai.sri.com">biocyc-support@ai.sri.com</a>.
+
+<p>
+</p><hr>
+<p>
+Please provide the following information:
+
+</p><p>
+</p><form action="/bugreport" name="bugreport" onsubmit="return checkFields()">
+Your Name: <input name="name" class="plain" size="50">[WHY ISN'T THIS FILLED IN AUTOMATICALLY?]<br>
+Your Email: <input name="email" class="plain" size="50">[WHY ISN'T THIS FILLED IN AUTOMATICALLY?]
+<p>URL of page from which you reached this form:<br>
+<input name="object" class="plain" size="80" value="https://cyanocyc.org/organism-summary?object=GCF_000009705"></p>
+
+<p>
+Suggested change or addition:<br>
+<textarea name="description" rows="10" cols="80"></textarea>
+<br>
+</p>
+
+<P>Annotations should be supported by preferably published evidence. All fields are optional, but please provide enough information so that the publication can be found.
+<P>First author: <input name="author" class="plain" size="50">
+<br>Title: <input name="title" class="plain" size="50">
+<br>Year: <input name="year" class="plain" size="50">
+<br>DOI: <input name="DOI" class="plain" size="50">
+<br>PMID: <input name="PMID" class="plain" size="50">
+<BR>Additional publications:<br>
+<textarea name="additional" rows="10" cols="80"></textarea>
+
+<center>
+<input type="submit" value="Submit Form">
+<input type="reset" value="Cancel" onclick="self.close()">
+</center>
+<p>
+</p></form>
+
+
+<script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.7190510504828883', methodName, methodArgs }, 'https://cyanocyc.org');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script></body></html>
