@@ -1,0 +1,2815 @@
+/*************************** style.css ***********************************
+
+ This is the default style-sheet for Pathway Tools.  We recommend that you do
+ not modify this file.  Many of these styles are necessary for proper
+ functioning of the banner and toolbar.  When a new version of Pathway Tools 
+ is installed, this file, along with any changes that you have made, will be
+ overwritten.  Sites that run Pathway Tools as a web server and wish to
+ customize the styles should instead modify the file
+ userWebsiteCustomization.css. That file is loaded in web pages after this 
+ style sheet so that any definition here can be overriden by the standard CSS
+ mechanism. Keep a copy of your userWebsiteCustomization.css
+ file in another location outside the Pathway Tools root before doing a new
+ Pathway Tools installation.
+
+
+ *************************************************************************/
+
+/* General style definitions applicable to many different components */
+
+.cBoxIndicator { 
+   visibility: hidden;
+   margin: auto;
+   left:0; right:0;
+   top:0;  bottom:0;
+   width: 1px; height: 1px;
+   position: absolute;
+   padding: 10px 10px 10px 10px;
+   margin: 10px 10px 10px 10px;
+   border: #000 solid 1px;
+   background-color: #f0f0ff;
+   text-align: center;
+   z-index: 30000;
+}
+
+.verticalText {
+  text-align: center;
+  vertical-align: middle;
+  writing-mode: tb-rl;
+  white-space:nowrap;
+}
+
+.verticalTextCC {
+  text-align: center;
+  vertical-align: middle;
+  writing-mode: tb-rl;
+  white-space:nowrap;
+}
+
+/* PureCSS sets this to zero, which is not what we want. */
+input {
+   margin: revert; 
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* ======================== The banner ========================= */
+
+#ptbanner { 
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #FFFFFF;
+  background-position: 0px 2px;
+  height: 60px;
+  padding-top: 6px;
+  }
+
+#ptbanner a.logo {
+  display: block;
+  height: 60px;
+  width: 190px;
+  float: left;
+}
+
+/* The temporary message is made visible by the JavaScript code.
+   See the userWebsiteCustomization.js file for fn insertTemporaryMessage.
+*/
+
+div.temporaryMsg {
+  display: none;
+  border: 0px solid black;
+  float: left;
+  height: 53px;
+  /* The width is modified by the JavaScript */
+  width: 0px;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+
+/* The color of the current database name, both in the banner and in the
+   pull-down menus.
+*/
+span.dynDBName {
+  color: white;
+}
+
+/* searchMenu is Quick Search form */
+
+.searchMenu {
+ font-size: 11px;
+ color: black; /* #1c2243; */
+ padding-bottom: 0px;
+
+text-align: right;
+ white-space: nowrap;
+}
+
+div.searchMenu {
+ font-size: 11px;
+ color: black; /* #1c2243; */
+ padding-bottom: 0px;
+ text-align: right;
+ white-space: nowrap;
+}
+
+a.searchMenu {
+ font-size: 11px;
+ color: blue; /* #1c2243; */
+ padding-right: 0px;
+ padding-bottom: 0px;
+ text-align: right;
+ white-space: nowrap;
+}
+
+form.searchMenu {
+ font-size: 11px;
+ color: blue; /* #1c2243; */
+ padding-bottom: 0px;
+ padding-top: 1px;
+ margin: 0;
+ text-align: right;
+ white-space: nowrap;
+}
+
+/* Used for the input text box of the quick search */
+input.inputQuickSearch {
+     color: black;
+     background-color: white;
+     white-space: nowrap;
+     border: 0;
+     /* width: 95%; for new website */
+}
+
+#QSTextBox:focus {
+    outline: none;
+}
+
+#QSContainer {
+    padding: 2px;
+    color: black;
+    background-color: white;
+    white-space: nowrap;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118,118,118), rgb(133,133,133));
+    margin-right: 2px;
+}
+
+
+.searchButton {
+  font-size: 11px;
+  background-color: white;
+  color: black
+}
+
+.searchMenuDatabaseName {
+ font-size: 12px;
+ color: #1c2243;
+ text-align: left;
+ white-space: nowrap;
+ padding-top: 2px;
+}
+
+span.dynDBName.banner {
+  padding: 0 0px 0 0px;
+  color: black; /* #181A6F; for new web site */
+  white-space: nowrap;
+}
+
+span.dynDBName.menu {
+  padding: 0 0px 0 0px;
+  color: white;  
+}
+
+div.searchGroupingExternalBox {
+ position: relative;
+ float:  right; 
+ margin: 1px 20px 1px 0px;
+ padding: 0;
+ text-align: right;
+ white-space: nowrap;
+}
+
+div.searchGroupingInternalBox {
+  margin: 0;
+  padding: 1px 3px 1px 3px;
+  border: 1px solid #0000ff;
+  text-align: left;
+  white-space: nowrap;
+}
+
+div.searchGroupingInternalBox:hover {
+  border: 1px solid #0000ff;
+  background-color: #f0f0ff;
+}
+
+
+/* The login links and overlay */
+
+div.PTlogIn {
+ <!--[if !IE]><!-->
+  position: relative; 
+ <!--<![endif]-->
+  display: none;
+  white-space: nowrap;
+  font-size: 11px;
+  color: #1c2243;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.PTlogIn a, .PTlogIn a:visited {
+ text-decoration: none;
+ color:#1c2243;
+ white-space: nowrap;
+}
+
+.PTlogIn a:hover, .PTlogIn a:visited:hover {
+ text-decoration: underline;
+ color:#1c2243;
+}
+
+table.PTlogIn {
+  border: 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; 
+  font-size: small;
+  white-space: nowrap;
+}
+
+#Login table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+/* ========== The styles for the top menu bar ========== */
+
+#pathwayToolsMenubar {z-index: 10000}
+
+
+
+li.yuimenubaritem a.yuimenubaritemlabel {
+ font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+ color: white;
+ background: #181A6F
+ z-index: 10000;
+}
+
+/* Control such thing as the small triangle that would appear next to a command name */
+.yui-skin-sam .yuimenubarnav .yuimenubaritemlabel-hassubmenu {
+    background-color: #181A6F;
+    background: url('/menubaritem_submenuindicator_white.png') right center no-repeat ;
+   z-index: 10000;
+}
+
+div.yuimenubarnav {
+  padding: 0;
+  margin:  0;
+  color: white;
+  background-color: #181A6F;
+  z-index: 10000;
+}
+
+.yui-skin-sam .yuimenubaritemlabel:visited {
+  color: white;
+}
+
+div.yuimenubarnav div.bd {
+  color: white;
+  background-color: #181A6F;
+  text-indent: 0;
+  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 100000;
+}
+
+/* Make sure that all li inside the menu have these settings */
+
+
+/* Colors should only be for menubar div.bd, not for other div.bd elts */
+div.yuimenubarnav div.bd li.yuimenubaritem {
+  color: white;
+  background-color:  #181A6F;
+  z-index: 100000;
+}
+
+
+/* The style of the selected command in the top menu bar */
+div.yuimenubarnav div.bd ul.toolbar li.yuimenubaritem-selected {
+  background-image: none;
+  background-color: #6c6da8;
+  border-left:  4px solid #181A6F;
+  margin-left: -4px;
+  z-index: 100000;
+}
+
+div.yuimenubarnav div.bd li {
+  text-indent: 0;
+  margin-left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 100000;
+}
+
+/* The menu bar */
+div.yuimenubarnav div.bd > ul {
+  color: white;
+  background-color: #181A6F;
+  padding: 0;
+  margin:  0;
+  list-style: none;
+  z-index: 100000;
+}
+
+/* The commands on a menu bar */
+div.yuimenubarnav div.bd > ul > li {
+   color:       white; 
+   background-color: #6c6da8;
+   font-weight: bold; 
+   padding: 0 0 0 0; 
+   margin: 0 0 0 0;
+   border: 0;
+   z-index: 100000;
+}
+
+/*
+div.bd div.withDatabase {
+   font-family: verdana; 
+   padding: 0 1% 1% 3%;
+   background-color: #6c6da8;
+   color: white;
+   border-top:    none;
+   border-right:  3px solid #181A6F;
+   border-left:   3px solid #181A6F;
+   border-bottom: 3px solid #181A6F;
+   -moz-border-radius-bottomright: 1em;
+   -moz-border-radius-bottomleft: 1em;
+    z-index: 10000;
+}
+*/
+
+div.bd div.bd > ul {
+  background-color: white; 
+  padding: 0;
+  margin: 0
+  z-index: 100000;
+}
+
+/* The commands in a first level menu */
+div.bd div.bd > ul li {
+  //font-family: verdana; 
+  background-color: white; 
+  color: #43362c;
+  //border-top:   none;
+  //border-bottom: 1px solid #43362c; 
+  /* Keep top and bottom padding small to prevent menu sizing weirdness */
+  padding: 1px 10px 1px 10px;
+  margin: 0 0 0 0; 
+  z-index: 100000;
+}
+
+/* IE6 ignores the > selector, so we have to try specifying the
+   background-color a different way...
+ */
+li.yuimenuitem {
+  background-color: white; 
+}
+
+/* The commands in a first level menu */
+div.bd div.bd > ul li > a {
+  //font-family: verdana; 
+  border:   none;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0; 
+  z-index: 100000;
+}
+
+/*
+table.menuDatabase {
+   font-family: verdana; 
+   text-align: left; 
+   margin:  0 0 0 0; 
+   padding: 0;
+   color:   white; 
+   border:  0  
+   z-index: 10000;
+}
+*/
+/* For any anchor inside a table for the menu database name (e.g. change) */
+/*
+table.menuDatabase a {
+   font-family:     verdana; 
+   font-size:       small;
+   text-align:      left; 
+   text-decoration: underline;
+   margin:  0 0 0 0; 
+   padding: 0 0 0 0;
+   color:   white; 
+   border:  0  
+   z-index: 10000;
+}
+*/
+
+/* The highlight color when the user mouses over one of the menu items */
+
+div.bd div.bd > ul li:hover {
+   background-color: #f0f0ff;
+}
+
+/* Use a slightly different background color for the object-specific menus
+
+div.yuimenubarnav .bd ul.toolbar li.objMenu {
+    background-color: #474791;
+}
+ */
+
+a.removedLink {
+    display: none;
+}
+
+/* === Styles for the new toolbar menu (moved here from BioCyc_Extra.css) === */
+
+/* The dropdown container */
+.toolbar-dropdown {
+  float: left;
+  overflow: hidden;
+  height: 49px;
+}
+
+.sub-toolbar-dropdown {
+}
+
+/* Dropdown button */
+.toolbar-dropdown .toolbar-dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.toolbar-dropdown:focus-within .toolbar-dropbtn, .toolbar-dropdown:hover .toolbar-dropbtn, .sub-toolbar-dropdown:focus-within .sub-toolbar-dropbtn, .sub-toolbar-dropdown:hover .sub-toolbar-dropbtn {
+    backdrop-filter: brightness(0.9);
+}
+
+.sub-toolbar-dropdown .sub-toolbar-dropbtn {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: black;
+  line-height: 26px;
+  padding-left: 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.toolbar-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  box-sizing:border-box;
+}
+
+.sub-toolbar-dropdown-content {
+  display: none;
+  margin-left: 45px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 100;
+  box-sizing:border-box;
+  position: absolute;
+  width: max-content;
+}
+
+/* Links inside the dropdown */
+.toolbar-dropdown-content a:not(.removedLink) {
+  float: none;
+  color: black;
+  padding: 3px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 26px;
+}
+
+.toolbar-dropdown-content p {
+  float: none;
+  color: black;
+  padding: 3px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-style: italic;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.toolbar-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.sub-toolbar-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.toolbar-dropdown:hover .toolbar-dropdown-content, .toolbar-dropdown:focus .toolbar-dropdown-content, .toolbar-dropdown:focus-within .toolbar-dropdown-content  {
+  display: block;
+}
+
+.sub-toolbar-dropdown:hover .sub-toolbar-dropdown-content, .sub-toolbar-dropdown:focus .sub-toolbar-dropdown-content, .sub-toolbar-dropdown:focus-within .sub-toolbar-dropdown-content {
+  display: block;
+}
+
+/* =========  End of styles for the top menu bar ========== */
+
+
+/* ============ Style for Organism Selector dialog ==================== */
+
+.orgselectorByNameContents {
+    display: flex;
+    margin: 2px;
+}
+
+.nameACColumn {
+    width: 526px;
+    min-width: 526px;
+}
+
+.alphabetFilter {
+    width: 18px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 3px;
+}
+
+div.alphabetFilter a {
+    color: #00F;
+}
+
+#quicklinksColumn {
+    width: 280px;
+    margin-left:5px
+}
+
+.yui-panel {
+    line-height: 1em;
+}
+
+#orgselectorAutoComplete {
+    width:39em; /* set width here or else widget will expand to fit its container */
+    padding-bottom:20em; /* allow enough real estate for the container */
+}
+
+.yui-skin-sam .yui-ac-content { /* set scrolling */
+    max-height:inherit;
+    overflow:auto;
+    overflow-x:hidden; /* set scrolling */
+    /* _height:18em;  ie6 */
+    z-index: 1000;
+}
+
+.yui-skin-sam .yui-ac-content ul li{
+   text-indent: 0em;
+}
+
+
+#orgselectorAutoComplete .yui-ac-input {
+  font-weight: bold;
+  font-size: 105%;
+  font-family: arial, helvetica, clean, sans-serif;
+}
+
+#orgContainer {
+  top: 1.9em;
+  left: 0.3em;
+  max-height:243px;
+}
+
+#orgnum {
+    width: 100%;
+    text-align:center;
+}
+
+#orgInput2 {
+  font-weight: bold; 
+  font-size: 90%; 
+  background-color:#ffffff
+}
+
+.bold-treenode {
+  background-color: white;
+  cursor: pointer;
+  margin-left: 2px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.disabled-treenode {
+  cursor: pointer;
+  margin-left: 2px;
+  text-decoration: none;
+  color: #999;
+}
+
+.boldOrgid {
+  font-weight: bold;
+}
+
+.grayOrgid, a.jstree-anchor.grayOrgid {
+  color: #999;
+}
+
+/* paley:May-27-2013 I think there is a bug in the YUI treeview styles -- 
+   check1 and check2 images seem to be switched.  Fix them here for now, but
+   if this gets fixed, we probably want to switch them back.
+*/
+
+.ygtv-checkbox .ygtv-highlight1 .ygtvcontent {
+    padding-left:1em;
+    background:url(check2.png) no-repeat
+}
+
+.ygtv-checkbox .ygtv-highlight2 .ygtvcontent{
+    padding-left:1em;
+    background:url(check1.png) no-repeat
+}
+
+div#metadataTab input[type=text], div#metadataTab input[type=search], div#metadataTab input[type=button], div#metadataTab select, div#multiorgMetadataTab input[type=text], div#multiorgMetadataTab input[type=search], div#multiorgMetadataTab input[type=button], div#multiorgMetadataTab select {
+    margin: 1px;
+    padding: 1px 2px;
+}
+
+div#metadataTab td, div#multiorgMetadataTab td {
+    padding: 0;
+}
+
+div#metadataTab th, div#multiorgMetadataTab th {
+    padding: 3px 20px 1px 1px;
+    font-weight: normal;
+    color: #000000;
+    background-image: linear-gradient(transparent 40%, rgba(0,0,0,0.21));
+    font-size: inherit;
+    text-shadow: 0 1px 1px #fff;
+    vertical-align: text-top;
+}
+
+div#multiorgMetadataTab td input, div#multiorgMetadataTab th input {
+    height: 11px;
+}
+
+div#metadataTab #orgTableDownload {
+    padding: 4px;
+}
+
+#mdResultsTable td input[type=radio] {
+    width: 0;
+}
+
+div.resizableDialog .yui-resize-handle-br{
+    right:0;
+    bottom:0;
+    height: 8px;
+    width: 8px;
+    position:absolute;
+}
+
+.dataTable.hover tr.even:hover {
+    background: #ccccff;
+}
+
+.dataTable tr span.tier1 {
+    color: #222222;
+}
+
+/* Unfortunately, all these widths have to be explicitly hardcoded so that
+   when the dialog is resized, the right pieces get resized accordingly.
+   This makes the code rather brittle however, so if anything about the
+   dialog gets changed, these widths may need to be adjusted.
+   paley:May-17-2021 If the content of a tab exceeds the assigned height, we
+   need to set to scroll, otherwise it will increase in height, and cover up the
+   OK button, making it unclickable.
+ */
+
+.orgselectorTab {
+    height: 346px;
+    overflow-y: scroll;
+}
+
+.multiorgselectorTab {
+    height: 424px;
+    overflow-y: scroll;
+}
+
+#multiorgSelection {
+    height: 434px;
+    max-width: 100%;
+    min-width: 230px;
+    margin: 0px;
+}
+
+#multiorgSelection option {
+    overflow-x: scroll;
+}
+
+#multiorgContainer {
+  max-height:372px;
+}
+
+#multiorgnum {
+    position:absolute;
+    bottom: 10px;
+    left:40%;
+}
+
+#multiorg3columns {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+#multiorg3columns > div {
+    flex: 1 1 auto;
+}
+
+#multiorg3columns > div.buttons {
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.tier1 {
+    background-color: #FFF2DF;
+}
+
+.tier1:hover {
+    color: #000000;
+}
+
+
+.tier2 {
+    background-color: #BCD3D766;
+}
+
+.quicklinkOrgs {
+    margin-left: 4px;
+    font-style: italic;
+    line-height: 118%;
+}
+
+.quicklinkOrgs a {
+    color: #000000;
+}
+a.showallText {
+    text-decoration: underline;
+    font-size: smaller;
+}
+
+div.mdSubstringInput {
+    width: 280px;
+}
+
+.chosen-container .chosen-results li {
+  padding: 2px 6px;
+  line-height: 1em;
+}
+
+div#multiorgSelectorDialog input[type=button] {
+    padding: 1px;
+}
+
+div#multiorgSelectorBody {
+    padding-bottom: 20px;
+}
+
+div#multiorgSelectorDialog {
+    min-width: min-content;
+}
+
+/*================ End of styles for Organism Selector dialog ============== */
+
+
+/*================ Styles for side bar ============== */
+
+a.sideBar {
+  white-space: nowrap;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+a.sideBar:hover {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+
+/*================ End of Styles for side bar ============== */
+
+
+/* ========== The default styles for the other web pages. =============== */
+
+html {height: 100%}
+
+body {
+    /* kothari:Jun-6-2024 removed the following property so that the fonts do not get changed when click on help"*/
+ /*font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;*/
+ background-color: #ffffff; /* white */
+ font-size: 14px;
+ color: #0f0f0f;
+ /* mt: removed 4/13/12 line-height: 16px; */
+ height: 100%;
+ padding: 0px 0px 0px 0px;
+ margin:  0;
+}
+
+div#topBannerMenu, div.pageContentStatic, div.pageContentDynamic {
+}
+
+div#topBannerMenu {
+ line-height: 1em; /* removed for new site */
+ /* z-index: 10; */
+ position:relative;
+}
+
+/* Use this class for pages that don't include the banner, and therefore
+   shouldn't show up invisible (because they don't have the javascript to 
+   make them visible).  Examples of pages like this are those that are
+   internal frames of pages, such as the omics viewer or the evidence popup.
+*/
+body.noBanner {
+ visibility: visible;
+ background-color: #ffffff; /* white */
+ padding: 5px;
+ margin:  0;
+}
+
+/* For static pages only */
+div.pageContentStatic {
+  padding-left:  0.25in;
+  padding-right: 0.25in;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  min-height: 80%;
+} 
+
+/* For dynamic pages only */
+div.pageContentDynamic {
+  padding-left:   15px;
+  padding-right:  15px;
+  padding-top:    15px;
+  padding-bottom: 15px;
+  min-height: 80%;
+} 
+
+.header {
+  font-size: large;
+  font-weight: bold;
+}
+
+.subheader {
+    font-size: medium;
+    font-weight: bold;
+}
+
+table.footer {
+  font-size: small;
+}
+
+table.small {
+ font-size: small;
+}
+
+pre, code {
+ font-family: Courier, monospace;
+}
+
+input.orange {
+  color: black;
+  background-color: #ff9900;  /* orange */
+}
+
+input.plain {
+ color: black;
+ background-color: white;
+}
+
+
+/* For paragraphs generated as part of a CLIM page, indent all lines other */
+/* than the first one.                                                     */
+P.ecoparagraph
+	{
+	margin-left: 2em;
+	text-indent: -2em;
+	}
+
+/* For paragraphs internal to a comment field, indent the whole thing */
+P.ecocomment
+	{
+	margin-left: 2em;
+	}
+
+/* For "subtitles" where we don't want a linebreak afterwards */
+B.embeddedSubtitle
+	{
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	}
+/* Center the buttons that ptools produces as part of a CLIM page (as 
+   opposed to the ones in the various forms)        
+*/
+.ecobuttons {
+    justify-content: center;
+    display: flex;
+    gap: 4px;
+}
+
+.infoBox2 .ecobuttons {
+    text-align: left;
+    justify-content: left;
+}
+
+.ecobuttons input {
+ cursor: pointer;    
+}
+
+
+
+img.ev {
+    min-width: 14px;
+}
+
+
+.ecobutton_in_table {
+    background-color: #181A6F;
+    border-radius: 4px;
+    border-width: 1px;
+    margin: 2px 0px 3px 0px;
+    color:white;
+}
+
+/* Quick Search Results page uses th for section names in table
+   that also contains descriptions of page contents.
+ */
+
+th {
+  font-weight: bold;
+  font-size: larger;
+  vertical-align: top;
+}
+
+div.floatbox {
+  float:right;
+  border:1px solid black;
+  margin:15px 10px 10px 5px;
+  padding:5px;
+  max-width: 350px;
+}
+
+/* paley:Feb-26-2008 This sets the background color for the overlib popups */
+.overlibFGClass {background-color: #EEEEFF;}
+
+/* Used to control alternating background colors for the rows of some of the tables.
+   In particular for the results of Search pages, SAQP (and BioVelo).
+
+*/
+
+tr.trLight {background-color: white;   font-size: 100%; border: 1px solid black }
+tr.trDark  {background-color: #F6F5D9; font-size: 100%; border: 1px solid black }
+/* For NOT lines in the table of GO terms on a gene/protein page */
+tr.red a { color:red; }
+
+table.sortableSAQPoutputTable {
+   border: 1px solid black;
+   background-color: white;
+   border-collapse: collapse;
+}
+/*kothari:Jun-6-2024 commented out and replaced with the same values as from rachael.css*/
+/*
+table.sortableSAQPoutputTable td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 0 5px 0 5px;
+}
+*/
+table.sortableSAQPoutputTable td {
+	padding:4px 6px 6px; 
+	border: 1px solid #ccc6e1; 
+}
+
+
+table.sortableSAQPoutputTable a {
+   text-decoration: none;
+}
+
+table.sortableSAQPoutputTable a:hover {
+   text-decoration: underline;
+   background:#ccc;
+   cursor: pointer;
+}
+
+/* This is required for IE. Dynamically changing it will not work */
+span.triangleSort {
+  cursor: pointer;
+  color: blue;
+  font-size: 100%
+}
+
+
+/* Latendre: Jan-23-2008 
+
+The following styles are used in SAQP.
+
+*/
+
+a.BioVeloQueryOutSAQP {
+  font-size: 100%;
+  font-family: monospace;
+  text-decoration: none; /* no underline for anchor */
+} 
+
+div.errorMsgContainer {
+   background-color: white;
+   color: red;
+   font-size: 120%;
+}
+
+select.SAQP {
+ /* possible values: dotted dashed solid double groove ridge inset outset */	
+  border-style: solid; 
+  border-width: 1px;
+}
+
+/* For reproducing the BioVelo query back to the user, e.g., output result of a query. */
+span.BioVeloQueryOutSAQP {
+  font-size: 90%;
+  font-family: monospace;
+  text-decoration: none;
+  color: blue;
+  background-color: white;
+  border: 0px solid black;
+  cursor: pointer;
+}
+
+span.BioVeloQueryOutSAQP:hover {
+  text-decoration: underline;
+}
+
+
+/* For reproducing the BioVelo query back to the user, e.g., output result of a query for searches. */
+span.BioVeloQueryOutSearch {
+  width: 100%;
+  white-space: wrap;
+  font-size: 90%;
+  font-family: monospace;
+  text-decoration: none;
+  color: blue;
+  background-color: white;
+  border: 0px solid black;
+  cursor: pointer;
+}
+
+span.BioVeloQueryOutSearch:hover {
+  text-decoration: underline;
+}
+
+/* Appearance of search components in SAQP */
+div.searchComponent { 
+ border:  2px solid black;
+ padding: 3px;
+ white-space: nowrap;
+}
+
+/* Appearance of where clause in a search component */
+div.whereClause { 
+   border:  1px solid black; 
+   padding: 3px;
+   white-space: nowrap;
+}
+
+/* Appearance of boxes to enter numbers, texts, etc. in a search component */
+input.textBox { 
+  background-color: white
+}
+
+/* Appearance of slots that are of type list of frames or frames. */
+
+option.saqpSelectFrame {
+  background-color: white
+}
+
+table.saqpColumnSpecification {
+  border : 1px solid black;
+  white-space: nowrap;
+}
+
+div.flexRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+div.flexRowWrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+
+div.flexCol {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+select.pwyList {
+    height: 200px;
+    width: 360px;
+    margin: 2px;
+}
+
+select.pwyList option {
+    overflow-x: scroll;
+}
+
+/* For MSA sequence input dialog */
+
+input.seqCoord {
+    width: 70px;
+}
+
+.rowIndex {
+    padding-left: 10px;
+}
+
+.noClose .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.hintTitlebar div.ui-dialog-titlebar {
+    border-radius: 0px;
+    border: none;
+}
+
+.hintTitlebar div.ui-dialog-titlebar span {
+    display: none;
+}
+
+/* ======================= Overviews =========================== */
+
+.acOvNarrow .yui-ac-content {
+    overflow: auto;
+    padding-bottom: 100px; 
+    overflow-x: hidden;
+    width: 50%;
+}
+
+
+.acOvMedium .yui-ac-content {
+    overflow: auto;
+    padding-bottom: 100px; 
+    overflow-x: hidden;
+    width: 60%;
+}
+
+.acOvWide .yui-ac-content {
+    overflow: auto;
+    padding-bottom: 100px; 
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.olPopup {
+  height: auto; width: auto;
+  overflow: auto;
+  background-color: #ffffd9;
+}
+
+.olPopupContent {
+  height: auto; width: auto;
+  overflow: auto;
+  background-color: #ffffd9;
+}
+
+#onePopup_GroupDiv {
+  background-color: #ffffd9;
+  height: auto; width: auto;
+  overflow: auto;
+}
+
+.yui-resize-handle-br { 
+   right:  0; 
+   bottom: 0; 
+   height: 30px; 
+   width:  30px; 	
+   position:absolute;  
+} 
+
+/* ======================= Regulatory Overview ================== */
+
+/* Make sure the map tiles do not hide the top menu bar lists */
+div.olMapViewport { z-index: 0 }
+
+#regNodeOperations > .yuimenuitemlabel {
+  background-color: white;
+  color: black
+}
+
+#regNodeOperations > div.bd > ul > li {
+  background-color: white;
+  color: black
+}
+
+#regNodeOperations > div.bd > ul > li > a {
+  background-color: white;
+  color: black
+}
+
+#regNodeOperations > .yuimenuitem {
+  background-color: white;
+  color: black
+}
+
+#regDialogGeneOntology .longAC {width:35em; padding-bottom:2em;}
+#regDialogGeneOntology {border: thin solid black}
+
+/* ======================= Cellular Overview ================== */
+
+
+#celDialogGenURL div.bd {
+   overflow: auto;
+   opacity: 0.9;
+}
+
+#celDialogGenURL div.ft {
+ height : 30px;
+ padding: 2px 20px 0px 0px;
+ opacity: 0.9
+}
+
+#dialogListNodes div.bd {
+   overflow: auto;
+   opacity: 0.9
+}
+
+#dialogListNodes div.ft {
+ height : 30px;
+ padding: 2px 20px 0 0;
+ opacity: 0.9
+}
+
+#dialogOmics div.bd {
+  overflow: auto;
+  background-color: white;
+  opacity: 1;
+  color: black
+}
+
+#dialogOmics div.ft {
+  border-top: 1px solid #CCCCCC;
+  font-size: 14px;
+  opacity: 1;
+  padding: 10px 20px 10px 10px;
+  line-height: 1.6;
+}
+
+#dialogOmics div.ft button{
+  color: blue;
+  font-size: 100%;
+  font-weight: bold;
+  min-height: 1.5em;
+}
+
+/*
+#dialogOmics div.ft {
+  background-color: white;
+  opacity: 1;
+  color: black;
+  padding: 2px 20px 2px 2px;
+}
+*/
+
+#controlDialogOmics div {
+  background-color: white;
+  opacity: 1.0;
+  color: black
+}
+#controlDialogOmics div.ft {
+  background-color: white;
+  opacity: 1.0;
+  color: black
+  height: 20
+}
+
+#reportTableOmicsDialog div.bd {
+  /* Scolling is obtained by limiting the height and width *here before* creating the dialog
+     and by having overflow: auto */    
+   overflow: auto;
+   height: "400px"
+   width:  "40em"
+}
+
+#omicsQuickHelpDialog div.bd {
+  background-color: white;
+  overflow: auto;
+  opacity: 0.9
+}
+
+
+#omicsSliderBg {
+ background: url(/yui/build/slider/assets/bg-fader.png) 5px 0 repeat; 
+}
+
+#celNodeOperations > .yuimenuitemlabel {
+  background-color: white;
+  color: black
+}
+
+#celNodeOperations > div.bd > ul > li {
+  background-color: white;
+  color: black
+}
+
+#celNodeOperations > div.bd > ul > li > a {
+  background-color: white;
+  color: black
+}
+
+#celNodeOperations > .yuimenuitem {
+  background-color: white;
+  color: black
+}
+
+/*Start Group Styling Buttons -- here rather than rachael.css because these widgets can appear anywhere */
+.create_group, .add_to_group, .browse_group  {
+
+	padding:5px;
+	position:relative;
+	text-decoration:none;
+	background:url("/yui/build/assets/skins/sam/sprite.png") repeat-x;
+	border: 1px solid #A3A3A3;
+}
+
+.create_group a {
+    font-size: 13px;
+    text-decoration: none;
+    background: url("/pgroups/group2.png") no-repeat scroll 0 3px transparent;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+}
+
+.add_to_group {
+   
+    width: 445px;
+    padding: 0px 5px;
+}
+
+.browse_group {
+    width: 300px;
+    padding: 10px;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+
+.clear {
+	clear:both;
+}
+
+.add_to_group img, .add_to_group form {
+	float: left;
+	padding-top: 3px;
+}
+
+.add_to_group form {
+	width: 393px;
+	margin-bottom:0;
+	margin-left: 5px;
+	height: 25px;
+	padding: 4px 0 2px 0;
+}
+
+.add_to_group form select {
+	margin: 0 5px 0 7px;
+        width:220px;
+}
+
+.create_group {
+	width: 162px;
+	min-height: 20px;
+	padding: 5px 5px 0px 6px;
+}
+
+.create_group a {
+	font-size: 13px;
+	text-decoration:none;
+	background:url("/pgroups/group.png") no-repeat scroll 0 3px transparent;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left:30px;
+}
+
+
+/*End Group Styling Buttons*/
+
+/* Tab styling for organism selector */
+
+div.orgSelectorTabs.ui-tabs {
+    padding: 0;
+    border-radius: 0;
+}
+
+div.orgSelectorTabs.ui-tabs .ui-tabs-nav {
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 3px solid #e27100; /* color between tab list and content */
+    border-radius: 0;
+    background: #f2f2f2;
+}
+
+div.orgSelectorTabs.ui-tabs .ui-tabs-panel.ui-widget-content {
+    border: 1px solid #808080;
+    border-top-color: #243356;
+    background:#fafafa; /* content background color */
+    font-size: 13px;
+    padding: 3px 6px;
+    font-family: arial, helvetica, clean, sans-serif;
+    min-height: 352px;
+}
+
+div.orgSelectorTabs input, div.orgSelectorTabs select, div.orgSelectorTabs textarea, div.orgSelectorTabs button {
+    font-family: arial, helvetica, clean, sans-serif;
+}
+
+div.orgSelectorTabs.ui-tabs .ui-corner-bottom {
+    border-radius: 0;
+}
+
+div.orgSelectorTabs .ui-tabs-nav li {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #d8d8d8 url(sprite.png) repeat-x;
+}
+
+div.orgSelectorTabs .ui-tabs-nav li a:hover {
+    background:#fbcb9a url("/lightorangegradient.png") repeat-x left;
+}
+
+
+div.orgSelectorTabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a.ui-tabs-anchor,
+div.orgSelectorTabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a.ui-tabs-anchor:hover,
+div.orgSelectorTabs.ui-tabs .ui-tabs-nav li.ui-tabs-active a.ui-tabs-anchor:focus {
+    background:#e27100 url("/orangegradient.png") repeat-x left; /* selected tab background */ 
+}
+
+div.orgSelectorTabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+     padding: 0.35em 0.75em;
+}
+
+div.orgSelectorTabs.ui-tabs .ui-tabs-nav li .ui-tabs-anchor {
+    line-height: 1em;
+    color: black;
+}
+
+.yui-skin-sam .yui-navset .yui-nav,
+.yui-skin-sam .yui-navset .yui-navset-top .yui-nav { /* protect nested tabviews from other orientations */
+    border:solid #e27100; /* color between tab list and content */
+    border-width:0 0 5px;
+    Xposition:relative;
+    zoom:1;
+}
+
+.yui-skin-sam .yui-navset .yui-nav .selected a, 
+.yui-skin-sam .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */ 
+.yui-skin-sam .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */ 
+  background:#e27100 url("/orangegradient.png") repeat-x left; /* selected tab background */ 
+  color:#000000; 
+} 
+
+.yui-skin-sam .yui-navset .yui-nav a:hover,
+.yui-skin-sam .yui-navset .yui-nav a:focus {
+    background:#fbcb9a url("/lightorangegradient.png") repeat-x left; /* selected tab background */
+    outline:0;
+}
+
+.yui-skin-sam .yui-navset .yui-content {
+    background:#fafafa; /* content background color */
+}
+
+/* AutoComplete widgets: set width here or else widget will expand to */
+/* fit its container                                                  */
+.longAC {width:40em;}
+.shortAC { width: 20em; margin-right:1em}
+
+.longAC input[type=text], .shortAC input[type=text] { width: 100% }
+
+.longAC.yui-ac, .shortAC.yui-ac {padding-bottom:2em;}
+
+.ui-front.ui-autocomplete { z-index: 2000; }
+.ui-autocomplete-loading {
+    background: white url("/ui-anim_spinner_16x16.gif") right center no-repeat;
+}
+
+
+/* ======================= Omics key (for pathway table)  ================== */
+
+#omicsKey {
+   background-color: #ffffff;
+   border: 1px solid;
+   font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+   font-size: 10px;
+   border-collapse: collapse;
+}
+
+td.omicsKeyColor {
+   width: 10px;
+   height: 12px;
+   padding:0px;
+   border: 1px solid;
+}
+td.omicsKeySpacer {
+   width: 4px;
+   border-bottom: 1px solid;
+   height: 12px;
+   padding:0px;
+}
+
+#omicsKeyValues {
+   border-collapse: collapse;
+}
+
+#omicsKeyColors {
+   border-collapse: collapse;
+}
+#omicsKeyValues td {
+   height: 13px;
+   padding:0px;
+}
+
+
+
+/* ======================= Styles for site redesign ================== */
+
+
+
+a {
+	text-decoration: none;
+	color: #0162b7;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#0000FF;
+}
+
+.summaryTable {
+	width: 800px;
+	font-size: 12px;
+	border: 1px solid #666666;
+	background-color: #EBEBEB;
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+.summaryTable td, .summaryTable th {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	padding: 3px 8px;
+
+}
+
+
+.dataTable, .dataTable2 {
+	width: 948px;
+	font-size: 12px;
+	border: 1px solid #666666;
+	border-spacing:0;
+ 	border-collapse:collapse;
+	
+}
+
+.dataTable tbody tr td, .dataTable2 tbody tr td {
+	padding: 3px 8px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.dataTable th, .dataTable2 th {
+	text-align: left;
+	padding: 3px 8px;
+	background-color: #ffffff;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+}
+
+.dataTable td {
+}
+
+.rowEven {
+	background-color: #EBEBFF;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+}
+
+.dataTable.hover tr:hover {
+	background-color: #ccccff;
+}
+
+.jumpUp {
+	font-size: 12px;
+	text-align: right;
+	margin-top: -14px;
+}
+.expand {
+	font-size: 12px;
+	font-weight: normal;
+}
+	
+.pointer {
+	background-image: url(../images/arrow.png);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+}
+
+.navBox {
+    /* font-family: Helvetica, Arial, Verdana, sans-serif; */
+	font-size: 12px;
+	color: #333333;
+	border: 1px solid #CCCCCC;
+	position: fixed;
+	top: 102px; /* change to 175px for new web site */
+	right: 0px;
+	padding: 0px;
+	background-color: #EBEBEB;
+	z-index: 6;
+	width: 215px;
+	max-height:100%;
+	overflow-y:auto;
+}
+#navBox .spacer {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	margin: 5px 0 0 0;
+	padding: 0px;
+	height: 5px;
+}
+
+.section1 {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	font-variant: small-caps;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	margin-bottom: 4px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	margin-top: 4px;
+	padding: 2px;
+}
+	
+#navBox ul  {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#navBox li  {
+	margin: 0;
+}
+
+#navBox li a {
+	display: block;
+	padding: 2px 5px 2px 15px;
+	background-color:#EBEBEB;
+	color: #333333;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	text-decoration: none;
+	background-image: url(/pointerCCCCCC.png);
+	background-repeat: no-repeat;
+	background-position: 5px 6px;
+	width: 100%;
+} 
+
+#navBox li li a {
+	display: block;
+	padding: 2px 5px 2px 25px;
+	background-color:#EBEBEB;
+	color: #333333;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	text-decoration: none;
+	background-position: 15px 6px;
+	width: 100%;
+}
+
+#navBox li li li a {
+	display: block;
+	padding: 2px 5px 2px 35px;
+	background-color:#EBEBEB;
+	color: #333333;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	text-decoration: none;
+	background-position: 25px 6px;
+	width: 100%;
+}
+
+html>body #navBox li a {
+	width: auto;
+} 
+
+#navBox li a:hover {
+	background-color:#E6E6E6;
+	color: #000000;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background-image: url(/pointer000000.png);
+
+}
+
+.navBoxExpansion{
+	font-size: 12px;
+	margin: 0;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-left: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;	
+	float: right;	
+}
+.navBoxExpansion:hover{
+	background-color:#FFFFFF;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;	
+}
+
+#navBoxShow {
+    display: none;
+}
+
+.navBoxHidden #navBoxShow {
+    display: inline;
+}
+
+.navBoxHidden #navBoxHide {
+    display: none;
+}
+
+.navBox a {
+	text-decoration: none;
+	color:#333333;
+}
+.navBoxLabel{
+	font-size: 10px;
+ 	font-weight: bold;
+	margin: 0;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	
+}
+.navBoxItem{
+	font-size: 14px;
+	margin: 0;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	
+}
+/*
+.navBox li.navBoxLink:hover {
+	background-color:#E6E6E6;
+	color: #000000;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.navBox a:hover {
+	color: #000000;
+}
+*/
+.navBox h3 {
+ 	font-weight: bold;
+	margin: 0;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+}
+
+
+#navBox li li .navBoxSubmenuHeader {
+	margin: 0;
+	font-size: 12px;
+	padding-left: 20px;
+	padding-top: 3px;
+	color: #333333;
+}
+
+#navBox li .navBoxSubmenuHeader {
+	margin: 0;
+	padding-left: 5px;
+}
+.navBoxSubmenuHeader {
+	font-weight: bold;
+	font-size: 13px;
+	margin: 0;
+}
+
+.submenuCollapsed span {
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: url(/yui/build/assets/skins/sam/menuitem_submenuindicator.png) right center no-repeat;
+	}
+
+.submenuExpanded span {
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: url(/yui/build/assets/skins/sam/menubaritem_submenuindicator.png) right center no-repeat;
+}
+.submenuCollapsed:hover {
+	background-color:#666666;
+	color: #FFFFFF;
+}
+ 
+.submenuExpanded:hover {
+	background-color:#666666;
+	color: #FFFFFF;
+}
+
+.floatRight {
+	border: 1px solid #333333;
+	left: 10px;
+	float: right;
+}
+.floatLeft {
+	border: 1px solid #333333;
+	float: left;
+}
+.titleBlock {
+
+	width: 966px;
+
+}
+.infoBox, .infoBox td, .infoBox th {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+.iconGenomeBrowser {
+	background-image: url(../images/genomeBrowser.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.tightList {
+	padding-top: 0em;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
+	margin-left: 3px;
+	list-style-image: none;
+	list-style: none;
+	margin-top: 0px;
+}
+.tightMargin{
+	margin-top: 3px;
+	margin-bottom: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.colSpacer180 {
+	height: 1px;
+	width: 180px;
+}
+.colSpacer260 {
+	height: 1px;
+	width: 240px;
+}
+
+/* For requiring logins: */
+
+div#pagemask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 90px;
+    background: #555555;
+    z-index: 9998;
+}
+
+div#requireLogin {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+    z-index: 9999;
+    background: #E6E6E6;
+    padding: 10px 20px 20px 20px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+div#requireLogin button {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+}
+
+div#requireLogin td {
+    vertical-align: middle;
+}
+
+
+#mediaBox {
+    /* font-family: Helvetica, Arial, Verdana, sans-serif; */
+/* width 95px height 20px original*/
+font-size: 0.8px;
+border: 0px solid#CCCCCC;
+background-color: #EBEBEB;
+position: relative;
+width: 51px;
+	
+}
+
+
+.gcontextHilitGene a {
+    color: OrangeRed;
+}
+
+div.gcontextTabs table td {
+    padding-right:6px;
+}
+
+/* ======================= Styles for tabbed gene pages ================== */
+
+.pageContentDynamic h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+}
+
+
+.geneHdrBox {
+	border-collapse:collapse;
+	border: 1px solid black;
+}
+
+.titleBox{
+	border: 1px solid #CCCCCC;
+	background-color:#F8F7F0;
+	width: 100%;
+	padding-left: 4px;
+	padding-right: 2px;
+	border-bottom-width: 0px;
+}
+
+.titleBox:last-of-type{
+	border-bottom-width: 1px;
+}
+
+.infoBox2, .infoBox2 td, .infoBox2 th {
+	border-collapse:collapse;
+	border: 1px solid #CCCCCC;
+	padding: 4px;
+}
+
+table.infoBox2 {
+	width: 100%;
+}
+
+.linkBox {
+    max-width: 600px;
+}
+
+.linkBox, .linkBox td, .linkBox th {
+    border-collapse:collapse;
+    border: 1px solid #EBEBEB;
+    font-size:10px;
+    padding: 3px 8px;
+}
+
+.linkBox h3 {
+    font-size:15px;
+}
+
+table.linkBox th.label {
+    width: fit-content;
+}
+
+.label {
+	background-color: #F8F7F0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+.toplabel {
+	background-color: #F8F7F0;
+	font-size: inherit;
+}
+
+table.goTable th {
+    font-size: 13px;
+    font-family: arial, helvetica, clean, sans-serif;
+    border: 0;
+    padding: 0;
+}
+
+table.goTable td {
+    border: 0;
+    padding: 0;
+}
+
+.summaryTable2 {
+    width: 100%;
+    font-size: 12px;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    background-color: #FFFFFF;
+    display: flex;
+    font-family: arial, helvetica, clean, sans-serif;
+}
+
+.summaryTable2 td, .summaryTable2 > div {
+	padding: 3px 8px;
+
+}
+
+.summaryTable3 {
+	width: 100%;
+	font-size: 12px;
+	border: 1px solid #EBEBEB;
+	background-color: #FFFFFF;
+	border-spacing:0;
+	border-collapse:collapse;
+	max-width: calc(100vw - 50px);
+}
+
+.summaryTable3 td.label, .summaryTable3 th {
+    max-width: 182px;
+}
+
+.summaryTable3 td, .summaryTable3 th {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.summaryText {
+	font-size: 14px;
+	max-width: calc(100vw - 50px);
+}
+
+.summaryTable2 P.ecocomment, .infoBox2 P.ecocomment {
+    margin-left: 0;
+}
+
+span.rxnNote {
+    font-size: 10px;
+}
+
+dl.componentOf {
+    margin: 0px;
+}
+
+table.internal, table.internal td, .dataTable2 table.internal tbody tr td, .infoBox2  td table.internal tbody tr td {
+    border-bottom-style: none;
+    padding-left: 0px;
+    padding-right: 2px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+
+.infoBox2  td table.internal tbody tr td {
+    border:none;
+}
+
+.infoBox2 td.label, .infoBox2 th.label {
+    width: 15%;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+
+div.genetabs .ui-tabs-active .ui-tabs-anchor,
+div.genetabs .ui-tabs-active .ui-tabs-anchor:hover,
+div.genetabs .ui-tabs-active .ui-tabs-anchor:focus,
+div.orgSelectorTabs .ui-tabs-active .ui-tabs-anchor,
+div.orgSelectorTabs .ui-tabs-active .ui-tabs-anchor:hover,
+div.orgSelectorTabs .ui-tabs-active .ui-tabs-anchor:focus {
+    background-color: #181A6F;
+    color: white;
+    background-image: none;
+}
+
+div.genetabs .ui-tabs-nav {
+    border-color:  #181A6F;
+    border-bottom-width: 2px;
+    background: white;
+}
+
+div.tabPanel img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.genetabs .tabPanel {
+    border-top: 1px solid #181A6F;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    padding: .25em .5em;
+}
+
+div.genetabs.ui-tabs, div.orgSelectorTabs.ui-tabs {
+    border: 0;
+}
+
+div.genetabs .ui-corner-all, div.genetabs .ui-corner-top, div.genetabs .ui-corner-left, div.genetabs .ui-corner-tl, div.genetabs .tabPanel {
+    border-radius: 0px;
+}
+
+div.genetabs.ui-tabs .ui-tabs-nav {
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid #181A6F;
+}
+
+div.genetabs.ui-tabs .ui-tabs-nav li, div.orgSelectorTabs.ui-tabs .ui-tabs-nav li {
+    margin: .1em .2em 0 0;
+}
+
+div.genetabs .ui-tabs-nav li, div.orgSelectorTabs .ui-tabs-nav li {
+}
+
+div.genetabs.ui-tabs .ui-tabs-nav li.ui-tabs-active, div.orgSelectorTabs.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0 .2em 0 0;
+    border-left: 1px solid rgb(36,51,86);
+    border-right: 1px solid rgb(36,51,86);
+    border-top: 1px solid rgb(36,51,86);
+    padding-bottom: 0;
+}
+
+div.genetabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor, div.orgSelectorTabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: .3em .75em;
+    font-size: 13px;
+}
+
+div.genetabs .ui-state-default a, div.genetabs .ui-state-default a:link, div.genetabs .ui-state-default a:visited {
+    color: #0162b7;
+    font-weight: bold;
+    font-family: arial, helvetica, clean, sans-serif;
+}
+
+div.genetabs .tabPanel.ui-widget-content {
+    font-size: 13px;
+    color: #0F0F0F;
+    font-family: arial, helvetica, clean, sans-serif;
+    overflow-x: auto;
+}
+
+div.genetabs .tabPanel.ui-widget-content a {
+    color: #0162b7;
+}
+
+div.genetabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    background-color: #181A6F;
+    color: white;
+    padding: 0.4em 0.75em;
+
+}
+
+.green {
+    color: #006600;
+}
+
+.red {
+    color: red;
+}
+
+.fa {
+    text-indent: 0px;
+}
+
+reference {
+	margin-left: 24px;
+	text-indent: -24px;
+	color: #666;
+}
+
+.reference a {
+	color: #666;
+}
+
+.reference a:hover {
+	text-decoration: underline;
+	color:#0000FF;
+}
+
+.reference strong{
+	color: #000;
+	font-weight: bold;
+}
+
+.reference .key{
+	color: #0162b7;
+	font-weight: bold;
+}
+
+.reference .key:hover, strong:hover{
+	color: #0000FF;
+}
+
+/* For lining things up w/o adding extra borders or spacing -- make sure you also add role=presentation to these tables */
+.spacingOnlyTable, .spacingOnlyTable td {
+    border: none;
+    border-spacing:0;
+    border-collapse:collapse;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 1em;
+}
+
+.infoBox2 td.reactionEquation, .infoBox2 th.reactionEquation {
+    font-size:14px;
+    line-height:20px; /* was 30px; */
+    padding-left: 4em;
+    text-indent: -3.5em;
+    font-weight: normal;
+}
+
+.tableSpacerCell {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	padding: 0px;
+	margin: 0px;
+	background-color: #fff;
+	font-size: 8px;
+}
+
+div.inlineBlockElt {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 24px;
+}
+
+/* The protein feature table uses lots of colors, so needs dark text for contrast */
+
+table.ftrTable td {
+    color: black;
+}
+
+table.ftrTable td a {
+    color: #002951;
+}
+
+table.ftrTable th {
+    font-size: inherit;
+}
+
+/* ============== For FBA interface =============== */
+
+i[title]:hover {
+   color: black;
+   background-color: white;
+} 
+
+/* All tab view needs a white background */
+div#model.yui3-tabview-panel {
+    background-color: white;
+    background-color: #FFFFFF;
+}
+
+div#model.yui3-tab-panel {
+    background-color: white;
+    background-color: #FFFFFF;
+}
+
+.fba-table-entries tr:hover {
+   background: rgba(226,113,0,0.2);
+}
+
+.reaction-frameid {
+  min-width: 250px
+}
+
+.reaction-name {
+  min-width: 300px;
+}
+
+.compound-name {
+  min-width: 250px
+}
+
+.compound-frameid {
+  min-width: 200px
+}
+
+.cco-frameid {
+  min-width: 140px
+}
+
+.flux-value {
+  min-width:  50px;
+  text-align: right;
+}
+
+.biomass-coeff {
+  width:      80px;
+  text-align: right;
+}
+
+textarea.fba-comment {
+  min-width: 200px; 
+  maxlength: 2000;
+  rows: 1;
+}
+
+textarea.fba-description {
+  maxlength: 4000;
+  width:     98%;
+  min-width: 500px
+}
+
+.fba-comment {
+  min-width:  200px;
+}
+
+.fba-remove-button {
+   width:   18px;
+   color:   red;
+   text-align: "center"
+}
+
+.cpdStructureCell {
+ max-width: 600px;
+ max-height: 200px;   
+}
+
+.cpdStructureCell img {
+ max-width: 600px;
+ max-height: 200px;   
+}
+
+div.treeview img {
+    max-width: none;
+}
+
+/* === The following provided by Aaron Spaulding */
+
+@charset "UTF-8";
+/* CSS Document */
+
+.margin {
+	margin: 10px 20px;
+}
+
+.bucket {
+	margin: 10px 50px;
+	padding: 5px 20px;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px;
+	background-color: rgb(248,247,240);
+	color: #333;
+}
+
+.fba-button {
+	padding: 5px 5px 4px 5px;
+	border-radius: 3px;
+	background-color: rgba(226,113,0,0.5);
+	color: #333;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+ a.fba-button:hover { 
+	background-color: rgba(226,113,0,1.00);
+        color: #fff;
+	text-decoration: none;
+        cursor: pointer;
+}
+
+.warning {
+	background-color: rgba(226,0,0,0.5);
+}
+
+a.warning:hover {
+	background-color: rgba(255,0,0,1);
+    color: #fff;
+	text-decoration: none;
+}
+
+.error-msg {
+    color: #F33;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.infoTable {
+	border: 1px solid #CCCCCC;
+}
+
+.infoTable th {
+	text-align: left;
+	font-size: 12px;
+	background-color: #F8F7F0;
+	padding: 4px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+}
+
+
+.infoTable, .infoTable td {
+	border-collapse:collapse;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	vertical-align: middle;
+	padding: 3px;
+}
+
+.infoTable tr:hover {
+    background: rgba(226,113,0,0.2);
+}
+
+.even {
+	background: #fff; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#fff, #f8f7f0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fff, #f8f7f0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fff, #f8f7f0); /* For Firefox 3.6 to 15 */
+/*
+	background-color: #ECE9D7;  
+*/
+}
+
+.selected {
+    background: rgba(226,113,0,.5);
+}
+
+.infoTable tr.selected:hover {
+    background: rgba(226,113,0,.7);
+}
+
+.vertical-center {
+	vertical-align: middle;
+}
+
+fba-h2 {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+	width: 948px;
+}
+
+fba-h3 {
+	font-family: Helvetica, Arial, Verdana, sans-serif;	font-size: 16px;
+	font-weight: bold;
+	color: #666666;
+}
+
+
+/* ==== end provided by Aaron Spaulding */
+
+/* ==== begin provided by James Herson to support Web Graphics ====*/
+
+  /* Overlay Look/Feel */
+
+.yui3-overlay-content {
+    background-color: #ECEFFB;
+    border: 1px solid #9EA8C6;
+    border-radius: 3px;
+    max-width: 500px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.yui3-overlay-content .yui3-widget-hd {
+    background-color: #B6BFDA;
+    color: #30418C;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0.2em 0.5em 0.3em;
+    border-radius: 2px 2px 0 0;
+}
+
+.yui3-overlay-content .yui3-widget-bd {
+    font-family: Verdana, Arial, Helvetica;
+    background-color: #ECEFFB;
+    color: #000000;
+    font-size: x-small;
+    padding: 0.4em 0.6em 0.5em;
+}
+
+.yui3-overlay-content .yui3-widget-ft {
+    background-color:#DFE3F5;
+    padding: 0.4em 0.6em 0.5em;
+    border-radius: 0 0 2px 2px;
+}
+
+.webGraphics {
+    font-kerning: none;
+}
+
+/*==== begin for preferences.html =================================*/
+
+.buttonforprefs {
+    border: none;
+    color: white;
+    width: 220px;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.buttonSubsInfo {background-color: #0000EE;} /* sorta blue */ 
+.buttonActivate {background-color: #F89838;} /* sorta orange */
+
+#loginMenuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+#loginMenuBar > div {
+    margin-left: 10px;
+}
+
+/*====================== tippy theme ====================*/
+
+.tippy-box[data-theme~=ptools] {
+    background-color:#eeeeff;
+    background-clip:padding-box;
+    border:1px solid #333399;
+    color:#000;
+    box-shadow:0 4px 14px -2px rgba(0,8,16,.08);
+    text-indent: 0;
+    font-size: 11px;
+    line-height: 12.5px;
+    text-align: left;
+}
+
+.tippy-box[data-theme~=ptools]>.tippy-backdrop {
+    background-color:#fff
+}
+
+.tippy-box[data-theme~=ptools]>.tippy-arrow:after,.tippy-box[data-theme~=ptools]>.tippy-svg-arrow:after {
+    content:"";
+    position:absolute;
+    z-index:-1
+}
+
+.tippy-box[data-theme~=ptools]>.tippy-arrow:after {
+    border-color:transparent;
+    border-style:solid
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=top]>.tippy-arrow:before {
+    border-top-color:#eeeeff
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=top]>.tippy-arrow:after {
+    border-top-color: #333399;
+    border-width:7px 7px 0;
+    top:17px;
+    left:1px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=top]>.tippy-svg-arrow>svg {
+    top:16px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=top]>.tippy-svg-arrow:after {
+    top:17px}
+
+.tippy-box[data-theme~=ptools][data-placement^=bottom]>.tippy-arrow:before {
+    border-bottom-color:#eeeeff;
+    bottom:16px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=bottom]>.tippy-arrow:after {
+    border-bottom-color:#333399;
+    border-width:0 7px 7px;
+    bottom:17px;
+    left:1px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=bottom]>.tippy-svg-arrow>svg {
+    bottom:16px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=bottom]>.tippy-svg-arrow:after {
+    bottom:17px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=left]>.tippy-arrow:before {
+    border-left-color:#eeeeff
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=left]>.tippy-arrow:after {
+    border-left-color:#333399;
+    border-width:7px 0 7px 7px;
+    left:17px;
+    top:1px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=left]>.tippy-svg-arrow>svg {
+    left:11px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=left]>.tippy-svg-arrow:after {
+    left:12px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=right]>.tippy-arrow:before {
+    border-right-color:#eeeeff;
+    right:16px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=right]>.tippy-arrow:after {
+    border-width:7px 7px 7px 0;
+    right:17px;
+    top:1px;
+    border-right-color:#333399)
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=right]>.tippy-svg-arrow>svg {
+    right:11px
+}
+
+.tippy-box[data-theme~=ptools][data-placement^=right]>.tippy-svg-arrow:after {
+    right:12px
+}
+
+.tippy-box[data-theme~=ptools]>.tippy-svg-arrow {fill:#eeeeff}
+.tippy-box[data-theme~=ptools]>.tippy-svg-arrow:after{
+    background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA2czEuNzk2LS4wMTMgNC42Ny0zLjYxNUM1Ljg1MS45IDYuOTMuMDA2IDggMGMxLjA3LS4wMDYgMi4xNDguODg3IDMuMzQzIDIuMzg1QzE0LjIzMyA2LjAwNSAxNiA2IDE2IDZIMHoiIGZpbGw9InJnYmEoMCwgOCwgMTYsIDAuMikiLz48L3N2Zz4=);
+    background-size:16px 6px;
+    width:16px;
+    height:6px
+}
+
+a.jstree-anchor[node-type=instance] i.jstree-checkbox, a.jstree-anchor.jstree-disabled i.jstree-checkbox {
+    display: none;
+}
+
+.screen-reader-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.searchButton {
+    border:none;
+    background: white;
+    padding: 0;
+}
+
+.searchButton:focus, .searchButton:hover {
+    background: #e5e5e5;
+}
+
+.skipLink {
+    left: -9999px;
+    position: absolute;
+    max-width: 28.125rem;
+    background-color: #fff;
+    text-align: center;
+    white-space: normal;
+}
+
+.skipLink:focus {
+    top: .3rem;
+    left: 2.8rem;
+    z-index: 5005;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .5rem;
+    font-weight: 600;
+    color: #181a6f;
+    font-size: 1rem;
+}
+
+table.terminatorTable th, table.compAnalysisTable th {
+    font-weight: normal;
+    font-size: inherit;
+}
+
+div.childToggle {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+div.childToggle div.nchildren {
+    margin-bottom: -5px;
+    font-size: smaller;
+}
+
+div.childToggle.expanded div.nchildren {
+    display: none;
+}
+
+div.childToggle.expanded i.fa {
+    transform: rotate(180deg);
+}
+
+.menuChooseSelect {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid gray;
+    overflow-y: scroll;
+}
+
+.menuChooseSelect li {
+    padding: 2px;
+}
+
+.menuChooseSelect li:hover {
+    background-color: moccasin;
+}
+
+.menuChooseSelect li.menu-choose-selected {
+    background-color: #3392e3;
+}
+
+div.toolbar-dropdown-content.show {
+    display: block;
+}
+
+div#dropdownMenuContainer {
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+div#dropdownMenuContainer a {
+    line-height: unset;
+    padding: 5px 10px;
+}
+
+div.maxWdOntologyGraph {
+    min-width: 100%;
+}
