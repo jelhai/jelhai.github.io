@@ -1,0 +1,60 @@
+ Volume in drive C is Windows
+ Volume Serial Number is DA86-CC84
+
+ Directory of C:\Users\jelhai\Documents\1\home\Misc\Baseball-cards\Card-images
+
+02/23/2026  01:00 PM    <DIR>          .
+02/23/2026  12:32 PM    <DIR>          ..
+02/23/2026  11:34 AM           164,707 1961-300-Mantle-creased__1961 Mantle.jpg
+02/22/2026  06:09 PM         2,105,464 1961-344-Koufax-creased-reverse__IMG_6531.jpg
+02/22/2026  06:07 PM         2,021,794 1961-344-Koufax-creased__IMG_6528.jpg
+02/22/2026  06:11 PM         2,000,169 1961-415-Aaron__IMG_6532.jpg
+02/23/2026  12:08 PM         1,689,431 1961-417-Marichal__IMG_6601.jpg
+02/22/2026  07:02 PM         1,887,853 1962-010-Clemente-creased__IMG_6538.jpg
+02/22/2026  07:00 PM         1,987,364 1962-053-AL-Home-Run-Leaders__IMG_6536.jpg
+02/22/2026  06:13 PM         1,980,983 1962-139c-Babe-Hits-60__IMG_6534.jpg
+02/23/2026  11:30 AM            67,142 1962-200-Mantle-peeled__1962 Mantle 1.jpg
+02/23/2026  11:30 AM           165,907 1962-200-Mantle-somewhat-peeled__1962 Mantle 2.jpg
+02/23/2026  11:31 AM           191,778 1962-387-Brock-speckled__1962 Brock.jpg
+02/22/2026  07:06 PM         1,804,042 1963-002-AL-Batting-Leaders-taped__IMG_6543.jpg
+02/22/2026  07:10 PM         1,835,831 1963-003-NL-Home-Run-Leaders-taped-bad-corner__IMG_6545.jpg
+02/22/2026  10:37 PM         1,593,229 1963-138-Pride-of-NL__IMG_6547.jpg
+02/23/2026  12:11 PM         1,790,345 1963-173a-Bombers-Best-taped__IMG_6603.jpg
+02/22/2026  10:41 PM         1,824,768 1963-200-Mantle-uncentered__IMG_6550.jpg
+02/23/2026  11:33 AM           170,409 1963-210-Koufax-peeled-top-and-bottom-taped__1963 Koufax.jpg
+02/22/2026  10:43 PM         1,961,280 1963-228-1963-Rookies__IMG_6553.jpg
+02/22/2026  10:45 PM         1,767,295 1963-242-Power-Plus-taped-creased__IMG_6555.jpg
+02/22/2026  10:47 PM         1,735,477 1963-300-Mays-taped-maybe__IMG_6556.jpg
+02/22/2026  07:04 PM         1,840,946 1963-300-Mays-taped-repaired__IMG_6540.jpg
+02/22/2026  10:50 PM         1,867,841 1963-340-Berra-taped__IMG_6558.jpg
+02/22/2026  10:51 PM         1,960,809 1963-340-Berra-uncentered__IMG_6560.jpg
+02/22/2026  10:53 PM         1,884,561 1963-345-Robinson-Brooks-taped__IMG_6563.jpg
+02/23/2026  10:49 AM         1,821,086 1964-055-Banks-taped__IMG_6570.jpg
+02/23/2026  12:13 PM         1,727,226 1964-125-Rose-taped__IMG_6605.jpg
+02/23/2026  10:52 AM         1,702,192 1964-125-Rose-uncentered__IMG_6571.jpg
+02/23/2026  11:18 AM         2,032,847 1964-136-Koufax-Strikes-Out-15-taped__IMG_6599.jpg
+02/23/2026  11:17 AM         1,961,048 1964-136-Koufax-Strikes-Out-15-uncentered-creased__IMG_6597.jpg
+02/22/2026  05:49 PM         1,968,638 1964-200-Koufax-taped__IMG_6516.JPG
+02/22/2026  05:55 PM         1,897,072 1964-200-Koufax-writing-reverse__IMG_6527.jpg
+02/22/2026  05:52 PM         2,031,605 1964-200-Koufax-writing__IMG_6525.jpg
+02/22/2026  06:03 PM         2,056,435 1964-331-AL-Bombers__IMG_6520.jpg
+02/23/2026  12:15 PM         1,813,381 1964-423-Tops-in-NL-taped__IMG_6607.jpg
+02/22/2026  06:05 PM         1,954,191 1964-440-Clemente-taped__IMG_6523.jpg
+02/22/2026  05:59 PM         1,999,454 1964-512-Tiger-Rookies-taped__IMG_6519.jpg
+02/22/2026  06:02 PM         2,064,228 1964-561-Phillies-Rookies-taped__IMG_6518.jpg
+02/23/2026  11:12 AM         2,031,934 1965-003-AL-Home-Run-Leaders__IMG_6595.jpg
+02/23/2026  11:11 AM         1,945,988 1965-134-Mantles-Clutch-HR__IMG_6593.jpg
+02/23/2026  11:09 AM         1,958,308 1965-170-Aaron__IMG_6590.jpg
+02/23/2026  11:08 AM         1,768,658 1965-207-Rose-uncentered__IMG_6586.jpg
+02/23/2026  11:06 AM         1,866,855 1965-207-Rose-very-uncentered__IMG_6588.jpg
+02/23/2026  12:19 PM         1,714,633 1965-250=Mays__IMG_6610.jpg
+02/23/2026  12:18 PM         1,772,657 1965-300-Koufax__IMG_6608.jpg
+02/23/2026  11:03 AM         1,977,416 1965-340-Oliva__IMG_6583.jpg
+02/23/2026  11:01 AM         1,838,711 1965-519-Uecker-IMG_6581.jpg
+02/23/2026  10:58 AM         1,791,581 1965-526-Athletics-Rookies-writing__IMG_6579.jpg
+02/23/2026  10:56 AM         2,035,460 1965-526-Athletics-Rookies__IMG_6576.jpg
+02/23/2026  10:54 AM         1,737,842 1965-533-Mets-Rookies__IMG_6575.jpg
+02/23/2026  12:21 PM         1,894,415 1966-126-Palmer-uncentered__IMG_6612.jpg
+02/23/2026  01:00 PM                 0 card-images-dir.txt
+              51 File(s)     85,663,286 bytes
+               2 Dir(s)  912,982,114,304 bytes free
